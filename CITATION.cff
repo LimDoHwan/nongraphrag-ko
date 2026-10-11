@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "이 저장소를 사용하면 아래 학위논문을 인용해 주세요. / If you use this repository, please cite the thesis below."
+title: "nongraphRAG-ko: reproduction package for a cost-effectiveness analysis of Korean entity extraction in relation-free graph RAG"
+authors:
+  - family-names: "임"
+    given-names: "도환"
+    alias: "LimDoHwan"
+repository-code: "https://github.com/LimDoHwan/nongraphrag-ko"
+license: Apache-2.0
+preferred-citation:
+  type: thesis
+  title: "관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가 (A Cost-Effectiveness Analysis of Entity Extraction Methods for Korean in Relation-Free Graph RAG: Does Investment in LLM-Based Indexing Translate into Performance?)"
+  authors:
+    - family-names: "임"
+      given-names: "도환"
+  thesis-type: "Master's thesis (경영학 석사학위논문)"
+  institution:
+    name: "경희대학교 (Kyung Hee University)"
+  year: 2027
+  url: "https://github.com/LimDoHwan/nongraphrag-ko"

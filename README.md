@@ -107,8 +107,8 @@ python scripts/run_system.py --system "noun" --dataset wiki_ko
 | 응답 생성·판정 | `scripts/run_system.py` 실행 결과에 대해 `python -m src.track_02.common.unify_qa` → `python -m src.track_02.common.rejudge_gpt4o` | 10개 비교 시스템은 공통 프롬프트·출력 한도 2,000토큰으로 응답을 통일. 판정은 gpt-4o |
 | HippoRAG2 (31B) | `python scripts/run_system.py --system "HippoRAG2 (31B 그래프)" --dataset admin_full` | OpenIE를 문서당 2회 호출 (admin full 21,108회) |
 | HippoRAG2 (4B) | `python -m src.track_02.graphrag.openie_4b --dataset admin_full` 후 run_system | wiki_ko는 `openie_4b_rerun.py`로 다시 추출한 판(`4bv2`) 사용 |
-| LLM 증류 사전 | `python -m src.track_02.data.distill_glossary --openie <OpenIE 캐시> --mode nerre --out <사전>` | HippoRAG2의 OpenIE 결과에서 엔티티 표층형만 회수 |
-| 통계(PMI) 사전 | `python -m src.track_02.data.build_glossary` | 평가 집합의 정답 문서를 뺀 문서에서 구축 |
+| LLM 증류 사전 | `python -m src.track_02.data.distill_glossary --openie <OpenIE 캐시> --mode nerre --out <사전>` | HippoRAG2의 OpenIE 결과에서 엔티티 표층형만 회수. 검색 코퍼스 전체(정답 문서 포함)의 OpenIE 결과를 쓰며, 질의·정답 정보는 사용하지 않음 |
+| 통계(PMI) 사전 | `python -m src.track_02.data.build_glossary` | 평가 코퍼스 본문으로 구축. 질의·정답 정보는 사용하지 않음(구축 풀에는 평가 집합의 정답 문서도 포함됨) |
 
 ### admin full·hard 질의 합성 (참고)
 
@@ -138,7 +138,10 @@ python -m src.track_02.data.filter_adversarial --distractors 10000 --topk 5   # 
 - **증류 사전 구축 스크립트(`distill_glossary.py`)는 복원본입니다.** 원 스크립트가 남아 있지 않아 산출물을 대조해 규칙을 복원했습니다. wiki_ko 4B 사전은 (낱말, 빈도) 집합까지 같게 재현됩니다.
 - **실행 시 어떤 사전을 썼는지는 기록되지 않았습니다.** `systems.csv`의 사전 파일은 색인 캐시를 각 후보 사전으로 다시 추출해 정확히 일치하는 것을 찾아 정했습니다. compdict(admin)만은 표본 문서에서 `glossary.json`과 거의 같은 `glossary_clean.json`이 구별되지 않아, 다른 PMI 조건과 같은 `glossary.json`으로 두었습니다.
 - **HippoRAG2는 공식 패키지가 아니라 원논문을 따라 재구현했습니다**(`src/track_02/graphrag/hipporag2.py`, `src/track_01/graph_rag/hipporag2_korean.py`).
-- **LinearRAG도 원 저장소 코드가 아니라 원논문 구현을 따라 재구현했습니다**(`src/track_02/linearrag/engine.py`).
+- **LinearRAG도 원 저장소 코드가 아니라 원 저장소(DEEP-PolyU/LinearRAG) 구현을 따라 재구현했습니다**(`src/track_02/linearrag/engine.py`).
+  - 같은 점: 씨앗 엔티티 선택, 문장 단위 활성화 전파, 문서 점수(정규화 유사도 × passage_ratio + log(1 + 엔티티 보너스)), 문서–엔티티 끈 무게(등장 횟수 비율), 개인화 페이지랭크(prpack)의 계산식이 원 저장소와 같습니다. 설정값 7개(top-5, 반복 3, 문장 1, passage_ratio 1.5, passage_node_weight 0.05, damping 0.5, 임계값 0.5)는 원 저장소 `config.py`의 기본값입니다. 원 저장소의 2wiki 실행 스크립트는 임계값 0.4·passage_ratio 0.05를 쓰는데, 이 연구는 두 코퍼스 모두 기본값을 썼습니다.
+  - 다른 점: wiki_ko 문서는 원래 "번호:본문" 형태입니다. 원 저장소는 이 번호로 앞뒤 문서를 끈(무게 1.0)으로 잇고, 번호가 붙은 채로 문서를 임베딩합니다. 이 연구의 데이터 로더는 번호를 떼어 내므로 wiki_ko에서 이 이웃 문서 끈이 생기지 않았습니다. admin 문서는 번호로 시작하지 않아 원 저장소에서도 이 끈이 생기지 않으므로 영향이 없습니다. 이 밖에 원 저장소는 엔티티 등장 횟수를 셀 때 소문자로 바꿔 셉니다.
+  - 대조: 원 저장소 코드로 낸 wiki_ko 검색 결과(같은 bge-m3·고유명사 추출·2wiki 실행값)와 상위 5개 문서를 1,000문항에서 비교했습니다. 재구현 그대로는 64문항만 순서까지 같았습니다(평균 겹침 70%). 이웃 문서 끈을 넣으면 693문항(92.5%), 문서 임베딩에 번호까지 붙이면 837문항(96.5%)이 같았습니다. 계산식은 원 저장소와 같고, 차이는 위의 입력 처리에서 온다는 뜻입니다.
 - **gpt-4o 판정자는 모델 별칭으로 호출했습니다.** 10개 비교 시스템을 판정한 2026-09-15에 응답한 모델은 `gpt-4o-2024-08-06`입니다.
 
 ## 원고 부록 E의 파일 해시와 공개본
@@ -148,7 +151,7 @@ python -m src.track_02.data.filter_adversarial --distractors 10000 --topk 5   # 
 | 부록 E 파일 | 공개본 경로 | 부록 E 해시 | 공개본 해시 | 차이 |
 |:--|:--|:--|:--|:--|
 | `hipporag2_korean.py` | `src/track_01/graph_rag/hipporag2_korean.py` | `9d2fd188b65e` | `9d2fd188b65e` | 같음 |
-| `graphrag/hipporag2.py` | `src/track_02/graphrag/hipporag2.py` | `50f83806b21c` | `efdb985ef65e` | 부록 E의 해시를 기록한 뒤인 2026-09-14에 질문 임베딩을 한 번에 미리 계산해 두는 방식(`compute_query_vecs`, `qvecs.npz`)으로 실행 방식만 바꿨다. 같은 bge-m3 모델·정규화를 쓰며 검색 알고리즘은 같다. 공개본은 실험 작업본과 같은 파일이다 |
+| `graphrag/hipporag2.py` | `src/track_02/graphrag/hipporag2.py` | `50f83806b21c` | `efdb985ef65e` | 부록 E의 해시를 기록한 뒤(2026-09-14), wiki_ko의 4B 재추출판을 돌리려고 실행 옵션 `--variant 4bv2`를 추가했다. 바뀐 곳은 캐시·결과 경로, 결과 폴더 이름 표기, 옵션 선택지, OpenIE 단계 실행 조건 4곳뿐이다. 이 4곳을 되돌리면 부록 E의 해시 `50f83806b21c`가 그대로 나온다. 검색 함수(`run_retrieval_qa`)는 바뀌지 않았으므로 31B·4B 그래프 결과는 변경 전 코드와 같다. 공개본은 실험 작업본과 같은 파일이다 |
 | `linearrag/engine.py` | `src/track_02/linearrag/engine.py` | `74c3c47ee54f` | `74c3c47ee54f` | 같음 |
 | `vanillarag/run.py` | `src/track_02/vanillarag/run.py` | `351787976145` | `351787976145` | 같음 |
 | `openie_4b.py` | `src/track_02/graphrag/openie_4b.py` | `f841466e0c45` | `abf34607b72a` | 공개 정제: 내부 서버 주소를 환경변수 `OPENIE_4B_URL`로 바꾸고 `import os` 추가. 그 밖에는 같음 |
@@ -161,6 +164,25 @@ python -m src.track_02.data.filter_adversarial --distractors 10000 --topk 5   # 
 |:--|:--|:--|:--|
 | `src/track_02/graphrag/openie_4b_rerun.py` | `e756567b8ec7` | `dcac9e661cda` | 내부 서버 주소를 환경변수 `OPENIE_4B_BASE`로, 서버 실행 옵션에서 호스트 주소 제거, `import os` 추가 |
 | `scripts/translate_dataset.py` | — | `5ad23c372a16` | 원 영어 데이터 다운로드 경로를 `resolve/main`에서 취득 시점 커밋 `resolve/f7971bb84fe205d0c080df5f48b1393d9f580c68`로 고정 |
+
+## 인용
+
+이 저장소를 사용하면 다음 논문을 인용해 주세요. `CITATION.cff`에도 같은 정보가 있습니다.
+
+> 임도환 (2027). 관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가. 경희대학교 경영학 석사학위논문.
+>
+> Lim, D. (2027). *A Cost-Effectiveness Analysis of Entity Extraction Methods for Korean in Relation-Free Graph RAG: Does Investment in LLM-Based Indexing Translate into Performance?* Master's thesis, Kyung Hee University.
+
+```bibtex
+@mastersthesis{lim2027nongraphrag,
+  author = {임도환},
+  title  = {관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가},
+  school = {경희대학교},
+  type   = {경영학 석사학위논문},
+  year   = {2027},
+  url    = {https://github.com/LimDoHwan/nongraphrag-ko}
+}
+```
 
 ## 데이터 출처와 라이선스
 
