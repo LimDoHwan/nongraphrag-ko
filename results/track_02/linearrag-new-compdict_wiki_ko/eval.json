@@ -1,0 +1,9 @@
+{
+ "dataset": "wiki_ko",
+ "system": "linearrag-new-compdict",
+ "n": 1000,
+ "contain_acc": 0.549,
+ "gpt_acc": 0.558,
+ "gpt4o_acc": 0.605,
+ "gpt4o_n": 1000
+}

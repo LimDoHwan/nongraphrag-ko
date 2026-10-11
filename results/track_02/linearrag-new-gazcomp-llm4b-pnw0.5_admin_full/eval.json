@@ -1,0 +1,9 @@
+{
+ "dataset": "admin_full",
+ "system": "linearrag-new-gazcomp-llm4b-pnw0.5",
+ "n": 279,
+ "contain_acc": 0.5986,
+ "gpt_acc": 0.6487,
+ "gpt4o_acc": 0.6989,
+ "gpt4o_n": 279
+}

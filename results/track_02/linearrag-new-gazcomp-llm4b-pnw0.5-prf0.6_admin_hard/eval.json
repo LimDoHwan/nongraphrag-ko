@@ -1,0 +1,10 @@
+{
+ "dataset": "admin_hard",
+ "system": "linearrag-new-gazcomp-llm4b-pnw0.5-prf0.6",
+ "n": 103,
+ "gen_model": "gemma-4-31B-it",
+ "contain_acc": 0.2816,
+ "valid_qa": 102,
+ "gpt4o_acc": 0.3495,
+ "gpt4o_n": 103
+}

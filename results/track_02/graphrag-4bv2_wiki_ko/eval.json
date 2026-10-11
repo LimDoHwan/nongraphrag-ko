@@ -1,0 +1,13 @@
+{
+ "dataset": "wiki_ko",
+ "system": "graphrag-4bv2",
+ "n": 1000,
+ "topk": 5,
+ "contain_acc": 0.622,
+ "both_at5": 0.0,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 1000,
+ "gpt4o_acc": 0.75,
+ "gpt4o_n": 1000
+}

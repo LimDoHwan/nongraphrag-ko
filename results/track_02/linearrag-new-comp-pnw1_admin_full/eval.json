@@ -1,0 +1,10 @@
+{
+ "dataset": "admin_full",
+ "system": "linearrag-new-comp-pnw1",
+ "n": 279,
+ "gen_model": "gemma-4-31B-it",
+ "contain_acc": 0.6201,
+ "valid_qa": 278,
+ "gpt4o_acc": 0.7097,
+ "gpt4o_n": 279
+}

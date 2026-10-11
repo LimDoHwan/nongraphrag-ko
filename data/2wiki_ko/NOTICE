@@ -1,0 +1,15 @@
+This directory contains a Korean translation of a 1,000-question / 658-passage subset of
+2WikiMultiHopQA (Ho et al., 2020; https://github.com/Alab-NII/2wikimultihop).
+
+- Source subset: obtained from the LinearRAG release on Hugging Face
+  (datasets/Zly0523/linear-rag, subset "2wikimultihop", commit f7971bb84fe205d0c080df5f48b1393d9f580c68),
+  downloaded on 2026-06-08. The English files are kept unchanged in _source_en/.
+- Original data license: Apache License 2.0 (see LICENSE in this directory).
+- Modifications: all passages and questions were machine-translated into Korean with
+  google/gemma-4-31B-it (scripts/translate_dataset.py). entity_consistency.json records the
+  check that each answer string appears in the translated corpus (885/890 non-yes/no questions).
+
+Please cite the original benchmark:
+  Xanh Ho, Anh-Khoa Duong Nguyen, Saku Sugawara, Akiko Aizawa. 2020.
+  Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps. COLING 2020.
+and the LinearRAG paper (arXiv:2510.10114), which packaged this subset.

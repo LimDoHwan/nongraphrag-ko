@@ -1,0 +1,46 @@
+{
+  "total_questions": 1000,
+  "boolean_excluded": 110,
+  "applicable": 890,
+  "matched": 885,
+  "mismatched": 5,
+  "match_rate_pct": 99.44,
+  "verdict": "PASS (>=95%)",
+  "mismatch_samples": [
+    {
+      "id": "ee999f4408b211ebbd85ac1f6bf848b6",
+      "answer": "누가 네 형제니?",
+      "question": "누가 네 형제니?와 라스트 아웃포스트 (1951 영화) 중 감독이 먼저 태어난 영화는 무엇인가요?",
+      "type": "bridge_comparison",
+      "reason": "answer_not_in_corpus"
+    },
+    {
+      "id": "8abef13108a911ebbd80ac1f6bf848b6",
+      "answer": "뿌에트르",
+      "question": "소울 보이와 프테트르 중 어느 영화가 더 일찍 개봉했나요?",
+      "type": "comparison",
+      "reason": "answer_not_in_corpus"
+    },
+    {
+      "id": "ef9dd4360bdd11eba7f7acde48001122",
+      "answer": "스코틀랜드인",
+      "question": "헤더 얀쉬의 남편의 국적은 무엇인가요?",
+      "type": "compositional",
+      "reason": "answer_not_in_corpus"
+    },
+    {
+      "id": "9eb2d88408a711ebbd7fac1f6bf848b6",
+      "answer": "야노시 다먀니치",
+      "question": "야노시 다먀니치와 버트럼 J. 로저스 중 누가 먼저 태어났나요?",
+      "type": "comparison",
+      "reason": "answer_not_in_corpus"
+    },
+    {
+      "id": "7620e1b00bde11eba7f7acde48001122",
+      "answer": "우에케르문데",
+      "question": "바덴-뒤를라흐의 알베르티나 프레데리카 공주의 아버지의 출생지는 어디인가?",
+      "type": "compositional",
+      "reason": "answer_not_in_corpus"
+    }
+  ]
+}

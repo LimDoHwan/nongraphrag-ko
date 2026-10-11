@@ -1,0 +1,11 @@
+{
+ "dataset": "admin_single",
+ "system": "linearrag-new-gazcomp",
+ "n": 300,
+ "contain_acc": 0.82,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 6,
+ "gpt4o_acc": 0.9,
+ "gpt4o_n": 300
+}

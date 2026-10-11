@@ -1,0 +1,11 @@
+{
+ "dataset": "admin_hard",
+ "system": "linearrag-new-noun",
+ "n": 103,
+ "contain_acc": 0.2524,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 27,
+ "gpt4o_acc": 0.3301,
+ "gpt4o_n": 103
+}

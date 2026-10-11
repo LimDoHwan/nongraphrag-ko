@@ -1,0 +1,17 @@
+{
+ "dataset": "wiki_ko",
+ "system": "linearrag-new-gazcomp-llm4bv2",
+ "n": 1000,
+ "contain_acc": 0.642,
+ "reused": 480,
+ "regenerated": 520,
+ "gen_model": "gemma-4-31B-it",
+ "retrieval_device": "cuda",
+ "glossary": "data/wiki_ko/glossary_llm4b_wiki_v2.json",
+ "baseline_system": "linearrag-new-gazcomp-llm4b",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 202,
+ "gpt4o_acc": 0.765,
+ "gpt4o_n": 1000
+}

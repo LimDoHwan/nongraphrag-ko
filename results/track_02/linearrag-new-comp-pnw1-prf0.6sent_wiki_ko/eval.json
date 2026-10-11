@@ -1,0 +1,10 @@
+{
+ "dataset": "wiki_ko",
+ "system": "linearrag-new-comp-pnw1-prf0.6sent",
+ "n": 1000,
+ "gen_model": "gemma-4-31B-it",
+ "contain_acc": 0.544,
+ "valid_qa": 997,
+ "gpt4o_acc": 0.591,
+ "gpt4o_n": 1000
+}

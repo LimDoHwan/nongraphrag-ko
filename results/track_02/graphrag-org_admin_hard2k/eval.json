@@ -1,0 +1,11 @@
+{
+ "dataset": "admin_hard2k",
+ "system": "graphrag-org",
+ "n": 103,
+ "topk": 5,
+ "contain_acc": 0.466,
+ "both_at5": 0.5243,
+ "gpt_acc": 0.5049,
+ "gpt4o_acc": 0.5146,
+ "gpt4o_n": 103
+}

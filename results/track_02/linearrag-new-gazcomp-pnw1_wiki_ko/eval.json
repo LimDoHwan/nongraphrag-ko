@@ -1,0 +1,9 @@
+{
+ "dataset": "wiki_ko",
+ "system": "linearrag-new-gazcomp-pnw1",
+ "n": 1000,
+ "contain_acc": 0.56,
+ "gpt_acc": 0.561,
+ "gpt4o_acc": 0.623,
+ "gpt4o_n": 1000
+}

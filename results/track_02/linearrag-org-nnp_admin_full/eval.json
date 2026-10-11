@@ -1,0 +1,11 @@
+{
+ "dataset": "admin_full",
+ "system": "linearrag-org-nnp",
+ "n": 279,
+ "contain_acc": 0.3943,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 41,
+ "gpt4o_acc": 0.4731,
+ "gpt4o_n": 279
+}

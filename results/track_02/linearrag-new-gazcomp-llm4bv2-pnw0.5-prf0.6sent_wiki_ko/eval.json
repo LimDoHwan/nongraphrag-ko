@@ -1,0 +1,14 @@
+{
+ "dataset": "wiki_ko",
+ "system": "linearrag-new-gazcomp-llm4bv2-pnw0.5-prf0.6sent",
+ "n": 1000,
+ "contain_acc": 0.642,
+ "reused": 554,
+ "regenerated": 446,
+ "gen_model": "gemma-4-31B-it",
+ "retrieval_device": "cuda",
+ "glossary": "data/wiki_ko/glossary_llm4b_wiki_v2.json",
+ "baseline_system": "linearrag-new-gazcomp-llm4b-pnw0.5-prf0.6sent",
+ "gpt4o_acc": 0.736,
+ "gpt4o_n": 1000
+}

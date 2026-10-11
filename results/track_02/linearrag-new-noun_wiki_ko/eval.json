@@ -1,0 +1,11 @@
+{
+ "dataset": "wiki_ko",
+ "system": "linearrag-new-noun",
+ "n": 1000,
+ "contain_acc": 0.655,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 179,
+ "gpt4o_acc": 0.789,
+ "gpt4o_n": 1000
+}

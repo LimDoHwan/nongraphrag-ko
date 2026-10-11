@@ -1,0 +1,13 @@
+{
+ "dataset": "admin_hard",
+ "system": "graphrag-4b",
+ "n": 103,
+ "topk": 5,
+ "contain_acc": 0.1553,
+ "both_at5": 0.1748,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 103,
+ "gpt4o_acc": 0.2621,
+ "gpt4o_n": 103
+}

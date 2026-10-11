@@ -1,0 +1,1856 @@
+[
+ {
+  "id": "admh_0",
+  "hops": 2,
+  "bridge": "예비협의",
+  "anchor": "한-중미 자유무역협정",
+  "docs": [
+   "745944",
+   "756741"
+  ],
+  "supporting_facts": [
+   "745944",
+   "756741"
+  ],
+  "question": "한-중미 자유무역협정을 위해 진행된 것과 같은 성격의 회의가 다른 지역과도 개최되었는데, 해당 회의가 열린 장소는 어디인가요?",
+  "answer": "아르헨티나 부에노스 아이레스",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_1",
+  "hops": 2,
+  "bridge": "경제총조사",
+  "anchor": "구청 홈페이지",
+  "docs": [
+   "843397",
+   "776979"
+  ],
+  "supporting_facts": [
+   "843397",
+   "776979"
+  ],
+  "question": "구청 홈페이지에 공고된 사업의 조사 주기는 어떻게 됩니까?",
+  "answer": "매 5년",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_2",
+  "hops": 2,
+  "bridge": "환경사랑공모전",
+  "anchor": "이상화",
+  "docs": [
+   "998325",
+   "985288"
+  ],
+  "supporting_facts": [
+   "998325",
+   "985288"
+  ],
+  "question": "이상화와 함께 하는 공모전의 홍보대사로 위촉된 인물은 누구인가요?",
+  "answer": "김풍",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_3",
+  "hops": 2,
+  "bridge": "화상디자인",
+  "anchor": "특허심판원",
+  "docs": [
+   "442578",
+   "731359"
+  ],
+  "supporting_facts": [
+   "442578",
+   "731359"
+  ],
+  "question": "특허심판원에서 최근 5년간 심판청구 건수를 조사한 대상이 구체적으로 무엇을 의미하는지 설명하시오.",
+  "answer": "물품의 액정화면 등 표시부에 표현되는 모양 및 색채로 구성되는 디자인으로, 화상에 표시되는 GUI, 그래픽 이미지, 아이콘 등이 있다.",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_4",
+  "hops": 2,
+  "bridge": "발명체험교육관",
+  "anchor": "황남초등학교",
+  "docs": [
+   "822728",
+   "729281"
+  ],
+  "supporting_facts": [
+   "822728",
+   "729281"
+  ],
+  "question": "황남초등학교 건물을 재단장하여 조성하는 시설의 운영은 누가 전담하게 됩니까?",
+  "answer": "선정된 시·도 교육청",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_5",
+  "hops": 2,
+  "bridge": "우산공제",
+  "anchor": "○○정밀",
+  "docs": [
+   "774172",
+   "772595"
+  ],
+  "supporting_facts": [
+   "774172",
+   "772595"
+  ],
+  "question": "○○정밀의 C씨가 가입한 제도는 언제 출범하였습니까?",
+  "answer": "2007년",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_6",
+  "hops": 2,
+  "bridge": "마을세무사",
+  "anchor": "홍윤식 행정자치부장관",
+  "docs": [
+   "461374",
+   "453099"
+  ],
+  "supporting_facts": [
+   "461374",
+   "453099"
+  ],
+  "question": "홍윤식 행정자치부장관이 정부 3.0의 모범사례가 될 것이라고 언급한 제도를 운영하는 기관은 어디인가요?",
+  "answer": "행정자치부, 한국세무사회, 전국 지방자치단체",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_7",
+  "hops": 2,
+  "bridge": "헤럴드경제",
+  "anchor": "신통상질서전략실",
+  "docs": [
+   "767645",
+   "759726"
+  ],
+  "supporting_facts": [
+   "767645",
+   "759726"
+  ],
+  "question": "신통상질서전략실 신설 관련 보도를 낸 매체에서 보도한 다른 해명자료 중, 예산 투입 전망이 언급된 보도 내용의 추경 규모는 얼마입니까?",
+  "answer": "1조원 대",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_8",
+  "hops": 2,
+  "bridge": "거창법조타운",
+  "anchor": "박성호 행정부지사",
+  "docs": [
+   "819553",
+   "821377"
+  ],
+  "supporting_facts": [
+   "819553",
+   "821377"
+  ],
+  "question": "박성호 행정부지사가 참석한 회의에서 논의된 사업의 갈등 해소를 위해 경상남도를 중재로 한 협의체가 구성된 시점은 언제인가요?",
+  "answer": "지난해 11월",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_9",
+  "hops": 2,
+  "bridge": "장애청소년",
+  "anchor": "국립 부경대학교",
+  "docs": [
+   "430652",
+   "426804"
+  ],
+  "supporting_facts": [
+   "430652",
+   "426804"
+  ],
+  "question": "국립 부경대학교에서 시상식이 개최된 행사의 대상인 이들의 사회참여 강화를 위해 추진된 사업에 참여한 인원은 작년까지 총 몇 명입니까?",
+  "answer": "2,184명",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_10",
+  "hops": 2,
+  "bridge": "경남중소기업대상",
+  "anchor": "한텍",
+  "docs": [
+   "834775",
+   "879578"
+  ],
+  "supporting_facts": [
+   "834775",
+   "879578"
+  ],
+  "question": "한텍이 수상한 상의 다음 회차 시상식은 어디서 개최되었는가?",
+  "answer": "경남도청 도정회의실",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_11",
+  "hops": 2,
+  "bridge": "전파방향탐지",
+  "anchor": "광주지혜학교",
+  "docs": [
+   "846139",
+   "838305"
+  ],
+  "supporting_facts": [
+   "846139",
+   "838305"
+  ],
+  "question": "광주지혜학교에서 개최된 대회의 다음 회차 대회 참가 신청 마감일은 언제인가요?",
+  "answer": "5월 31일(금)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_12",
+  "hops": 2,
+  "bridge": "특허경쟁력",
+  "anchor": "의료기기 IP 협의체",
+  "docs": [
+   "731627",
+   "939037"
+  ],
+  "supporting_facts": [
+   "731627",
+   "939037"
+  ],
+  "question": "의료기기 IP 협의체가 발족한 목적과 관련된 역량의 혁신을 위해 특허청이 공동으로 개최하는 포럼의 날짜는 언제인가요?",
+  "answer": "11월 20일(금)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_13",
+  "hops": 2,
+  "bridge": "국민주택기금",
+  "anchor": "우리은행",
+  "docs": [
+   "801706",
+   "771346"
+  ],
+  "supporting_facts": [
+   "801706",
+   "771346"
+  ],
+  "question": "우리은행이 총괄수탁은행으로 선정되어 운용 및 관리 업무를 수행하게 된 기금의 지원 조건 중 금리는 얼마입니까?",
+  "answer": "연 2.0%",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_14",
+  "hops": 2,
+  "bridge": "파괴물질",
+  "anchor": "대체전환 촉진 기술지원 사업",
+  "docs": [
+   "750966",
+   "745567"
+  ],
+  "supporting_facts": [
+   "750966",
+   "745567"
+  ],
+  "question": "대체전환 촉진 기술지원 사업의 대상이 되는 물질들의 전체 종류는 총 몇 종입니까?",
+  "answer": "96종",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_15",
+  "hops": 2,
+  "bridge": "재해영향",
+  "anchor": "자연재해대책법",
+  "docs": [
+   "446247",
+   "419683"
+  ],
+  "supporting_facts": [
+   "446247",
+   "419683"
+  ],
+  "question": "자연재해대책법 일부개정으로 부활한 제도의 검토 용역이 시행되는 사업의 총 규모는 얼마입니까?",
+  "answer": "13.7km",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_16",
+  "hops": 2,
+  "bridge": "국민소통단",
+  "anchor": "국립의과학지식센터",
+  "docs": [
+   "894931",
+   "457015"
+  ],
+  "supporting_facts": [
+   "894931",
+   "457015"
+  ],
+  "question": "국립의과학지식센터에서 발대식을 개최한 단체의 운영 시작 연도는 언제인가요?",
+  "answer": "2016년",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_17",
+  "hops": 2,
+  "bridge": "벤처촉진지구",
+  "anchor": "(사)대덕이노폴리스 벤처협회",
+  "docs": [
+   "857902",
+   "774958"
+  ],
+  "supporting_facts": [
+   "857902",
+   "774958"
+  ],
+  "question": "(사)대덕이노폴리스 벤처협회 홈페이지에서 평가 결과를 확인할 수 있는 대상들의 전체 지구 수가 올해는 몇 개로 조사될 예정인가요?",
+  "answer": "26개",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_18",
+  "hops": 2,
+  "bridge": "뿔제비갈매기",
+  "anchor": "환경부 자연정책과장",
+  "docs": [
+   "892628",
+   "954810"
+  ],
+  "supporting_facts": [
+   "892628",
+   "954810"
+  ],
+  "question": "환경부 자연정책과장이 보호대책을 추진하겠다고 밝힌 새의 생태환경조사 2차년도 수행기관은 어디인가요?",
+  "answer": "국립생태원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_19",
+  "hops": 2,
+  "bridge": "발신번호",
+  "anchor": "미래창조과학부",
+  "docs": [
+   "830927",
+   "838835"
+  ],
+  "supporting_facts": [
+   "830927",
+   "838835"
+  ],
+  "question": "미래창조과학부가 이용자 피해 예방을 위해 대책을 확대한 대상의 조작 방지를 위해 국회 통과 시 실시하려는 제도는 무엇인가요?",
+  "answer": "발신번호 사전등록제",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_20",
+  "hops": 2,
+  "bridge": "반려동물",
+  "anchor": "포인핸드",
+  "docs": [
+   "891473",
+   "955390"
+  ],
+  "supporting_facts": [
+   "891473",
+   "955390"
+  ],
+  "question": "포인핸드와 같은 앱이 활용하는 대상과 관련하여, 현재 정부에서 구성하여 운영 중인 TF의 구성원은 총 몇 명입니까?",
+  "answer": "11명",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_21",
+  "hops": 2,
+  "bridge": "연구의사",
+  "anchor": "이낙연 국무총리",
+  "docs": [
+   "821206",
+   "896185"
+  ],
+  "supporting_facts": [
+   "821206",
+   "896185"
+  ],
+  "question": "이낙연 국무총리가 지시한 사항을 추진하기 위해 마련된 전략에서, 양성체계를 강화하고자 하는 대상이 대학 내 기초연구 과학자와 협업할 때 의무적으로 참여해야 하는 비율은 얼마입니까?",
+  "answer": "30% 이상",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_22",
+  "hops": 2,
+  "bridge": "소액결제",
+  "anchor": "과학기술정보통신부",
+  "docs": [
+   "859638",
+   "840576"
+  ],
+  "supporting_facts": [
+   "859638",
+   "840576"
+  ],
+  "question": "과학기술정보통신부가 주의를 당부한 사칭 피해 대상 중 하나와 관련하여, 이를 안전하게 만들기 위해 마련된 제도 개선안이 시행된 시점은 언제인가요?",
+  "answer": "작년 3월",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_23",
+  "hops": 2,
+  "bridge": "예시계약서",
+  "anchor": "국립생물자원관",
+  "docs": [
+   "977126",
+   "976204"
+  ],
+  "supporting_facts": [
+   "977126",
+   "976204"
+  ],
+  "question": "국립생물자원관이 공개한 그것은 법적구속력이 있는 문서인가요?",
+  "answer": "법적구속력이 없는 문서이다",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_24",
+  "hops": 2,
+  "bridge": "장사시설",
+  "anchor": "장사 등에 관한 법률 시행령",
+  "docs": [
+   "437023",
+   "437731"
+  ],
+  "supporting_facts": [
+   "437023",
+   "437731"
+  ],
+  "question": "장사 등에 관한 법률 시행령의 적용을 받는 시설들의 전체적인 공급 여력과 관련하여, 운영 주체별로 어떤 편차가 존재합니까?",
+  "answer": "공설 봉안당은 부족한 반면, 사설 봉안당은 초과 공급",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_25",
+  "hops": 2,
+  "bridge": "전자파등급",
+  "anchor": "한국전파진흥협회",
+  "docs": [
+   "806648",
+   "823837"
+  ],
+  "supporting_facts": [
+   "806648",
+   "823837"
+  ],
+  "question": "한국전파진흥협회 대강당에서 설명회가 개최된 제도의 상세 정보와 측정값을 확인할 수 있는 홈페이지 주소는 무엇인가?",
+  "answer": "www.emf.go.kr",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_26",
+  "hops": 2,
+  "bridge": "보건의료기술",
+  "anchor": "제13기 보정심",
+  "docs": [
+   "433085",
+   "440213"
+  ],
+  "supporting_facts": [
+   "433085",
+   "440213"
+  ],
+  "question": "제13기 보정심이 심의를 담당하는 분야의 법적 근거가 되는 법령은 무엇인가?",
+  "answer": "보건의료기술진흥법",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_27",
+  "hops": 2,
+  "bridge": "정책해우",
+  "anchor": "KCA IT벤처타워",
+  "docs": [
+   "888558",
+   "826294"
+  ],
+  "supporting_facts": [
+   "888558",
+   "826294"
+  ],
+  "question": "KCA IT벤처타워에서 개최된 회의보다 3회 앞서 진행된 동일 성격의 회의는 어디서 열렸습니까?",
+  "answer": "한국정보화진흥원 서울사무소",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_28",
+  "hops": 2,
+  "bridge": "국제의약품구매기구",
+  "anchor": "정은경",
+  "docs": [
+   "456572",
+   "456578"
+  ],
+  "supporting_facts": [
+   "456572",
+   "456578"
+  ],
+  "question": "정은경 본부장이 이끄는 질병관리본부가 외교부와 공동주최하는 행사에 참석하는 기구의 단독 의석 부여 시점은 언제인가요?",
+  "answer": "2018년 6월",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_29",
+  "hops": 2,
+  "bridge": "경남미래",
+  "anchor": "김경수 도지사",
+  "docs": [
+   "816463",
+   "815899"
+  ],
+  "supporting_facts": [
+   "816463",
+   "815899"
+  ],
+  "question": "김경수 도지사가 주재하여 준비단 회의를 열었던 협의체의 발대식은 어디에서 개최되었습니까?",
+  "answer": "창원컨벤션센터",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_30",
+  "hops": 2,
+  "bridge": "마이크로그리드",
+  "anchor": "서울대",
+  "docs": [
+   "758696",
+   "1030182"
+  ],
+  "supporting_facts": [
+   "758696",
+   "1030182"
+  ],
+  "question": "서울대에서 국내 최초로 구축하는 시스템과 관련하여, 최근 5년간 특허출원이 가장 많이 이루어진 유형은 무엇인가?",
+  "answer": "계통연계형",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_31",
+  "hops": 2,
+  "bridge": "발명기자",
+  "anchor": "김광림 국회의원",
+  "docs": [
+   "731881",
+   "437574"
+  ],
+  "supporting_facts": [
+   "731881",
+   "437574"
+  ],
+  "question": "김광림 국회의원이 초대 총재로 위촉된 단체의 모집 신청 기간은 언제까지인가요?",
+  "answer": "2018. 4. 11.(수) 18시까지",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_32",
+  "hops": 2,
+  "bridge": "재혼가정",
+  "anchor": "민사집행법 시행령",
+  "docs": [
+   "440686",
+   "458591"
+  ],
+  "supporting_facts": [
+   "440686",
+   "458591"
+  ],
+  "question": "민사집행법 시행령상 압류금지 최저생계비가 반영된 제도 개선과 관련된 대상의 불편을 개선한 공로로 행정자치부장관상을 받은 단체는 어디인가요?",
+  "answer": "차별 없는 가정을 위한 시민연합",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_33",
+  "hops": 2,
+  "bridge": "국제여객선",
+  "anchor": "정종환",
+  "docs": [
+   "771671",
+   "774586"
+  ],
+  "supporting_facts": [
+   "771671",
+   "774586"
+  ],
+  "question": "정종환 장관이 특별점검을 실시한다고 밝힌 대상의 2012년 상반기 총 이용객 수는 얼마인가?",
+  "answer": "1,439천명",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_34",
+  "hops": 2,
+  "bridge": "재산변동사항",
+  "anchor": "한경호 정부공직자윤리위원회 간사",
+  "docs": [
+   "727473",
+   "721814"
+  ],
+  "supporting_facts": [
+   "727473",
+   "721814"
+  ],
+  "question": "한경호 정부공직자윤리위원회 간사가 엄정하게 운영하겠다고 밝힌 제도의 공개 대상자에는 어떤 직급의 공무원이 포함됩니까?",
+  "answer": "1급 공무원(고위공무원단 가등급)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_35",
+  "hops": 2,
+  "bridge": "무역대표부",
+  "anchor": "1974년 통상법",
+  "docs": [
+   "754217",
+   "757886"
+  ],
+  "supporting_facts": [
+   "754217",
+   "757886"
+  ],
+  "question": "1974년 통상법 제181조에 따라 보고서를 작성하는 기관이 한국 정부와 환경협의를 진행하며 요청한 협의 대상 부처는 어디인가요?",
+  "answer": "산업통상자원부",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_36",
+  "hops": 2,
+  "bridge": "순회수리봉사",
+  "anchor": "김현수",
+  "docs": [
+   "447719",
+   "842170"
+  ],
+  "supporting_facts": [
+   "447719",
+   "842170"
+  ],
+  "question": "김현수 장관이 추진한 사업의 과거 실시 사례 중, 동원된 수리기사의 수는 총 몇 명입니까?",
+  "answer": "87명",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_37",
+  "hops": 2,
+  "bridge": "환경특별",
+  "anchor": "장정구",
+  "docs": [
+   "777483",
+   "781797"
+  ],
+  "supporting_facts": [
+   "777483",
+   "781797"
+  ],
+  "question": "장정구가 단장으로 임명된 추진단이 발족한 시점은 언제인가요?",
+  "answer": "2021. 3.",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_38",
+  "hops": 2,
+  "bridge": "미래보건의료",
+  "anchor": "권덕철 차관",
+  "docs": [
+   "439096",
+   "439629"
+  ],
+  "supporting_facts": [
+   "439096",
+   "439629"
+  ],
+  "question": "권덕철 차관이 축사 예정인 포럼의 이전 차수 행사에서는 어떤 주제로 논의가 진행되었습니까?",
+  "answer": "IT 기반 미래보건의료의 법, 제도, 윤리",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_39",
+  "hops": 2,
+  "bridge": "어린이날",
+  "anchor": "건강보험심사평가원",
+  "docs": [
+   "433276",
+   "460641"
+  ],
+  "supporting_facts": [
+   "433276",
+   "460641"
+  ],
+  "question": "건강보험심사평가원이 분석 결과를 발표한 그 날을 앞두고 방문한 시설의 명칭은 무엇인가요?",
+  "answer": "송죽원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_40",
+  "hops": 2,
+  "bridge": "행정사법",
+  "anchor": "홍윤식",
+  "docs": [
+   "457284",
+   "440870"
+  ],
+  "supporting_facts": [
+   "457284",
+   "440870"
+  ],
+  "question": "홍윤식 장관이 입법예고를 추진한 법령의 시행일은 언제인가요?",
+  "answer": "6월 10일(목)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_41",
+  "hops": 2,
+  "bridge": "국립어린이과학관",
+  "anchor": "과학기술정보통신부",
+  "docs": [
+   "810487",
+   "896399"
+  ],
+  "supporting_facts": [
+   "810487",
+   "896399"
+  ],
+  "question": "과학기술정보통신부가 개관식을 개최한 곳의 전시공간은 어떤 영역들로 구성됩니까?",
+  "answer": "감각, 상상 및 창작 놀이터",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_42",
+  "hops": 2,
+  "bridge": "국립마산병원",
+  "anchor": "(주)에스엔비아",
+  "docs": [
+   "432675",
+   "438836"
+  ],
+  "supporting_facts": [
+   "432675",
+   "438836"
+  ],
+  "question": "(주)에스엔비아와 의료기기 개발 협약을 체결한 기관의 원장은 누구인가?",
+  "answer": "김대연",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_43",
+  "hops": 2,
+  "bridge": "정보기술아키텍처",
+  "anchor": "메리츠화재",
+  "docs": [
+   "724646",
+   "451485"
+  ],
+  "supporting_facts": [
+   "724646",
+   "451485"
+  ],
+  "question": "메리츠화재가 중요성을 알리는 역할을 수행하고 있는 그것의 기본계획 4단계는 언제까지 추진됩니까?",
+  "answer": "2019년",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_44",
+  "hops": 2,
+  "bridge": "탄저백신",
+  "anchor": "서울대학교 오명돈 교수",
+  "docs": [
+   "432322",
+   "451905"
+  ],
+  "supporting_facts": [
+   "432322",
+   "451905"
+  ],
+  "question": "서울대학교 오명돈 교수가 수행한 임상2상(스텝1) 시험의 대상이 된 제품의 제품 승인은 언제로 예상됩니까?",
+  "answer": "2024년경",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_45",
+  "hops": 2,
+  "bridge": "약자기업",
+  "anchor": "인천시",
+  "docs": [
+   "781669",
+   "820691"
+  ],
+  "supporting_facts": [
+   "781669",
+   "820691"
+  ],
+  "question": "인천시가 공공구매를 늘리기로 한 대상 기업들에 대해, 다른 지자체에서는 물품 구매 시 금액을 얼마 미만으로 제한하여 소상공인으로 한정하고 있습니까?",
+  "answer": "1억원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_46",
+  "hops": 2,
+  "bridge": "복원우수사례",
+  "anchor": "솜반천생태공원",
+  "docs": [
+   "941339",
+   "961660"
+  ],
+  "supporting_facts": [
+   "941339",
+   "961660"
+  ],
+  "question": "솜반천생태공원이 선정된 분야의 지정제도는 2001년 처음 시작된 이래 현재까지 총 몇 개의 지역이 운영되고 있습니까?",
+  "answer": "54개 지역",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_47",
+  "hops": 2,
+  "bridge": "공익직불",
+  "anchor": "국립농산물품질관리원",
+  "docs": [
+   "448359",
+   "448779"
+  ],
+  "supporting_facts": [
+   "448359",
+   "448779"
+  ],
+  "question": "국립농산물품질관리원이 온라인 교육 참여를 추진하는 제도가 시행됨에 따라, 기존 제도가 통합되어 작물 종류와 관계없이 동일한 금액이 지급될 때 기대되는 효과는 무엇인가요?",
+  "answer": "쌀 중심의 농업 생산구조가 개선되고, 곡물자급률 향상과 국토공간의 효율적 이용이 가능할 것으로 전망된다.",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_48",
+  "hops": 2,
+  "bridge": "인디브랜드페어",
+  "anchor": "서울 에이티(aT)센터",
+  "docs": [
+   "760449",
+   "751188"
+  ],
+  "supporting_facts": [
+   "760449",
+   "751188"
+  ],
+  "question": "서울 에이티(aT)센터에서 개최된 행사의 제5회 행사 기간은 언제인가요?",
+  "answer": "2015.7.15(수)~16(목), 10:00~18:00",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_49",
+  "hops": 2,
+  "bridge": "음식관광",
+  "anchor": "지리산 흑돈",
+  "docs": [
+   "828609",
+   "446967"
+  ],
+  "supporting_facts": [
+   "828609",
+   "446967"
+  ],
+  "question": "지리산 흑돈이 10월 주제로 선정된 사업의 관련 공모전 당선작은 언제 발표됩니까?",
+  "answer": "10월 15일",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_50",
+  "hops": 2,
+  "bridge": "한강사랑",
+  "anchor": "양종훈 교수",
+  "docs": [
+   "890963",
+   "960269"
+  ],
+  "supporting_facts": [
+   "890963",
+   "960269"
+  ],
+  "question": "양종훈 교수가 심사위원으로 참여한 공모전과 관련하여, 동일한 명칭의 행사에 참여하는 학생들에게 제공되는 대상 상금은 얼마입니까?",
+  "answer": "50만원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_51",
+  "hops": 2,
+  "bridge": "노인자원봉사",
+  "anchor": "KT대전인재 개발원",
+  "docs": [
+   "430777",
+   "435529"
+  ],
+  "supporting_facts": [
+   "430777",
+   "435529"
+  ],
+  "question": "KT대전인재 개발원에서 개최된 행사와 관련된 활동의 대축제는 어디서 열렸습니까?",
+  "answer": "더 케이 호텔(서울 서초구)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_52",
+  "hops": 2,
+  "bridge": "기능인재",
+  "anchor": "함양제일고등학교",
+  "docs": [
+   "727846",
+   "728465"
+  ],
+  "supporting_facts": [
+   "727846",
+   "728465"
+  ],
+  "question": "함양제일고등학교 이초희 씨가 선발된 대상의 필기시험 과목은 무엇인가요?",
+  "answer": "국어․한국사",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_53",
+  "hops": 2,
+  "bridge": "수퍼비전",
+  "anchor": "해솔정신건강의학과의원장",
+  "docs": [
+   "401408",
+   "401477"
+  ],
+  "supporting_facts": [
+   "401408",
+   "401477"
+  ],
+  "question": "해솔정신건강의학과의원장이 외부위원으로 참여한 회의와 동일한 성격의 회의가 다른 날짜에 진행되었을 때, 해당 회의의 외부위원은 누구입니까?",
+  "answer": "연세소울정신건강의학과의원장",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_54",
+  "hops": 2,
+  "bridge": "지역일자리사업",
+  "anchor": "상시 심사창구",
+  "docs": [
+   "444323",
+   "728169"
+  ],
+  "supporting_facts": [
+   "444323",
+   "728169"
+  ],
+  "question": "상시 심사창구를 활용하여 투자심사 기간을 단축할 수 있는 사업의 창출 방향과 향후 과제에 대해 설명한 사람은 누구입니까?",
+  "answer": "행정안전부 지역발전정책국장",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_55",
+  "hops": 2,
+  "bridge": "비상체제",
+  "anchor": "보건복지부",
+  "docs": [
+   "436364",
+   "446527"
+  ],
+  "supporting_facts": [
+   "436364",
+   "446527"
+  ],
+  "question": "보건복지부가 가동한 것과 동일한 성격의 조치를 발령한 기관의 장은 누구입니까?",
+  "answer": "김부겸",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_56",
+  "hops": 2,
+  "bridge": "마을지도자",
+  "anchor": "새마을금고 국제협력사업",
+  "docs": [
+   "722788",
+   "446194"
+  ],
+  "supporting_facts": [
+   "722788",
+   "446194"
+  ],
+  "question": "새마을금고 국제협력사업의 초청연수 대상인 이들이 한자리에 모여 화합하는 국내 최대 규모의 행사는 어디서 개최되었습니까?",
+  "answer": "부산 벡스코",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_57",
+  "hops": 2,
+  "bridge": "재해보험",
+  "anchor": "김경수 경남도지사",
+  "docs": [
+   "831171",
+   "1015923"
+  ],
+  "supporting_facts": [
+   "831171",
+   "1015923"
+  ],
+  "question": "김경수 경남도지사가 국비지원 상향을 건의한 제도의 사업관리 위탁기관으로 지정된 곳은 어디인가요?",
+  "answer": "농업정책보험금융원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_58",
+  "hops": 2,
+  "bridge": "생태산업단지",
+  "anchor": "세계은행그룹(WBG)",
+  "docs": [
+   "750864",
+   "883702"
+  ],
+  "supporting_facts": [
+   "750864",
+   "883702"
+  ],
+  "question": "세계은행그룹(WBG)과 협력하여 핸드북을 발간한 모델이 지향하는 미래형 산업단지의 목표는 무엇인가?",
+  "answer": "오염물 무배출(Zero Emission)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_59",
+  "hops": 2,
+  "bridge": "송암미술관",
+  "anchor": "꿈을 그리는 미술관",
+  "docs": [
+   "782525",
+   "776978"
+  ],
+  "supporting_facts": [
+   "782525",
+   "776978"
+  ],
+  "question": "꿈을 그리는 미술관 프로그램을 운영하는 곳의 관장 이름은 무엇인가요?",
+  "answer": "김장성",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_60",
+  "hops": 2,
+  "bridge": "전파방송",
+  "anchor": "㈜픽스트리",
+  "docs": [
+   "827924",
+   "829072"
+  ],
+  "supporting_facts": [
+   "827924",
+   "829072"
+  ],
+  "question": "㈜픽스트리가 대통령상을 수상한 행사의 시상 대상이 되는 제품들의 공모 기간은 언제인가요?",
+  "answer": "6.18일부터 9.26일까지",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_61",
+  "hops": 2,
+  "bridge": "한국정보올림피아드",
+  "anchor": "과기정통부 장관",
+  "docs": [
+   "845876",
+   "856511"
+  ],
+  "supporting_facts": [
+   "845876",
+   "856511"
+  ],
+  "question": "과기정통부 장관이 주재한 간담회의 대상이 된 대회의 우수 입상자들이 대한민국을 대표하여 참가했던 국제대회들의 명칭은 무엇인가?",
+  "answer": "국제정보올림피아드대회(IOI : International Olympiad in Informatics), 아시아·태평양정보올림피아드(Asia-Pacific Informatics Olympiad)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_62",
+  "hops": 2,
+  "bridge": "분리배출표시",
+  "anchor": "한국환경자원공사",
+  "docs": [
+   "1017047",
+   "980769"
+  ],
+  "supporting_facts": [
+   "1017047",
+   "980769"
+  ],
+  "question": "한국환경자원공사 제도운영실이 업무를 담당하는 제도의 표시 방법 중, 소비자가 쉽게 볼 수 있도록 규정한 최소 크기는 얼마입니까?",
+  "answer": "가로, 세로 각각 8밀리미터 이상",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_63",
+  "hops": 2,
+  "bridge": "환경운전왕",
+  "anchor": "수도권대기환경청장상",
+  "docs": [
+   "984582",
+   "892357"
+  ],
+  "supporting_facts": [
+   "984582",
+   "892357"
+  ],
+  "question": "수도권대기환경청장상을 수여하는 대회의 홍보대사는 누구입니까?",
+  "answer": "가수 김정민",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_64",
+  "hops": 2,
+  "bridge": "경제통상연구",
+  "anchor": "WTO 복수국간 서비스협정(TiSA)",
+  "docs": [
+   "747620",
+   "741811"
+  ],
+  "supporting_facts": [
+   "747620",
+   "741811"
+  ],
+  "question": "우리나라가 참여 중인 WTO 복수국간 서비스협정(TiSA) 협상과 관련하여 논의가 전개된 모임의 다음 차수 회의는 언제 개최되었습니까?",
+  "answer": "2015.7.17일(금)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_65",
+  "hops": 2,
+  "bridge": "기후변화주간",
+  "anchor": "번개맨공연",
+  "docs": [
+   "945691",
+   "962236"
+  ],
+  "supporting_facts": [
+   "945691",
+   "962236"
+  ],
+  "question": "번개맨공연이 준비된 행사의 기준이 되는 기념일은 어떻게 시작되었나요?",
+  "answer": "1969년 미국 캘리포니아 주에서 발생한 원유 유출사고를 계기로, 1970년 4월 22일 미 상원의원 게이로드 닐슨과 하버드대학생 *** ***를 중심으로 기념행사가 개최된 것에서 비롯된 기념일",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_66",
+  "hops": 2,
+  "bridge": "스포츠과학",
+  "anchor": "건국대학교",
+  "docs": [
+   "846434",
+   "808363"
+  ],
+  "supporting_facts": [
+   "846434",
+   "808363"
+  ],
+  "question": "건국대학교에서 개최된 워크숍의 대상이 된 사업의 신규과제 공모 시, 신청 접수 마감일은 언제인가요?",
+  "answer": "5월 9일",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_67",
+  "hops": 2,
+  "bridge": "방사선진흥대회",
+  "anchor": "한국과학기술회관",
+  "docs": [
+   "833141",
+   "820637"
+  ],
+  "supporting_facts": [
+   "833141",
+   "820637"
+  ],
+  "question": "한국과학기술회관에서 개최된 행사의 전년도 개최 장소는 어디인가요?",
+  "answer": "부산 BEXCO",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_68",
+  "hops": 2,
+  "bridge": "건설기술자",
+  "anchor": "2016년 하반기 건설현장 안전교육",
+  "docs": [
+   "772855",
+   "887240"
+  ],
+  "supporting_facts": [
+   "772855",
+   "887240"
+  ],
+  "question": "2016년 하반기 건설현장 안전교육의 대상자가 이용할 수 있는 누리집 주소는 무엇인가요?",
+  "answer": "http://cworknet.kocea.or.kr",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_69",
+  "hops": 2,
+  "bridge": "중고가구",
+  "anchor": "사전방문수거제",
+  "docs": [
+   "893912",
+   "892988"
+  ],
+  "supporting_facts": [
+   "893912",
+   "892988"
+  ],
+  "question": "사전방문수거제를 함께 추진하는 사업의 시범사업 기간 중 가장 많은 실적을 낸 지역은 어디인가요?",
+  "answer": "경기도 안산시",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_70",
+  "hops": 2,
+  "bridge": "공중케이블",
+  "anchor": "강릉지역",
+  "docs": [
+   "847718",
+   "810286"
+  ],
+  "supporting_facts": [
+   "847718",
+   "810286"
+  ],
+  "question": "강릉지역의 거리환경 조성을 위해 정비하는 대상의 종합계획이 수립된 시점은 언제인가요?",
+  "answer": "2012년 11월",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_71",
+  "hops": 2,
+  "bridge": "공무원연금개혁",
+  "anchor": "부산시의회 대회의실",
+  "docs": [
+   "720679",
+   "720730"
+  ],
+  "supporting_facts": [
+   "720679",
+   "720730"
+  ],
+  "question": "부산시의회 대회의실에서 개최되는 포럼의 이전 차수 행사 중 호남권에서 진행된 포럼의 개최 장소는 어디인가요?",
+  "answer": "전주시청 대강당",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_72",
+  "hops": 2,
+  "bridge": "가축매몰지",
+  "anchor": "유역(지방)환경청",
+  "docs": [
+   "979591",
+   "980929"
+  ],
+  "supporting_facts": [
+   "979591",
+   "980929"
+  ],
+  "question": "유역(지방)환경청이 환경순찰조를 편성해 관리하는 대상의 전체 개소 수는 총 몇 개소입니까?",
+  "answer": "2,259개소",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_73",
+  "hops": 2,
+  "bridge": "뉴딜일자리",
+  "anchor": "디지털 플랫폼 운영 및 콘텐츠 제작",
+  "docs": [
+   "401425",
+   "1017528"
+  ],
+  "supporting_facts": [
+   "401425",
+   "1017528"
+  ],
+  "question": "디지털 플랫폼 운영 및 콘텐츠 제작 사업이 속한 제도의 다른 과정 중, 결원 충원을 위해 선발하려는 인원은 몇 명입니까?",
+  "answer": "1명",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_74",
+  "hops": 2,
+  "bridge": "토양오염우려지역",
+  "anchor": "환경정책기본법 제15조",
+  "docs": [
+   "949624",
+   "891852"
+  ],
+  "supporting_facts": [
+   "949624",
+   "891852"
+  ],
+  "question": "환경정책기본법 제15조를 법적 근거로 하여 추진하는 조사의 전체 조사 기간은 언제까지인가요?",
+  "answer": "2001.12.31",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_75",
+  "hops": 2,
+  "bridge": "국가연구개발정보관리위원회",
+  "anchor": "최문기",
+  "docs": [
+   "807970",
+   "862073"
+  ],
+  "supporting_facts": [
+   "807970",
+   "862073"
+  ],
+  "question": "최문기 장관이 소속된 미래부에서 개최한 위원회가 다음 해 제1회 회의를 연 날짜는 언제인가요?",
+  "answer": "6월 11일(목)",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_76",
+  "hops": 2,
+  "bridge": "연탄가격",
+  "anchor": "성윤모",
+  "docs": [
+   "746133",
+   "735098"
+  ],
+  "supporting_facts": [
+   "746133",
+   "735098"
+  ],
+  "question": "성윤모 장관이 소속된 부처에서 과거에 원가계산을 위해 용역을 의뢰했던 기관은 어디인가요?",
+  "answer": "광해관리공단",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_77",
+  "hops": 2,
+  "bridge": "강원지방",
+  "anchor": "미래창조과학부",
+  "docs": [
+   "823008",
+   "886027"
+  ],
+  "supporting_facts": [
+   "823008",
+   "886027"
+  ],
+  "question": "미래창조과학부에서 공개모집을 연장했던 직위의 2017년도 응시원서 접수기간은 언제인가요?",
+  "answer": "2017. 12. 1.부터 2017. 12. 15.까지",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_78",
+  "hops": 2,
+  "bridge": "생태네트워크",
+  "anchor": "새만금",
+  "docs": [
+   "955100",
+   "950843"
+  ],
+  "supporting_facts": [
+   "955100",
+   "950843"
+  ],
+  "question": "새만금 가이드라인에서 구축하고자 하는 체계의 정의는 무엇입니까?",
+  "answer": "생태적으로 중요한 지역들을 유기적으로 연결시켜 국토의 생태환경을 통합적으로 관리하는 것",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_79",
+  "hops": 2,
+  "bridge": "본인서명사실확인",
+  "anchor": "새마을금고",
+  "docs": [
+   "461667",
+   "463465"
+  ],
+  "supporting_facts": [
+   "461667",
+   "463465"
+  ],
+  "question": "새마을금고가 추가된 법인으로 기재될 수 있는 제도는 언제부터 시행되었습니까?",
+  "answer": "2012.12.1",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_80",
+  "hops": 2,
+  "bridge": "국제지구과학올림피아드",
+  "anchor": "http://ieso2013.webs.com",
+  "docs": [
+   "819538",
+   "816450"
+  ],
+  "supporting_facts": [
+   "819538",
+   "816450"
+  ],
+  "question": "공식 홈페이지가 http://ieso2013.webs.com인 대회의 다음 해 개최지는 어디인가요?",
+  "answer": "스페인 산탄데르",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_81",
+  "hops": 2,
+  "bridge": "미래전환",
+  "anchor": "서울혁신파크",
+  "docs": [
+   "404237",
+   "402466"
+  ],
+  "supporting_facts": [
+   "404237",
+   "402466"
+  ],
+  "question": "서울혁신파크 조성을 추진한 계획과 관련된 사업의 운영 과정 중, 팀당 지원되는 연구비는 얼마입니까?",
+  "answer": "1백만원 내외",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_82",
+  "hops": 2,
+  "bridge": "공직채용",
+  "anchor": "맹형규 장관",
+  "docs": [
+   "727220",
+   "427469"
+  ],
+  "supporting_facts": [
+   "727220",
+   "427469"
+  ],
+  "question": "맹형규 장관이 소속된 부처에서 주관하여 최초로 개최한 관련 박람회는 어디에서 열렸습니까?",
+  "answer": "코엑스",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_83",
+  "hops": 2,
+  "bridge": "산학융합",
+  "anchor": "한국산업기술진흥원",
+  "docs": [
+   "762181",
+   "781009"
+  ],
+  "supporting_facts": [
+   "762181",
+   "781009"
+  ],
+  "question": "한국산업기술진흥원이 전담기관으로 지원하는 사업의 지구 평가에서 3년 연속 1위를 달성한 곳은 어디인가?",
+  "answer": "인천산학융합원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_84",
+  "hops": 2,
+  "bridge": "그린캠퍼스",
+  "anchor": "코리아나호텔",
+  "docs": [
+   "957392",
+   "955332"
+  ],
+  "supporting_facts": [
+   "957392",
+   "955332"
+  ],
+  "question": "코리아나호텔에서 시상식이 열린 사업의 대상이 되는 대학은 환경부장관이 어떻게 지정하는가?",
+  "answer": "지속가능 사회를 위한 대학 운영 및 교류·협력, 교육 및 연구, 친환경 교정 조성 등의 사업수행을 위해 환경부장관이 지정하는 대학",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_85",
+  "hops": 2,
+  "bridge": "우수마을",
+  "anchor": "국토생태탐방로 사업",
+  "docs": [
+   "960642",
+   "947613"
+  ],
+  "supporting_facts": [
+   "960642",
+   "947613"
+  ],
+  "question": "국토생태탐방로 사업과 연계될 예정인 대상들의 총 지정 운영 개수는 몇 개입니까?",
+  "answer": "96개",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_86",
+  "hops": 2,
+  "bridge": "성장클럽",
+  "anchor": "정보통신산업진흥원(NIPA)",
+  "docs": [
+   "816182",
+   "809515"
+  ],
+  "supporting_facts": [
+   "816182",
+   "809515"
+  ],
+  "question": "정보통신산업진흥원(NIPA) 등이 지원기관으로 참여하는 해당 사업의 작년 지원 기업들이 달성한 매출액은 얼마인가?",
+  "answer": "2,606억원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_87",
+  "hops": 2,
+  "bridge": "상품무역위원회",
+  "anchor": "라파엘 마우로 페트리치오네",
+  "docs": [
+   "757181",
+   "737958"
+  ],
+  "supporting_facts": [
+   "757181",
+   "737958"
+  ],
+  "question": "라파엘 마우로 페트리치오네가 수석대표로 참석한 위원회의 다음 차수 회의는 어디에서 개최되었습니까?",
+  "answer": "한국",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_88",
+  "hops": 2,
+  "bridge": "아랍에미리트",
+  "anchor": "유명희 산업통상자원부 통상교섭본부장",
+  "docs": [
+   "740906",
+   "754154"
+  ],
+  "supporting_facts": [
+   "740906",
+   "754154"
+  ],
+  "question": "유명희 산업통상자원부 통상교섭본부장이 화상 회담을 가진 국가에서 석유·가스 분야 청년 전문인력의 본격적 교류를 추진하기 위해 계획한 연간 인원 규모는 얼마입니까?",
+  "answer": "약 10여 명",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_89",
+  "hops": 2,
+  "bridge": "지역혁신포럼",
+  "anchor": "김경수 도지사",
+  "docs": [
+   "820260",
+   "441458"
+  ],
+  "supporting_facts": [
+   "820260",
+   "441458"
+  ],
+  "question": "김경수 도지사가 지역문제 해결을 위해 함께 머리를 맞대고 문제를 풀어나가야 한다고 강조한 포럼의 첫 행사가 개최된 장소는 어디인가요?",
+  "answer": "국립아시아문화전당",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_90",
+  "hops": 2,
+  "bridge": "인권교육",
+  "anchor": "서울특별시 성북구 인권증진 기본조례",
+  "docs": [
+   "408331",
+   "431709"
+  ],
+  "supporting_facts": [
+   "408331",
+   "431709"
+  ],
+  "question": "서울특별시 성북구 인권증진 기본조례를 근거로 추진되는 교육의 대상 기관으로 새롭게 정해진 곳은 어디입니까?",
+  "answer": "재가장기요양기관",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_91",
+  "hops": 2,
+  "bridge": "창업유망팀",
+  "anchor": "지식재산권(IP, Intellectual Property) 디딤돌 프로그램",
+  "docs": [
+   "837803",
+   "821355"
+  ],
+  "supporting_facts": [
+   "837803",
+   "821355"
+  ],
+  "question": "지식재산권(IP, Intellectual Property) 디딤돌 프로그램 참여 기회를 제공받는 팀들이 온라인 육성과정을 통해 학습할 수 있는 기본 지식은 무엇인가요?",
+  "answer": "고객 발굴 및 사업모형(Business Model) 개발 등 사업계획 고도화에 필요한 기본 지식",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_92",
+  "hops": 2,
+  "bridge": "위성전파",
+  "anchor": "문성계",
+  "docs": [
+   "809410",
+   "886174"
+  ],
+  "supporting_facts": [
+   "809410",
+   "886174"
+  ],
+  "question": "문성계 소장이 이끄는 기관의 센터에서 운영하는 프로그램이 처음으로 시행된 연도는 언제인가요?",
+  "answer": "2005년",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_93",
+  "hops": 2,
+  "bridge": "국가생산",
+  "anchor": "민경집",
+  "docs": [
+   "739334",
+   "767069"
+  ],
+  "supporting_facts": [
+   "739334",
+   "767069"
+  ],
+  "question": "민경집 대표이사가 은탑산업 훈장을 수상한 행사의 전년도 행사에서 금탑산업훈장을 수상한 인물은 누구입니까?",
+  "answer": "함영준",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_94",
+  "hops": 2,
+  "bridge": "한-중미",
+  "anchor": "산살바도르",
+  "docs": [
+   "741460",
+   "744010"
+  ],
+  "supporting_facts": [
+   "741460",
+   "744010"
+  ],
+  "question": "산살바도르에서 예비협의가 개최되었던 협정의 발효 예정일은 언제입니까?",
+  "answer": "10월 1일",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_95",
+  "hops": 2,
+  "bridge": "위성전파분야",
+  "anchor": "문성계",
+  "docs": [
+   "809410",
+   "887944"
+  ],
+  "supporting_facts": [
+   "809410",
+   "887944"
+  ],
+  "question": "문성계 소장이 운영하는 센터에서 진행하는 인턴십 프로그램이 처음으로 시행된 연도는 언제인가요?",
+  "answer": "2005년",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_96",
+  "hops": 2,
+  "bridge": "공공기술이전",
+  "anchor": "포항 창조경제혁신센터",
+  "docs": [
+   "825687",
+   "883116"
+  ],
+  "supporting_facts": [
+   "825687",
+   "883116"
+  ],
+  "question": "포항 창조경제혁신센터에서 개최된 행사가 그간 총 몇 차례 진행되었습니까?",
+  "answer": "10차례",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_97",
+  "hops": 2,
+  "bridge": "물리올림피아드",
+  "anchor": "미래부",
+  "docs": [
+   "1030229",
+   "860533"
+  ],
+  "supporting_facts": [
+   "1030229",
+   "860533"
+  ],
+  "question": "미래부가 지원을 아끼지 않겠다고 밝힌 대회의 전년도 종합 순위는 몇 위였습니까?",
+  "answer": "종합2위",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_98",
+  "hops": 2,
+  "bridge": "임시의정원",
+  "anchor": "문희상 국회의장",
+  "docs": [
+   "981692",
+   "983688"
+  ],
+  "supporting_facts": [
+   "981692",
+   "983688"
+  ],
+  "question": "문희상 국회의장이 참석한 학술대회에서 기조발제를 맡은 인물은 누구입니까?",
+  "answer": "김문현 이화여대 명예교수",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_99",
+  "hops": 2,
+  "bridge": "수학체험전",
+  "anchor": "난타 하이라이트",
+  "docs": [
+   "813385",
+   "862676"
+  ],
+  "supporting_facts": [
+   "813385",
+   "862676"
+  ],
+  "question": "문화공연 '난타 하이라이트'가 진행된 행사의 체험부스는 총 몇 개로 구성되었습니까?",
+  "answer": "61개",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_100",
+  "hops": 2,
+  "bridge": "확대협상",
+  "anchor": "스위스 제네바",
+  "docs": [
+   "754571",
+   "737218"
+  ],
+  "supporting_facts": [
+   "754571",
+   "737218"
+  ],
+  "question": "스위스 제네바에서 전체 대사급 회의를 통해 최종 합의한 사항의 일반품목 관세철폐기간은 어떻게 됩니까?",
+  "answer": "3년 내",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_101",
+  "hops": 2,
+  "bridge": "보훈지청",
+  "anchor": "포괄권역 명칭",
+  "docs": [
+   "462473",
+   "780555"
+  ],
+  "supporting_facts": [
+   "462473",
+   "780555"
+  ],
+  "question": "포괄권역 명칭으로 변경하여 대표성을 높이려는 기관의 청장은 누구인가?",
+  "answer": "박현숙",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ },
+ {
+  "id": "admh_102",
+  "hops": 2,
+  "bridge": "민원봉사",
+  "anchor": "조봉현 조사관",
+  "docs": [
+   "726551",
+   "822497"
+  ],
+  "supporting_facts": [
+   "726551",
+   "822497"
+  ],
+  "question": "조봉현 조사관이 수상한 상의 대상 수상자에게 주어지는 상금은 얼마입니까?",
+  "answer": "1,000만원",
+  "question_type": "multi-hop",
+  "source": "admin_anchored"
+ }
+]

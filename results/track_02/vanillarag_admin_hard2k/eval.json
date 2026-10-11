@@ -1,0 +1,10 @@
+{
+ "dataset": "admin_hard2k",
+ "system": "vanillarag",
+ "n": 103,
+ "topk": 5,
+ "contain_acc": 0.2816,
+ "gpt_acc": 0.3301,
+ "gpt4o_acc": 0.3398,
+ "gpt4o_n": 103
+}

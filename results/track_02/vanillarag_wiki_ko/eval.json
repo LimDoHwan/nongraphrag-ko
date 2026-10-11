@@ -1,0 +1,12 @@
+{
+ "dataset": "wiki_ko",
+ "system": "vanillarag",
+ "n": 1000,
+ "topk": 5,
+ "contain_acc": 0.428,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 1000,
+ "gpt4o_acc": 0.496,
+ "gpt4o_n": 1000
+}

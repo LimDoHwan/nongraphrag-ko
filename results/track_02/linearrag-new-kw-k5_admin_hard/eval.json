@@ -1,0 +1,8 @@
+{
+ "dataset": "admin_hard",
+ "system": "linearrag-new-kw-k5",
+ "n": 103,
+ "contain_acc": 0.0485,
+ "gpt4o_acc": 0.0583,
+ "gpt4o_n": 103
+}

@@ -1,0 +1,13 @@
+{
+ "dataset": "admin_single",
+ "system": "graphrag-org",
+ "n": 300,
+ "topk": 5,
+ "contain_acc": 0.8533,
+ "both_at5": 0.9267,
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_regenerated": 300,
+ "gpt4o_acc": 0.9333,
+ "gpt4o_n": 300
+}

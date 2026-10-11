@@ -1,0 +1,8 @@
+model,gpu,corpus,docs,calls,input_tokens,output_tokens_lb,output_note,minutes
+31B,RTX PRO 6000,admin_full,10554,21108,17804243,3772712,lower bound,207.7
+31B,RTX PRO 6000,admin_single,10300,20600,17658585,3810315,lower bound,337.8
+31B,RTX PRO 6000,admin_hard2k,2205,4410,3725663,795107,lower bound,44.5
+31B,RTX PRO 6000,wiki_ko,658,1316,3032934,1585222,lower bound,
+4B,RTX 4090,admin_full,10554,21108,17281226,3660630,lower bound,72.2
+4B,RTX 4090,admin_single,10299,20598,17140675,3645381,lower bound,72.0
+4B,RTX 4090,wiki_ko,658,1316,2909975,1653801,RE measured / NER lower bound,

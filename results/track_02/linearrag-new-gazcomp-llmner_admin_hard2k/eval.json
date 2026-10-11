@@ -1,0 +1,9 @@
+{
+ "dataset": "admin_hard2k",
+ "system": "linearrag-new-gazcomp-llmner",
+ "n": 103,
+ "contain_acc": 0.5146,
+ "gpt_acc": 0.5243,
+ "gpt4o_acc": 0.5534,
+ "gpt4o_n": 103
+}

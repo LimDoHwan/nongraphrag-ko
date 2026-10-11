@@ -1,0 +1,10 @@
+{
+ "dataset": "admin_single",
+ "system": "linearrag-new-gazcomp-pnw1-prf0.6sent",
+ "n": 300,
+ "gen_model": "gemma-4-31B-it",
+ "contain_acc": 0.8433,
+ "valid_qa": 300,
+ "gpt4o_acc": 0.9267,
+ "gpt4o_n": 300
+}

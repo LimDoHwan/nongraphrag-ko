@@ -1,0 +1,9 @@
+{
+ "dataset": "admin_full",
+ "system": "linearrag-new-dict",
+ "n": 279,
+ "contain_acc": 0.5591,
+ "gpt_acc": 0.6237,
+ "gpt4o_acc": 0.6631,
+ "gpt4o_n": 279
+}

@@ -1,0 +1,16 @@
+# 비밀 정보
+.env
+
+# AI-Hub 원천과 그로부터 복원한 파일 (재배포 금지)
+data/admin_ko/raw/
+data/admin_ko/docs_*.json
+data/admin_ko/chunks_*.json
+data/admin_ko/questions_admin_single.json
+
+# 실행 중 생기는 것
+cache/
+models/
+logs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
