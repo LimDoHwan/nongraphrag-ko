@@ -1,42 +1,42 @@
-no,name,main10,wiki_folder,admin_folder,runner,extract,tag,pnw,prf_beta,prf_sent,topk_kw,glossary_wiki_ko,glossary_admin_single,glossary_admin_full,glossary_admin_hard
-1,Vanilla RAG,1,vanillarag,vanillarag,vanillarag,,,,,0,,,,,
-2,HippoRAG2 (31B 그래프),1,graphrag-org,graphrag-org,hipporag2,,,,,0,,,,,
-3,HippoRAG2 (4B 그래프),1,graphrag-4bv2,graphrag-4b,hipporag2,,4b,,,0,,,,,
-4,nnp (원논문 대응),1,linearrag-org-nnp,linearrag-org-nnp,linearrag,nnp,,,,0,,,,,
-5,noun,1,linearrag-new-noun,linearrag-new-noun,linearrag,noun,,,,0,,,,,
-6,comp,1,linearrag-new-comp,linearrag-new-comp,linearrag,comp,,,,0,,,,,
-7,dict,0,linearrag-new-dict,linearrag-new-dict,linearrag,dict,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-8,compdict,0,linearrag-new-compdict,linearrag-new-compdict,linearrag,compdict,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-9,gazcomp(PMI),1,linearrag-new-gazcomp,linearrag-new-gazcomp,linearrag,gazcomp,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-10,gazcomp-sparse(PMI),0,linearrag-new-gazcomp-sparse,linearrag-new-gazcomp-sparse,linearrag,gazcomp,sparse,,,0,,data/wiki_ko/glossary_sparse.json,data/admin_ko/glossary_sparse.json,data/admin_ko/glossary_sparse.json,data/admin_ko/glossary_sparse.json
-11,gazet(PMI),0,linearrag-new-gazet,linearrag-new-gazet,linearrag,gazet,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-12,gazcomp(31B 증류 NER),0,linearrag-new-gazcomp-llmner,linearrag-new-gazcomp-llmner,linearrag,gazcomp,llmner,,,0,,data/wiki_ko/glossary_llmner.json,data/admin_ko/glossary_llmner_single.json,data/admin_ko/glossary_llmner_full.json,data/admin_ko/glossary_llmner_full.json
-13,gazcomp(31B 증류 NER+RE),1,linearrag-new-gazcomp-llm,linearrag-new-gazcomp-llm,linearrag,gazcomp,llm,,,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
-14,gazcomp(4B 증류 NER),0,linearrag-new-gazcomp-llm4bner,linearrag-new-gazcomp-llm4bner,linearrag,gazcomp,llm4bner,,,0,,data/wiki_ko/glossary_llm4bner_wiki.json,data/admin_ko/glossary_llm4bner_single.json,data/admin_ko/glossary_llm4bner_full.json,data/admin_ko/glossary_llm4bner_full.json
-15,gazcomp(4B 증류 NER+RE),1,linearrag-new-gazcomp-llm4bv2,linearrag-new-gazcomp-llm4b,linearrag,gazcomp,llm4b,,,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
-16,kw(TF-IDF×TextRank k5),0,linearrag-new-kw-k5,linearrag-new-kw-k5,linearrag,kw,k5,,,0,5,,,,
-17,kw(TF-IDF×TextRank k10),0,linearrag-new-kw-k10,linearrag-new-kw-k10,linearrag,kw,k10,,,0,10,,,,
-18,kw(TF-IDF×TextRank k20),0,linearrag-new-kw-k20,linearrag-new-kw-k20,linearrag,kw,k20,,,0,20,,,,
-19,kw(TF-IDF×TextRank k30),0,linearrag-new-kw-k30,linearrag-new-kw-k30,linearrag,kw,k30,,,0,30,,,,
-20,gazcomp(병합 PMI∪31B),0,linearrag-new-gazcomp-m31,linearrag-new-gazcomp-m31,linearrag,gazcomp,m31,,,0,,data/wiki_ko/glossary_merge31b.json,data/admin_ko/glossary_merge31b.json,data/admin_ko/glossary_merge31b.json,data/admin_ko/glossary_merge31b.json
-21,gazcomp(병합 PMI∪4B),0,linearrag-new-gazcomp-m4,linearrag-new-gazcomp-m4,linearrag,gazcomp,m4,,,0,,data/wiki_ko/glossary_merge4b.json,data/admin_ko/glossary_merge4b.json,data/admin_ko/glossary_merge4b.json,data/admin_ko/glossary_merge4b.json
-22,gazcomp(PMI) +dense0.5,0,linearrag-new-gazcomp-pnw0.5,linearrag-new-gazcomp-pnw0.5,linearrag,gazcomp,,0.5,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-23,gazcomp(PMI) +dense1.0,0,linearrag-new-gazcomp-pnw1,linearrag-new-gazcomp-pnw1,linearrag,gazcomp,,1.0,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-24,comp +dense0.5,0,linearrag-new-comp-pnw0.5,linearrag-new-comp-pnw0.5,linearrag,comp,,0.5,,0,,,,,
-25,comp +dense1.0,0,linearrag-new-comp-pnw1,linearrag-new-comp-pnw1,linearrag,comp,,1.0,,0,,,,,
-26,comp +dense0.5 +PRF(문서),0,linearrag-new-comp-pnw0.5-prf0.6,linearrag-new-comp-pnw0.5-prf0.6,linearrag,comp,,0.5,0.6,0,,,,,
-27,comp +dense1.0 +PRF(문서),0,linearrag-new-comp-pnw1-prf0.6,linearrag-new-comp-pnw1-prf0.6,linearrag,comp,,1.0,0.6,0,,,,,
-28,comp +dense0.5 +PRF(문장),1,linearrag-new-comp-pnw0.5-prf0.6sent,linearrag-new-comp-pnw0.5-prf0.6sent,linearrag,comp,,0.5,0.6,1,,,,,
-29,comp +dense1.0 +PRF(문장),0,linearrag-new-comp-pnw1-prf0.6sent,linearrag-new-comp-pnw1-prf0.6sent,linearrag,comp,,1.0,0.6,1,,,,,
-30,gazcomp(PMI) +dense0.5 +PRF(문장),0,linearrag-new-gazcomp-pnw0.5-prf0.6sent,linearrag-new-gazcomp-pnw0.5-prf0.6sent,linearrag,gazcomp,,0.5,0.6,1,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-31,gazcomp(PMI) +dense1.0 +PRF(문장),0,linearrag-new-gazcomp-pnw1-prf0.6sent,linearrag-new-gazcomp-pnw1-prf0.6sent,linearrag,gazcomp,,1.0,0.6,1,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-32,gazcomp(4B 증류 NER+RE) +dense0.5 +PRF(문장),0,linearrag-new-gazcomp-llm4bv2-pnw0.5-prf0.6sent,linearrag-new-gazcomp-llm4b-pnw0.5-prf0.6sent,linearrag,gazcomp,llm4b,0.5,0.6,1,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
-33,gazcomp(31B 증류 NER+RE) +dense0.5 +PRF(문장),0,linearrag-new-gazcomp-llm-pnw0.5-prf0.6sent,linearrag-new-gazcomp-llm-pnw0.5-prf0.6sent,linearrag,gazcomp,llm,0.5,0.6,1,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
-34,gazcomp(PMI) +dense0.5 +PRF(문서),0,linearrag-new-gazcomp-pnw0.5-prf0.6,linearrag-new-gazcomp-pnw0.5-prf0.6,linearrag,gazcomp,,0.5,0.6,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-35,gazcomp(PMI) +dense1.0 +PRF(문서),0,linearrag-new-gazcomp-pnw1-prf0.6,linearrag-new-gazcomp-pnw1-prf0.6,linearrag,gazcomp,,1.0,0.6,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
-36,gazcomp(4B 증류 NER+RE) +dense0.5 +PRF(문서),0,linearrag-new-gazcomp-llm4bv2-pnw0.5-prf0.6,linearrag-new-gazcomp-llm4b-pnw0.5-prf0.6,linearrag,gazcomp,llm4b,0.5,0.6,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
-37,gazcomp(31B 증류 NER+RE) +dense0.5 +PRF(문서),0,linearrag-new-gazcomp-llm-pnw0.5-prf0.6,linearrag-new-gazcomp-llm-pnw0.5-prf0.6,linearrag,gazcomp,llm,0.5,0.6,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
-38,gazcomp(4B 증류 NER+RE) +dense0.5,0,linearrag-new-gazcomp-llm4bv2-pnw0.5,linearrag-new-gazcomp-llm4b-pnw0.5,linearrag,gazcomp,llm4b,0.5,,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
-39,gazcomp(4B 증류 NER+RE) +dense1.0,0,linearrag-new-gazcomp-llm4bv2-pnw1,linearrag-new-gazcomp-llm4b-pnw1,linearrag,gazcomp,llm4b,1.0,,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
-40,gazcomp(31B 증류 NER+RE) +dense0.5,0,linearrag-new-gazcomp-llm-pnw0.5,linearrag-new-gazcomp-llm-pnw0.5,linearrag,gazcomp,llm,0.5,,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
-41,gazcomp(31B 증류 NER+RE) +dense1.0,0,linearrag-new-gazcomp-llm-pnw1,linearrag-new-gazcomp-llm-pnw1,linearrag,gazcomp,llm,1.0,,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
+no,name,main10,wiki_folder,wiki_dataset,admin_folder,runner,extract,tag,pnw,prf_beta,prf_sent,topk_kw,glossary_wiki_ko,glossary_admin_single,glossary_admin_full,glossary_admin_hard
+1,Vanilla RAG,1,vanillarag,wiki_ko,vanillarag,vanillarag,,,,,0,,,,,
+2,HippoRAG2 (31B 그래프),1,graphrag-org,wiki_ko,graphrag-org,hipporag2,,,,,0,,,,,
+3,HippoRAG2 (4B 그래프),1,graphrag-4bv2,wiki_ko,graphrag-4b,hipporag2,,4b,,,0,,,,,
+4,nnp (원논문 대응),1,linearrag-org-nnp,wiki_ko_v2,linearrag-org-nnp,linearrag,nnp,,,,0,,,,,
+5,noun,1,linearrag-new-noun,wiki_ko_v2,linearrag-new-noun,linearrag,noun,,,,0,,,,,
+6,comp,1,linearrag-new-comp,wiki_ko_v2,linearrag-new-comp,linearrag,comp,,,,0,,,,,
+7,dict,0,linearrag-new-dict,wiki_ko_v2,linearrag-new-dict,linearrag,dict,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+8,compdict,0,linearrag-new-compdict,wiki_ko_v2,linearrag-new-compdict,linearrag,compdict,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+9,gazcomp(PMI),1,linearrag-new-gazcomp,wiki_ko_v2,linearrag-new-gazcomp,linearrag,gazcomp,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+10,gazcomp-sparse(PMI),0,linearrag-new-gazcomp-sparse,wiki_ko_v2,linearrag-new-gazcomp-sparse,linearrag,gazcomp,sparse,,,0,,data/wiki_ko/glossary_sparse.json,data/admin_ko/glossary_sparse.json,data/admin_ko/glossary_sparse.json,data/admin_ko/glossary_sparse.json
+11,gazet(PMI),0,linearrag-new-gazet,wiki_ko_v2,linearrag-new-gazet,linearrag,gazet,,,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+12,gazcomp(31B 증류 NER),0,linearrag-new-gazcomp-llmner,wiki_ko_v2,linearrag-new-gazcomp-llmner,linearrag,gazcomp,llmner,,,0,,data/wiki_ko/glossary_llmner.json,data/admin_ko/glossary_llmner_single.json,data/admin_ko/glossary_llmner_full.json,data/admin_ko/glossary_llmner_full.json
+13,gazcomp(31B 증류 NER+RE),1,linearrag-new-gazcomp-llm,wiki_ko_v2,linearrag-new-gazcomp-llm,linearrag,gazcomp,llm,,,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
+14,gazcomp(4B 증류 NER),0,linearrag-new-gazcomp-llm4bner,wiki_ko_v2,linearrag-new-gazcomp-llm4bner,linearrag,gazcomp,llm4bner,,,0,,data/wiki_ko/glossary_llm4bner_wiki.json,data/admin_ko/glossary_llm4bner_single.json,data/admin_ko/glossary_llm4bner_full.json,data/admin_ko/glossary_llm4bner_full.json
+15,gazcomp(4B 증류 NER+RE),1,linearrag-new-gazcomp-llm4bv2,wiki_ko_v2,linearrag-new-gazcomp-llm4b,linearrag,gazcomp,llm4b,,,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
+16,kw(TF-IDF×TextRank k5),0,linearrag-new-kw-k5,wiki_ko_v2,linearrag-new-kw-k5,linearrag,kw,k5,,,0,5,,,,
+17,kw(TF-IDF×TextRank k10),0,linearrag-new-kw-k10,wiki_ko_v2,linearrag-new-kw-k10,linearrag,kw,k10,,,0,10,,,,
+18,kw(TF-IDF×TextRank k20),0,linearrag-new-kw-k20,wiki_ko_v2,linearrag-new-kw-k20,linearrag,kw,k20,,,0,20,,,,
+19,kw(TF-IDF×TextRank k30),0,linearrag-new-kw-k30,wiki_ko_v2,linearrag-new-kw-k30,linearrag,kw,k30,,,0,30,,,,
+20,gazcomp(병합 PMI∪31B),0,linearrag-new-gazcomp-m31,wiki_ko_v2,linearrag-new-gazcomp-m31,linearrag,gazcomp,m31,,,0,,data/wiki_ko/glossary_merge31b.json,data/admin_ko/glossary_merge31b.json,data/admin_ko/glossary_merge31b.json,data/admin_ko/glossary_merge31b.json
+21,gazcomp(병합 PMI∪4B),0,linearrag-new-gazcomp-m4,wiki_ko_v2,linearrag-new-gazcomp-m4,linearrag,gazcomp,m4,,,0,,data/wiki_ko/glossary_merge4b.json,data/admin_ko/glossary_merge4b.json,data/admin_ko/glossary_merge4b.json,data/admin_ko/glossary_merge4b.json
+22,gazcomp(PMI) +dense0.5,0,linearrag-new-gazcomp-pnw0.5,wiki_ko_v2,linearrag-new-gazcomp-pnw0.5,linearrag,gazcomp,,0.5,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+23,gazcomp(PMI) +dense1.0,0,linearrag-new-gazcomp-pnw1,wiki_ko_v2,linearrag-new-gazcomp-pnw1,linearrag,gazcomp,,1.0,,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+24,comp +dense0.5,0,linearrag-new-comp-pnw0.5,wiki_ko_v2,linearrag-new-comp-pnw0.5,linearrag,comp,,0.5,,0,,,,,
+25,comp +dense1.0,0,linearrag-new-comp-pnw1,wiki_ko_v2,linearrag-new-comp-pnw1,linearrag,comp,,1.0,,0,,,,,
+26,comp +dense0.5 +PRF(문서),0,linearrag-new-comp-pnw0.5-prf0.6,wiki_ko_v2,linearrag-new-comp-pnw0.5-prf0.6,linearrag,comp,,0.5,0.6,0,,,,,
+27,comp +dense1.0 +PRF(문서),0,linearrag-new-comp-pnw1-prf0.6,wiki_ko_v2,linearrag-new-comp-pnw1-prf0.6,linearrag,comp,,1.0,0.6,0,,,,,
+28,comp +dense0.5 +PRF(문장),1,linearrag-new-comp-pnw0.5-prf0.6sent,wiki_ko_v2,linearrag-new-comp-pnw0.5-prf0.6sent,linearrag,comp,,0.5,0.6,1,,,,,
+29,comp +dense1.0 +PRF(문장),0,linearrag-new-comp-pnw1-prf0.6sent,wiki_ko_v2,linearrag-new-comp-pnw1-prf0.6sent,linearrag,comp,,1.0,0.6,1,,,,,
+30,gazcomp(PMI) +dense0.5 +PRF(문장),0,linearrag-new-gazcomp-pnw0.5-prf0.6sent,wiki_ko_v2,linearrag-new-gazcomp-pnw0.5-prf0.6sent,linearrag,gazcomp,,0.5,0.6,1,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+31,gazcomp(PMI) +dense1.0 +PRF(문장),0,linearrag-new-gazcomp-pnw1-prf0.6sent,wiki_ko_v2,linearrag-new-gazcomp-pnw1-prf0.6sent,linearrag,gazcomp,,1.0,0.6,1,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+32,gazcomp(4B 증류 NER+RE) +dense0.5 +PRF(문장),0,linearrag-new-gazcomp-llm4bv2-pnw0.5-prf0.6sent,wiki_ko_v2,linearrag-new-gazcomp-llm4b-pnw0.5-prf0.6sent,linearrag,gazcomp,llm4b,0.5,0.6,1,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
+33,gazcomp(31B 증류 NER+RE) +dense0.5 +PRF(문장),0,linearrag-new-gazcomp-llm-pnw0.5-prf0.6sent,wiki_ko_v2,linearrag-new-gazcomp-llm-pnw0.5-prf0.6sent,linearrag,gazcomp,llm,0.5,0.6,1,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
+34,gazcomp(PMI) +dense0.5 +PRF(문서),0,linearrag-new-gazcomp-pnw0.5-prf0.6,wiki_ko_v2,linearrag-new-gazcomp-pnw0.5-prf0.6,linearrag,gazcomp,,0.5,0.6,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+35,gazcomp(PMI) +dense1.0 +PRF(문서),0,linearrag-new-gazcomp-pnw1-prf0.6,wiki_ko_v2,linearrag-new-gazcomp-pnw1-prf0.6,linearrag,gazcomp,,1.0,0.6,0,,data/wiki_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json,data/admin_ko/glossary.json
+36,gazcomp(4B 증류 NER+RE) +dense0.5 +PRF(문서),0,linearrag-new-gazcomp-llm4bv2-pnw0.5-prf0.6,wiki_ko_v2,linearrag-new-gazcomp-llm4b-pnw0.5-prf0.6,linearrag,gazcomp,llm4b,0.5,0.6,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
+37,gazcomp(31B 증류 NER+RE) +dense0.5 +PRF(문서),0,linearrag-new-gazcomp-llm-pnw0.5-prf0.6,wiki_ko_v2,linearrag-new-gazcomp-llm-pnw0.5-prf0.6,linearrag,gazcomp,llm,0.5,0.6,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
+38,gazcomp(4B 증류 NER+RE) +dense0.5,0,linearrag-new-gazcomp-llm4bv2-pnw0.5,wiki_ko_v2,linearrag-new-gazcomp-llm4b-pnw0.5,linearrag,gazcomp,llm4b,0.5,,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
+39,gazcomp(4B 증류 NER+RE) +dense1.0,0,linearrag-new-gazcomp-llm4bv2-pnw1,wiki_ko_v2,linearrag-new-gazcomp-llm4b-pnw1,linearrag,gazcomp,llm4b,1.0,,0,,data/wiki_ko/glossary_llm4b_wiki_v2.json,data/admin_ko/glossary_llm4b_single.json,data/admin_ko/glossary_llm4b_full.json,data/admin_ko/glossary_llm4b_full.json
+40,gazcomp(31B 증류 NER+RE) +dense0.5,0,linearrag-new-gazcomp-llm-pnw0.5,wiki_ko_v2,linearrag-new-gazcomp-llm-pnw0.5,linearrag,gazcomp,llm,0.5,,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json
+41,gazcomp(31B 증류 NER+RE) +dense1.0,0,linearrag-new-gazcomp-llm-pnw1,wiki_ko_v2,linearrag-new-gazcomp-llm-pnw1,linearrag,gazcomp,llm,1.0,,0,,data/wiki_ko/glossary_llm.json,data/admin_ko/glossary_llm_single.json,data/admin_ko/glossary_llm_full.json,data/admin_ko/glossary_llm_full.json

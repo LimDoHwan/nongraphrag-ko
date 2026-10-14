@@ -6,6 +6,10 @@
   python scripts/run_system.py --list
 
 --dry-run 은 실행할 명령만 출력한다. HippoRAG2 는 OpenIE(색인 LLM 호출) → 그래프 → QA 순으로 돈다.
+
+LinearRAG 계열의 wiki_ko 논문 결과는 원 구현과 같은 입력 처리("번호:본문" 유지, 인접 문단 간선)를 쓴
+wiki_ko_v2 로 냈다. 이 재실행은 scripts/rerun_wiki_v2.py 로 한다. 이 스크립트로 LinearRAG 를 wiki_ko 에서
+돌리면 번호를 뗀 이전 로더로 실행되므로, --legacy-wiki 를 붙여야만 실행한다.
 """
 import argparse
 import csv
@@ -60,6 +64,7 @@ def main():
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--legacy-wiki", action="store_true", help="LinearRAG 를 이전 wiki_ko 로더(번호 제거)로 실행")
     a = ap.parse_args()
     rows = list(csv.DictReader(open(ROOT / "analysis" / "systems.csv", encoding="utf-8")))
     if a.list:
@@ -71,6 +76,9 @@ def main():
     s = next((r for r in rows if r["name"] == a.system), None)
     if s is None:
         sys.exit(f"시스템 없음: {a.system} (--list 로 확인)")
+    if s["runner"] == "linearrag" and a.dataset == "wiki_ko" and not a.legacy_wiki:
+        sys.exit("LinearRAG 계열의 wiki_ko 논문 결과는 scripts/rerun_wiki_v2.py 로 재현합니다 "
+                 "(retrieve → qa → judge → assemble). 이전 로더로 실행하려면 --legacy-wiki 를 붙이세요.")
     cmd = command(s, a.dataset, a.workers)
     print(" ".join(shlex.quote(c) for c in cmd))
     if not a.dry_run:

@@ -1,0 +1,12 @@
+{
+ "dataset": "wiki_ko_v2",
+ "system": "linearrag-new-gazcomp-llm-pnw0.5-prf0.6sent",
+ "n": 1000,
+ "gpt4o_acc": 0.724,
+ "contain_acc": 0.62,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 256,
+ "qa_new": 884,
+ "note": "원 LinearRAG 입력 처리(번호:본문, 인접 문단 간선) 반영 재실행 2026-10-14"
+}

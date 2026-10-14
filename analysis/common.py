@@ -38,7 +38,8 @@ def folder(sysrow, dataset):
 def load(name_or_row, dataset):
     """문항 ID → {"acc", "contain", "r5"} (r5 는 wiki_ko 에서 None)"""
     row = system(name_or_row) if isinstance(name_or_row, str) else name_or_row
-    path = RESULTS / f"{folder(row, dataset)}_{dataset}" / "predictions.json"
+    suffix = (row.get("wiki_dataset") or "wiki_ko") if dataset == "wiki_ko" else dataset
+    path = RESULTS / f"{folder(row, dataset)}_{suffix}" / "predictions.json"
     out = {}
     for r in json.load(open(path, encoding="utf-8")):
         r5 = None

@@ -27,6 +27,7 @@ data/
   wiki_ko/       wiki_ko 엔티티 사전
   admin_ko/      admin: 합성 질의, 엔티티 사전, 코퍼스 문서 ID 목록, 체크섬 (원문 없음)
 results/track_02/  시스템×데이터셋별 eval.json, predictions.json (41개 시스템 × 4개 집합 + hard2k 5개)
+                 LinearRAG 계열의 wiki_ko 결과는 {시스템}_wiki_ko_v2/ (아래 "wiki_ko_v2" 참조)
 scripts/         데이터 구축·복원, 시스템 실행, 보조 분석
 src/track_02/    실험 코드 (LinearRAG 재구현, HippoRAG2 재구현, Vanilla RAG, 데이터 합성)
 src/track_01/    공용 모듈 (임베딩, LLM 클라이언트, 평가)
@@ -48,12 +49,13 @@ GPU와 원천 데이터 없이, 저장소에 든 문항별 결과만으로 논�
 
 ```bash
 cd analysis
-python master_table.py        # 부록 B <표 41>: 41개 시스템 × 4개 집합, 논문 수록값과 자동 대조
+python master_table.py        # 부록 B <표 41>: 41개 시스템 × 4개 집합, 논문 수록값(수정본)과 자동 대조
 python hypothesis_tests.py    # 제4장 <표 20>~<표 24>, <표 31>: 정확 McNemar 검정, 95% 신뢰구간
 python cost.py                # 제4장 <표 26>, <표 27>, <표 29>, <표 30>: 토큰, GPU-시간, ICER
 ```
 
-- `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
+- `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
+- `analysis/reference/appendix_b.csv`: 원고 부록 B의 수록값입니다. wiki_ko 재실행으로 바뀐 LinearRAG 계열 74칸과 원고의 이중 반올림 6칸을 수정한 값(2026-10-15)이며, `master_table.py`는 이 값과 모두 일치해야 합니다.
 - 비용 표의 입력(`analysis/cost_inputs.csv`)에 대한 설명은 다음과 같습니다.
   - 입력 토큰: 실제 요청을 재구성해 센 정확값
   - 출력 토큰: 저장된 추출 결과로 계산한 하한값
@@ -63,13 +65,15 @@ python cost.py                # 제4장 <표 26>, <표 27>, <표 29>, <표 30>: 
 
 ### wiki_ko
 
-번역본이 저장소에 있으므로 바로 실행할 수 있습니다.
+번역본이 저장소에 있으므로 바로 실행할 수 있습니다. LinearRAG 계열 38개 시스템은 `wiki_ko_v2`(아래)로 검색합니다.
 
 ```bash
 huggingface-cli download BAAI/bge-m3 --local-dir models/bge-m3
-python scripts/run_system.py --list
-python scripts/run_system.py --system "noun" --dataset wiki_ko
+python scripts/rerun_wiki_v2.py retrieve        # LinearRAG 계열 38개, 상위 5개 → cache/track_02/rerun_wiki_v2/retrieved/
+python scripts/run_system.py --system "HippoRAG2 (31B 그래프)" --dataset wiki_ko   # HippoRAG2·Vanilla RAG
 ```
+
+**wiki_ko_v2.** wiki_ko 문서는 원래 "번호:본문" 형태입니다. 원 LinearRAG 구현은 이 번호로 앞뒤 문서를 인접 문단 간선(무게 1.0)으로 잇고, 번호가 붙은 채로 문서를 임베딩합니다. 처음 실험한 로더(`wiki_ko`)는 번호를 떼어 이 간선이 생기지 않았기 때문에, 번호를 유지하는 `wiki_ko_v2`로 LinearRAG 계열을 다시 실행했고 논문의 wiki_ko 결과는 이것입니다(2026-10-15). 응답 생성에 넣는 지문은 두 판 모두 번호 없는 본문이므로 바뀌는 것은 검색뿐입니다. `scripts/run_system.py`로 LinearRAG를 wiki_ko에서 돌리면 이전 로더가 쓰이므로 `--legacy-wiki`를 붙여야만 실행됩니다.
 
 ### admin (AI-Hub 원천 필요)
 
@@ -105,6 +109,7 @@ python scripts/run_system.py --system "noun" --dataset wiki_ko
 | 단계 | 명령 | 비고 |
 |:--|:--|:--|
 | 응답 생성·판정 | `scripts/run_system.py` 실행 결과에 대해 `python -m src.track_02.common.unify_qa` → `python -m src.track_02.common.rejudge_gpt4o` | 10개 비교 시스템은 공통 프롬프트·출력 한도 2,000토큰으로 응답을 통일. 판정은 gpt-4o |
+| wiki_ko LinearRAG 계열 | `python scripts/rerun_wiki_v2.py retrieve` → `qa --urls <31B 서버 주소…>` → `judge` → `assemble` | 생성 조건은 다른 시스템과 같음(◆ 출력 한도 2,000, 나머지 256, temperature 0). 결과는 `results/track_02/{시스템}_wiki_ko_v2/`. `validate`(원 저장소 코드 결과 대조)는 그 결과 파일이 저장소에 없어 건너뜀 |
 | HippoRAG2 (31B) | `python scripts/run_system.py --system "HippoRAG2 (31B 그래프)" --dataset admin_full` | OpenIE를 문서당 2회 호출 (admin full 21,108회) |
 | HippoRAG2 (4B) | `python -m src.track_02.graphrag.openie_4b --dataset admin_full` 후 run_system | wiki_ko는 `openie_4b_rerun.py`로 다시 추출한 판(`4bv2`) 사용 |
 | LLM 증류 사전 | `python -m src.track_02.data.distill_glossary --openie <OpenIE 캐시> --mode nerre --out <사전>` | HippoRAG2의 OpenIE 결과에서 엔티티 표층형만 회수. 검색 코퍼스 전체(정답 문서 포함)의 OpenIE 결과를 쓰며, 질의·정답 정보는 사용하지 않음 |
@@ -140,8 +145,9 @@ python -m src.track_02.data.filter_adversarial --distractors 10000 --topk 5   # 
 - **HippoRAG2는 공식 패키지가 아니라 원논문을 따라 재구현했습니다**(`src/track_02/graphrag/hipporag2.py`, `src/track_01/graph_rag/hipporag2_korean.py`).
 - **LinearRAG도 원 저장소 코드가 아니라 원 저장소(DEEP-PolyU/LinearRAG) 구현을 따라 재구현했습니다**(`src/track_02/linearrag/engine.py`).
   - 같은 점: 씨앗 엔티티 선택, 문장 단위 활성화 전파, 문서 점수(정규화 유사도 × passage_ratio + log(1 + 엔티티 보너스)), 문서–엔티티 끈 무게(등장 횟수 비율), 개인화 페이지랭크(prpack)의 계산식이 원 저장소와 같습니다. 설정값 7개(top-5, 반복 3, 문장 1, passage_ratio 1.5, passage_node_weight 0.05, damping 0.5, 임계값 0.5)는 원 저장소 `config.py`의 기본값입니다. 원 저장소의 2wiki 실행 스크립트는 임계값 0.4·passage_ratio 0.05를 쓰는데, 이 연구는 두 코퍼스 모두 기본값을 썼습니다.
-  - 다른 점: wiki_ko 문서는 원래 "번호:본문" 형태입니다. 원 저장소는 이 번호로 앞뒤 문서를 끈(무게 1.0)으로 잇고, 번호가 붙은 채로 문서를 임베딩합니다. 이 연구의 데이터 로더는 번호를 떼어 내므로 wiki_ko에서 이 이웃 문서 끈이 생기지 않았습니다. admin 문서는 번호로 시작하지 않아 원 저장소에서도 이 끈이 생기지 않으므로 영향이 없습니다. 이 밖에 원 저장소는 엔티티 등장 횟수를 셀 때 소문자로 바꿔 셉니다.
-  - 대조: 원 저장소 코드로 낸 wiki_ko 검색 결과(같은 bge-m3·고유명사 추출·2wiki 실행값)와 상위 5개 문서를 1,000문항에서 비교했습니다. 재구현 그대로는 64문항만 순서까지 같았습니다(평균 겹침 70%). 이웃 문서 끈을 넣으면 693문항(92.5%), 문서 임베딩에 번호까지 붙이면 837문항(96.5%)이 같았습니다. 계산식은 원 저장소와 같고, 차이는 위의 입력 처리에서 온다는 뜻입니다.
+  - 입력 처리: 처음 실험한 wiki_ko 로더는 문서 앞의 번호를 떼어 원 구현의 인접 문단 간선이 생기지 않았습니다. 이를 바로잡은 `wiki_ko_v2`로 LinearRAG 계열을 다시 실행했고, 논문과 이 저장소의 wiki_ko 결과는 모두 `wiki_ko_v2` 결과입니다(위 "wiki_ko_v2"). admin 문서는 번호로 시작하지 않아 원 저장소에서도 이 간선이 생기지 않으므로 영향이 없습니다.
+  - 남은 차이: 원 저장소는 엔티티 등장 횟수를 셀 때 소문자로 바꿔 셉니다(한국어에는 영향이 거의 없음). 2wiki 전용 실행값(임계값 0.4·passage_ratio 0.05)은 쓰지 않았습니다.
+  - 대조: 원 저장소 코드로 낸 wiki_ko 검색 결과(같은 bge-m3·고유명사 추출·2wiki 실행값)와 상위 5개 문서를 1,000문항에서 비교했습니다. `wiki_ko_v2`에서 849문항이 순서까지 같았고 평균 겹침은 96.8%입니다. 번호를 뗀 이전 로더에서는 64문항(평균 겹침 70%)이었습니다. 계산식은 원 저장소와 같고, 차이는 입력 처리에서 왔다는 뜻입니다.
 - **gpt-4o 판정자는 모델 별칭으로 호출했습니다.** 10개 비교 시스템을 판정한 2026-09-15에 응답한 모델은 `gpt-4o-2024-08-06`입니다.
 
 ## 원고 부록 E의 파일 해시와 공개본

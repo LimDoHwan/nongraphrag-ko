@@ -13,12 +13,15 @@ ROOT = Path(__file__).resolve().parents[3]
 DATA = ROOT / "data"
 
 
-def _load_wiki_ko():
+def _load_wiki_ko(keep_index=False):
+    """keep_index=False: 본문만(기존 wiki_ko). True: 원 LinearRAG처럼 "번호:본문"을 유지(wiki_ko_v2).
+    원 구현은 이 번호로 인접 문단 간선을 만들고 번호째 임베딩한다(engine._build_graph 의 "idx:" 처리)."""
     chunks = json.load(open(DATA / "2wiki_ko" / "chunks.json", encoding="utf-8"))
     passages = []
     for s in chunks:                       # "idx:본문"
         i, _, text = s.partition(":")
-        passages.append({"id": i.strip(), "text": text.strip()})
+        i, text = i.strip(), text.strip()
+        passages.append({"id": i, "text": f"{i}:{text}" if keep_index else text})
     qs = json.load(open(DATA / "2wiki_ko" / "questions.json", encoding="utf-8"))
     questions = [{"id": str(q["id"]), "question": q["question"],
                   "answer": q["answer"], "supporting": q.get("evidence", [])}
@@ -78,6 +81,8 @@ def _load_admin_hard2k():
 def load_dataset(name: str):
     if name == "wiki_ko":
         return _load_wiki_ko()
+    if name == "wiki_ko_v2":
+        return _load_wiki_ko(keep_index=True)
     if name == "admin_ko":
         return _load_admin_ko()
     if name == "admin_hard":
