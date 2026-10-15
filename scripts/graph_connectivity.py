@@ -9,6 +9,9 @@ LinearRAG engine._build_graph 와 같은 규칙(text.count(e) > 0 일 때만 문
   - 끈 없는 언급    : (문서, 엔티티) 언급 중 원문에 그 문자열이 그대로 없어 끈이 생기지 않은 비율
   - 다리 없는 문서  : 다리 엔티티와 하나도 이어지지 않은 문서의 비율 (그래프에서 고립)
 
+wiki_ko 는 논문 결과와 같은 wiki_ko_v2 색인("번호:본문" 유지, 2026-10-15 재실행)을 읽는다.
+인접 문단 간선(문서–문서)은 엔티티를 거치지 않으므로 이 지표에 들어가지 않는다.
+
 실행: python scripts/graph_connectivity.py
 """
 import json
@@ -24,7 +27,7 @@ HUB_FRAC = 0.05
 
 
 def main():
-    for ds in ("wiki_ko", "admin_full"):
+    for ds in ("wiki_ko_v2", "admin_full"):
         passages = load_dataset(ds)[0]
         texts = {str(p["id"]): p["text"] for p in passages}
         n_doc = len(passages)
