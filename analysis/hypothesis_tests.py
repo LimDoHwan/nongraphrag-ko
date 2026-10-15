@@ -1,12 +1,12 @@
 """제4장 가설 검정표 재생성 (정확 McNemar, 양측).
 
-  <표 20> H1  : noun 대 nnp
-  <표 21> 추가 분석: comp 대 noun, gazcomp(PMI) 대 comp
-  <표 22> H2-a: comp·gazcomp(PMI) 대 HippoRAG2(31B)
-  <표 23> H2-b: gazcomp(PMI) 대 4B·31B 증류 사전
-  <표 24> 구축 LLM 규모: 4B 대 31B (증류 사전, HippoRAG2 그래프)
-  <표 31> H3  : 검색 조정 6개 구성 대 comp (R@5)
-  <표 32> 단일 도약 R@5: 검색 조정 6개 구성 대 comp
+  <표 22> H1  : noun 대 nnp
+  <표 23> 추가 분석: comp 대 noun, gazcomp(PMI) 대 comp
+  <표 25> H2-a: comp·gazcomp(PMI) 대 HippoRAG2(31B)
+  <표 26> H2-b: gazcomp(PMI) 대 4B·31B 증류 사전
+  <표 27> 구축 LLM 규모: 4B 대 31B (증류 사전, HippoRAG2 그래프)
+  <표 35> H3  : 검색 조정 6개 구성 대 comp (R@5)
+  <표 36> 단일 도약 R@5: 검색 조정 6개 구성 대 comp
 
 판정 유의수준: H1 0.05/3, H3 0.05/2 (Bonferroni), H2 0.05 (보정 없음, 제3장 제5절).
 표의 "b/c"는 A만 맞힌 문항 수 / B만 맞힌 문항 수, 차이는 A − B (%p)와 95% 신뢰구간.
@@ -41,31 +41,31 @@ def full_plan(r5_single=True):
 
 
 def main():
-    table("<표 20> H1", "noun", "nnp (원논문 대응)", full_plan())
+    table("<표 22> H1", "noun", "nnp (원논문 대응)", full_plan())
 
-    print("\n## <표 21> 추가 분석 (탐색적)")
+    print("\n## <표 23> 추가 분석 (탐색적)")
     table("comp 대 noun", "comp", "noun", [(d, "acc") for d in MULTI] + [(d, "r5") for d in ADMIN])
     table("gazcomp(PMI) 대 comp", "gazcomp(PMI)", "comp", [(d, "acc") for d in MULTI] + [(d, "r5") for d in ADMIN])
 
-    print("\n## <표 22> H2-a")
+    print("\n## <표 25> H2-a")
     for a in ("comp", "gazcomp(PMI)"):
         table(f"{a} 대 HippoRAG2 (31B 그래프)", a, "HippoRAG2 (31B 그래프)", full_plan())
 
-    print("\n## <표 23> H2-b")
+    print("\n## <표 26> H2-b")
     for b in ("gazcomp(4B 증류 NER+RE)", "gazcomp(31B 증류 NER+RE)"):
         table(f"gazcomp(PMI) 대 {b}", "gazcomp(PMI)", b, full_plan())
 
-    print("\n## <표 24> 구축 LLM 규모 (A = 4B, B = 31B)")
+    print("\n## <표 27> 구축 LLM 규모 (A = 4B, B = 31B)")
     plan = [("wiki_ko", "acc")] + [(d, k) for d in ("admin_full", "admin_hard", "admin_single") for k in ("acc", "r5")]
     table("증류 사전", "gazcomp(4B 증류 NER+RE)", "gazcomp(31B 증류 NER+RE)", plan)
     table("HippoRAG2 그래프", "HippoRAG2 (4B 그래프)", "HippoRAG2 (31B 그래프)", plan)
 
     configs = ["comp +dense0.5 +PRF(문장)", "comp +dense0.5", "comp +dense1.0",
                "comp +dense0.5 +PRF(문서)", "comp +dense1.0 +PRF(문서)", "comp +dense1.0 +PRF(문장)"]
-    print("\n## <표 31> H3: 검색 조정 구성 대 comp (R@5)")
+    print("\n## <표 35> H3: 검색 조정 구성 대 comp (R@5)")
     for c in configs:
         table(c, c, "comp", [(d, "r5") for d in ADMIN])
-    print("\n## <표 32> 관련: 단일 도약 R@5, 검색 조정 구성 대 comp")
+    print("\n## <표 36> 관련: 단일 도약 R@5, 검색 조정 구성 대 comp")
     for c in configs:
         table(c, c, "comp", [("admin_single", "r5")])
 

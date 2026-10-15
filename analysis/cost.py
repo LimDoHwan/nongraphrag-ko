@@ -1,4 +1,4 @@
-"""제4장 제3절 비용 표 재생성: <표 26> 토큰, <표 27> GPU-시간·화폐 환산, <표 29> ICER, <표 30> 비용 구조.
+"""제4장 제3절 비용 표 재생성: <표 30> 토큰, <표 31> GPU-시간·화폐 환산, <표 33> ICER, <표 34> 비용 구조.
 
 입력: analysis/cost_inputs.csv
   - 호출 수 = 문서 수 × 2 (OpenIE의 NER 1회 + RE 1회)
@@ -6,7 +6,7 @@
   - 출력 토큰 = 저장된 추출 결과를 재직렬화한 하한값 (4B wiki_ko 의 RE 는 서버 실측)
   - minutes = OpenIE 캐시 파일 생성 시각으로 복원한 처리 시간(동시 16요청, 공유 부하 포함, 잠정치)
     wiki_ko 는 처리 시간이 기록되지 않았다.
-잠재가격: 2026-09-14 조회 클라우드 온디맨드 GPU 단가(USD/GPU·h), 제3장 <표 14>.
+잠재가격: 2026-09-14 조회 클라우드 온디맨드 GPU 단가(USD/GPU·h), 제3장 <표 16>.
 
 실행: python analysis/cost.py
 """
@@ -27,7 +27,7 @@ def rows():
 
 def main():
     R = rows()
-    print("## <표 26> 색인 단계 토큰 수 (OpenIE, 문서당 2회 호출)\n")
+    print("## <표 30> 색인 단계 토큰 수 (OpenIE, 문서당 2회 호출)\n")
     print("| 모델 | 코퍼스 | 문서 | 호출 | 입력(정확) | 출력(하한) | 문서당 입력 / 출력 |")
     print("|:--|:--|--:|--:|--:|--:|:--|")
     for r in R:
@@ -35,7 +35,7 @@ def main():
         print(f"| {r['model']} | {r['corpus']} | {d:,} | {int(r['calls']):,} | {int(r['input_tokens']):,} | "
               f"≥ {int(r['output_tokens_lb']):,} | {int(r['input_tokens']) / d:,.0f} / ≥ {int(r['output_tokens_lb']) / d:,.0f} |")
 
-    print("\n## <표 27> GPU-시간과 화폐 환산\n")
+    print("\n## <표 31> GPU-시간과 화폐 환산\n")
     print("| 모델 (GPU) | 코퍼스 | 문서 | GPU-시간 | 기준 단가 | 민감도 범위 |")
     print("|:--|:--|--:|--:|--:|:--|")
     gpu_h = {}
@@ -52,7 +52,7 @@ def main():
         c4 = gpu_h[("4B", corpus)] * PRICE["RTX 4090"][0]
         print(f"\n{corpus}: 31B 비용 / 4B 비용 = {c31 / c4:.1f}배")
 
-    print("\n## <표 29> wiki_ko 증분 비용-효과비 (호출·입력 토큰 기준)\n")
+    print("\n## <표 33> wiki_ko 증분 비용-효과비 (호출·입력 토큰 기준)\n")
     tok = {r["model"]: int(r["input_tokens"]) for r in R if r["corpus"] == "wiki_ko"}
     calls = 1316
     pairs = [("HippoRAG2 (31B 그래프)", "comp", "31B"),
@@ -65,7 +65,7 @@ def main():
         de = 100 * (rate(load(b, "wiki_ko"), "acc") - rate(load(a, "wiki_ko"), "acc"))
         print(f"| {b} 대 {a} | {de:.1f} | {calls:,} | {tok[m]:,} | {calls / de:.1f}회 | 약 {tok[m] / de / 1e4:.1f}만 개 |")
 
-    print("\n## <표 30> 문서 규모별 GPU 비용 (예시)\n")
+    print("\n## <표 34> 문서 규모별 GPU 비용 (예시)\n")
     print("1,000문서당 GPU-시간 범위는 admin_full·admin_single 의 관측값에서 구한다.\n")
     for m, gpu in (("4B", "RTX 4090"), ("31B", "RTX PRO 6000")):
         per = sorted(gpu_h[(m, c)] / int(next(r["docs"] for r in R if r["model"] == m and r["corpus"] == c)) * 1000
