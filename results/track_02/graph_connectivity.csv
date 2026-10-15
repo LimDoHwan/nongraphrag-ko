@@ -1,0 +1,7 @@
+dataset,extract,documents,unique_entities,bridge_entities,hub_edge_ratio,unlinked_mention_ratio,isolated_doc_ratio
+wiki_ko_v2,nnp,658,19981,7331,0.2086,0.0025,0.0
+wiki_ko_v2,noun,658,29528,13075,0.4543,0.0012,0.0
+wiki_ko_v2,comp,658,51773,6658,0.4126,0.3964,0.0
+admin_full,nnp,10554,16460,5034,0.0581,0.0037,0.122
+admin_full,noun,10554,34026,17399,0.4035,0.0006,0.0
+admin_full,comp,10554,193790,24813,0.1839,0.2944,0.0

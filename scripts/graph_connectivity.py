@@ -13,7 +13,9 @@ wiki_ko 는 논문 결과와 같은 wiki_ko_v2 색인("번호:본문" 유지, 20
 인접 문단 간선(문서–문서)은 엔티티를 거치지 않으므로 이 지표에 들어가지 않는다.
 
 실행: python scripts/graph_connectivity.py
+결과: 화면 출력과 함께 results/track_02/graph_connectivity.csv 에 저장한다.
 """
+import csv
 import json
 import sys
 from collections import Counter
@@ -27,6 +29,7 @@ HUB_FRAC = 0.05
 
 
 def main():
+    rows = []
     for ds in ("wiki_ko_v2", "admin_full"):
         passages = load_dataset(ds)[0]
         texts = {str(p["id"]): p["text"] for p in passages}
@@ -51,6 +54,17 @@ def main():
             print(f"{ds:10s} {mode:5s} 고유 {len(uniq):7,d}  다리 {len(bridge):6,d}  "
                   f"허브끈 {hub_edges / edges:.1%}  끈없는언급 {orphan / mentions:.1%}  "
                   f"다리없는문서 {isolated / len(p2e):.1%}")
+            rows.append({"dataset": ds, "extract": mode, "documents": len(p2e), "unique_entities": len(uniq),
+                         "bridge_entities": len(bridge), "hub_edge_ratio": round(hub_edges / edges, 4),
+                         "unlinked_mention_ratio": round(orphan / mentions, 4),
+                         "isolated_doc_ratio": round(isolated / len(p2e), 4)})
+    out = ROOT / "results" / "track_02" / "graph_connectivity.csv"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with open(out, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
+    print(f"저장: {out.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

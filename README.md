@@ -56,6 +56,7 @@ python cost.py                # 제4장 <표 26>, <표 27>, <표 29>, <표 30>: 
 
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
 - `analysis/reference/appendix_b.csv`: 원고 부록 B의 수록값입니다. wiki_ko 재실행으로 바뀐 LinearRAG 계열 74칸과 원고의 이중 반올림 6칸을 수정한 값(2026-10-15)이며, `master_table.py`는 이 값과 모두 일치해야 합니다.
+- `results/track_02/graph_connectivity.csv`: 추출 방식별 그래프 연결성 지표(고유·다리 엔티티 수, 허브 끈 비율, 끈 없는 언급 비율, 고립 문서 비율). `scripts/graph_connectivity.py`의 출력이며, 입력인 색인 캐시는 원문 조각이 들어 있어 공개하지 않으므로 결과를 파일로 제공합니다. wiki_ko는 `wiki_ko_v2` 색인 기준입니다.
 - 비용 표의 입력(`analysis/cost_inputs.csv`)에 대한 설명은 다음과 같습니다.
   - 입력 토큰: 실제 요청을 재구성해 센 정확값
   - 출력 토큰: 저장된 추출 결과로 계산한 하한값
