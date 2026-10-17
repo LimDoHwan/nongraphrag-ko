@@ -21,7 +21,8 @@
 ## 저장소 구성
 
 ```
-analysis/        표 재생성 스크립트, 시스템 목록(systems.csv), 논문 수록값(reference/)
+analysis/        표 재생성 스크립트, 시스템 목록(systems.csv), 논문 수록값(reference/),
+                 탐색 실험 목록(systems_explore.csv)·분석(explore_compsp.py)
 data/
   2wiki_ko/      wiki_ko: 2WikiMultiHopQA 한국어 번역본 (Apache-2.0, LICENSE·NOTICE 참조)
   wiki_ko/       wiki_ko 엔티티 사전
@@ -128,6 +129,59 @@ python -m src.track_02.data.filter_adversarial --distractors 10000 --topk 5   # 
 
 - 연결어 후보는 실험 조건 comp와 같은 규칙(연속 명사 결합)으로 뽑았습니다. 이 점이 결과에 주는 영향은 `scripts/bridge_strata.py`로 확인할 수 있습니다(논문 제4장 추가 분석).
 - 방해 문서는 원천 풀에서 무작위로 뽑았습니다(시드 42).
+
+## 4. 탐색적 추가 실험: compsp·gazcompsp
+
+논문의 가설 검정을 마친 뒤 결과를 보고 설계한 **탐색적 실험**입니다(2026-10-17). 부록 B의 41개 시스템과 분리해 `analysis/systems_explore.csv`에 따로 두었고, 논문 표 재생성(`master_table.py`)에는 들어가지 않습니다.
+
+**동기.** comp는 연속 명사를 띄어쓰기와 상관없이 묶습니다. 행정문서의 붙여 쓴 복합명사("농업재해보험심의회")에는 유리하지만, 위키의 띄어 쓴 이름("미망인 마로지아")을 "미망인마로지아"로 붙여 다른 문서의 "마로지아"와 끊어 버립니다. 그래서 wiki_ko에서 comp가 noun보다 크게 낮았습니다.
+
+**추출 규칙.**
+
+| 이름 | 규칙 | 예 |
+|:--|:--|:--|
+| compsp | comp 엔티티 + 공백으로 나뉜 어절 조각 | "미망인 마로지아" → 미망인마로지아, 미망인, 마로지아 / "농업재해보험심의회" → 그대로 하나 |
+| gazcompsp | gazcomp(사전 최장 일치 우선) + 사전에 안 잡힌 명사에 compsp 규칙 | 사전은 논문의 PMI·4B 증류·31B 증류 사전 |
+
+**조건.** `engine.py`는 바꾸지 않고 추출기만 바꿔 끼웠습니다. 같은 경로로 comp와 gazcomp(PMI)를 다시 돌려 저장된 결과와 상위 5개가 103/103, 102/103 일치함을 확인했습니다(다른 1문항도 R@5는 같음). 검색 설정은 논문 기본값이고, 응답 생성과 판정은 10개 비교 시스템(◆)과 같습니다(gemma-4-31B-it, QA_SYS, 출력 한도 2,000, gpt-4o).
+
+**결과 재생성.**
+
+```bash
+cd analysis
+python explore_compsp.py      # GPT-Acc·Contain·R@5 표, 정확 McNemar 짝 비교, 검색 조정 R@5, 연결성 지표
+```
+
+**요약 (GPT-Acc).**
+
+| 시스템 | wiki_ko | admin single | admin full | admin hard |
+|:--|--:|--:|--:|--:|
+| compsp | 0.785 | 0.923 | 0.710 | 0.427 |
+| gazcompsp(PMI) | 0.784 | 0.910 | 0.706 | 0.437 |
+| comp | 0.632 | 0.877 | 0.674 | 0.369 |
+| noun | 0.796 | 0.873 | 0.602 | 0.330 |
+| HippoRAG2 (31B 그래프) | 0.793 | 0.933 | 0.652 | 0.233 |
+
+- compsp는 wiki_ko에서 comp보다 15.3%p 높고(p = 1.2×10⁻²⁹) noun·HippoRAG2와 차이가 없습니다. admin에서는 comp보다 3.6~5.8%p 높습니다(single만 유의).
+- 공백 조각의 효과는 사전이 약할수록 큽니다. 같은 사전의 gazcomp 대비 wiki_ko에서는 세 사전 모두 유의하게 높지만, admin hard에서는 PMI +4.9%p, 4B·31B 증류 −3.9%p입니다(모두 유의하지 않음).
+- gazcompsp에서는 통계 사전과 증류 사전의 차이가 wiki_ko에서도 유의하지 않습니다(−0.8%p).
+- compsp에 검색 조정(dense0.5 + PRF(문장))을 얹으면 단일 도약 R@5는 오르지만(0.937), 다중 도약은 comp + 조정보다 조금 낮습니다(검색만 실행, `linearrag-new-compsp-pnw0.5-prf0.6sent_*`).
+
+**다시 실행하기** (`scripts/explore_compsp/`)
+
+| 순서 | 명령 | 하는 일 |
+|:--|:--|:--|
+| 1 | `python scripts/explore_compsp/conn_pieces.py wiki_ko_v2 admin_full` | comp 대 compsp 연결성 지표 (CPU, Kiwi만) |
+| 2 | `python scripts/explore_compsp/run_compsp.py` | 검증(comp 재실행) 후 compsp admin 3개 집합 색인·검색 |
+| 3 | `python scripts/explore_compsp/run_compsp_wiki.py` | compsp wiki_ko_v2 색인·검색 |
+| 4 | `python scripts/explore_compsp/run_compsp_stack.py` | compsp + dense0.5 + PRF(문장) admin R@5 |
+| 5 | `python scripts/explore_compsp/run_gazcompsp.py` | 검증(gazcomp 재실행) 후 gazcompsp 사전 3종 × 4개 집합 색인·검색 |
+| 6 | `LLM_URLS=<31B 서버 주소들> SYSN=<compsp\|gazcompsp\|gazcompsp_llm4b\|gazcompsp_llm> python scripts/explore_compsp/compsp_eval.py qa <집합...>` | 응답 생성 |
+| 7 | `SYSN=… python scripts/explore_compsp/compsp_eval.py judge <집합...>` → `report <집합...>` | gpt-4o 판정, 결과 폴더 작성 |
+
+2~5는 bge-m3 임베딩이 필요합니다(GPU 권장). 색인은 기존 comp·gazcomp 캐시의 문장 임베딩을 재사용하므로 그 캐시가 먼저 있어야 합니다(수준 ② 검색 재실행으로 생성). 6은 기존 결과와 질문·상위 5개가 같은 문항의 답을 재사용하므로, 공개 저장소에서 처음부터 돌리면 모든 답을 새로 생성합니다.
+
+**주의.** 논문 가설 검정 이후 결과를 보고 설계한 실험이라 사전에 정한 검정이 아니며, 비교 수가 많아 다중 비교 보정을 하지 않았습니다. 논문에 인용할 때는 탐색적 결과로 표기해야 합니다.
 
 ## 공개하지 않은 것
 

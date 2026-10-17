@@ -1,0 +1,5 @@
+dataset,extract,unique_entities,bridge_entities,bridge_entities_sentence_layer,hub_edge_ratio,unlinked_mention_ratio,isolated_doc_ratio,entities_per_doc
+wiki_ko_v2,comp,51773,6658,12358,0.413,0.396,0.000,179.9
+wiki_ko_v2,compsp,66451,13359,19073,0.437,0.242,0.000,295.8
+admin_full,comp,193790,24813,44238,0.184,0.294,0.000,58.1
+admin_full,compsp,221439,36981,56245,0.259,0.200,0.000,85.6

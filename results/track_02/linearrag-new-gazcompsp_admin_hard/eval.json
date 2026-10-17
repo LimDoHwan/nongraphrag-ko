@@ -1,0 +1,12 @@
+{
+ "dataset": "admin_hard",
+ "system": "linearrag-new-gazcompsp",
+ "n": 103,
+ "gpt4o_acc": 0.4369,
+ "contain_acc": 0.3495,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_new": 99,
+ "note": "탐색적 추가 실험(2026-10-17): gazcompsp"
+}

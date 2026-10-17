@@ -1,0 +1,12 @@
+{
+ "dataset": "admin_full",
+ "system": "linearrag-new-compsp",
+ "n": 279,
+ "gpt4o_acc": 0.7097,
+ "contain_acc": 0.6165,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_new": 265,
+ "note": "탐색적 추가 실험(2026-10-17): comp 엔티티 + 공백 단위 어절 조각"
+}

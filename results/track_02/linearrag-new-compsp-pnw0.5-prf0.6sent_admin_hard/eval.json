@@ -1,0 +1,7 @@
+{
+ "dataset": "admin_hard",
+ "system": "linearrag-new-compsp-pnw0.5-prf0.6sent",
+ "n": 103,
+ "r5": 0.4272,
+ "note": "탐색적 추가 실험(2026-10-17): compsp + dense0.5 + PRF(문장, β 0.6). 검색만 실행(답변 생성 없음)"
+}

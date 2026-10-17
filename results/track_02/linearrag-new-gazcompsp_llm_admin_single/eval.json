@@ -1,0 +1,12 @@
+{
+ "dataset": "admin_single",
+ "system": "linearrag-new-gazcompsp_llm",
+ "n": 300,
+ "gpt4o_acc": 0.9067,
+ "contain_acc": 0.8367,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_new": 253,
+ "note": "탐색적 추가 실험(2026-10-17): gazcompsp_llm"
+}

@@ -1,0 +1,5 @@
+name,wiki_folder,wiki_dataset,admin_folder,note
+compsp,linearrag-new-compsp,wiki_ko_v2,linearrag-new-compsp,comp 엔티티 + 공백 단위 어절 조각
+gazcompsp(PMI),linearrag-new-gazcompsp,wiki_ko_v2,linearrag-new-gazcompsp,gazcomp(PMI) + 나머지 명사의 공백 조각
+gazcompsp(4B 증류 NER+RE),linearrag-new-gazcompsp_llm4b,wiki_ko_v2,linearrag-new-gazcompsp_llm4b,gazcomp(4B 증류) + 나머지 명사의 공백 조각
+gazcompsp(31B 증류 NER+RE),linearrag-new-gazcompsp_llm,wiki_ko_v2,linearrag-new-gazcompsp_llm,gazcomp(31B 증류) + 나머지 명사의 공백 조각
