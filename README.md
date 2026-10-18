@@ -228,7 +228,7 @@ python pnw_sweep.py    # R@5 곡선, 추출 방식별 full 최고 pnw, 정확 Mc
 
 - 스윕 결과: `results/track_02/pnw_sweep/{추출}[_prf]_{집합}.json`
 - 확인용 GPT-Acc 결과: `results/track_02/linearrag-new-{comp,gazcomp_llm4b}-sweep-pnw*_admin_*/`
-- **알려진 차이:** 부록 B의 `gazcomp(4B·31B 증류 NER+RE) +dense0.5/+dense1.0` 4개 행은 full·hard에서 질문 엔티티를 single용 증류 사전으로 뽑은 실행의 값입니다. 문서 쪽 색인은 맞는 사전입니다. 올바른 사전으로 낸 값은 이 스윕의 pnw 0.5·1.0 결과입니다(full R@5 0.681~0.695, hard 0.350~0.369). 결과 폴더는 논문 수록값을 재현하도록 그대로 두었습니다.
+- **2026-10-19 수정:** 부록 B의 `gazcomp(4B·31B 증류 NER+RE) +dense0.5/+dense1.0` 4개 행은 처음 실행 때 admin full·hard의 질문 엔티티를 single용 증류 사전으로 뽑았습니다(문서 쪽 색인은 올바름). 이 스윕 검증에서 발견해 올바른 사전으로 검색·응답(256토큰)·판정을 다시 냈고, 해당 결과 폴더와 `analysis/reference/appendix_b.csv`(24칸)를 고친 값으로 바꿨습니다.
 
 ## 공개하지 않은 것
 

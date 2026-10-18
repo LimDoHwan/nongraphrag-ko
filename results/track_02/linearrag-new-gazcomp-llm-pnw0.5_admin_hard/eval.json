@@ -2,8 +2,16 @@
  "dataset": "admin_hard",
  "system": "linearrag-new-gazcomp-llm-pnw0.5",
  "n": 103,
- "contain_acc": 0.2718,
- "gpt_acc": 0.3204,
- "gpt4o_acc": 0.3786,
- "gpt4o_n": 103
+ "contain_acc": 0.301,
+ "gpt4o_acc": 0.3689,
+ "gpt4o_n": 103,
+ "both_at5": 0.3689,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 256,
+ "note": "2026-10-19 수정: 질문 엔티티 추출 사전을 single용에서 올바른 full용 증류 사전으로 바로잡아 검색·응답·판정을 다시 냄. 이전 결과는 results/track_02_backup_glossbug_20261019/",
+ "previous": {
+  "gpt4o_acc": 0.3786,
+  "contain_acc": 0.2718
+ }
 }
