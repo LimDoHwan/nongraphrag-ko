@@ -8,6 +8,8 @@
 - LLM 관계 그래프(HippoRAG2)와의 성능·색인 비용
 - 검색 조정(dense-seed, PRF)의 효과
 
+**전체 결과는 [`RESULTS.md`](RESULTS.md)의 통합 결과표**(51개 시스템 × 4개 집합 × GPT-Acc·R@5·Contain)에서 바로 볼 수 있습니다.
+
 ## 재현 수준
 
 | 수준 | 무엇을 | 필요한 것 | 방법 |
@@ -21,6 +23,7 @@
 ## 저장소 구성
 
 ```
+RESULTS.md       통합 결과표 (analysis/integrated_table.py가 생성)
 analysis/        표 재생성 스크립트, 시스템 목록(systems.csv), 논문 수록값(reference/),
                  탐색 실험 목록(systems_explore.csv)·분석(explore_compsp.py)
 data/
@@ -50,6 +53,7 @@ GPU와 원천 데이터 없이, 저장소에 든 문항별 결과만으로 논�
 
 ```bash
 cd analysis
+python integrated_table.py     # 통합 결과표 RESULTS.md: 부록 B 41개 시스템 + 탐색 실험 10개 행
 python master_table.py        # 부록 B <표 46>: 41개 시스템 × 4개 집합, 논문 수록값(수정본)과 자동 대조
 python hypothesis_tests.py    # 제4장 <표 22>·<표 23>, <표 25>~<표 27>, <표 35>·<표 36>: 정확 McNemar 검정, 95% 신뢰구간
 python cost.py                # 제4장 <표 30>, <표 31>, <표 33>, <표 34>: 토큰, GPU-시간, ICER
