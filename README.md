@@ -210,6 +210,26 @@ python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 
 
 다시 측정하려면 OpenAI 호환 vLLM 서버(`gemma-4-31B-it`)가 필요합니다(`.env`의 `GEMMA_URL`·`GEMMA_MODEL`·`GEMMA_COOKIE`).
 
+## 6. dense 가중치(pnw) 스윕 (2026-10-18~19, admin R@5)
+
+LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
+
+```bash
+cd analysis
+python pnw_sweep.py    # R@5 곡선, 추출 방식별 full 최고 pnw, 정확 McNemar(최고점 대비·0.05 대비), 확인용 GPT-Acc
+```
+
+다시 실행하기:
+
+| 명령 | 하는 일 |
+|:--|:--|
+| `python scripts/pnw_sweep/pnw_sweep.py <추출> <집합> [--prf]` | 한 추출 방식·집합의 pnw 11개 스윕(문항별 상위 5개 저장). `engine.py`는 바꾸지 않고, 질문당 시드·활성화·엔티티 보너스를 한 번 계산한 뒤 PPR만 pnw별로 반복 |
+| `python scripts/pnw_sweep/validate.py` | 같은 설정의 저장 결과와 문항 단위 대조 |
+
+- 스윕 결과: `results/track_02/pnw_sweep/{추출}[_prf]_{집합}.json`
+- 확인용 GPT-Acc 결과: `results/track_02/linearrag-new-{comp,gazcomp_llm4b}-sweep-pnw*_admin_*/`
+- **알려진 차이:** 부록 B의 `gazcomp(4B·31B 증류 NER+RE) +dense0.5/+dense1.0` 4개 행은 full·hard에서 질문 엔티티를 single용 증류 사전으로 뽑은 실행의 값입니다. 문서 쪽 색인은 맞는 사전입니다. 올바른 사전으로 낸 값은 이 스윕의 pnw 0.5·1.0 결과입니다(full R@5 0.681~0.695, hard 0.350~0.369). 결과 폴더는 논문 수록값을 재현하도록 그대로 두었습니다.
+
 ## 공개하지 않은 것
 
 | 항목 | 이유 | 대신 제공하는 것 |

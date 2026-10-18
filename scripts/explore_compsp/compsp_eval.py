@@ -146,6 +146,8 @@ def stage_report(dss):
         for name, folder in extra + (('comp', 'linearrag-new-comp'), ('noun', 'linearrag-new-noun'),
                              ('HippoRAG2', 'graphrag-org'), ('comp+조정', 'linearrag-new-comp-pnw0.5-prf0.6sent')):
             sf = 'wiki_ko' if (ds == 'wiki_ko_v2' and folder == 'graphrag-org') else sfx
+            if not os.path.exists(f'{ROOT}/results/track_02/{folder}_{sf}/predictions.json'):
+                continue                                      # 비교 대상 결과가 없는 조합(예: 스윕 확인용 점)
             B = {x['id']: x for x in json.load(open(f'{ROOT}/results/track_02/{folder}_{sf}/predictions.json'))}
             for m in ('gpt4o', 'contain'):
                 b = sum(1 for i in A if A[i][m] and not B[i][m]); c = sum(1 for i in A if B[i][m] and not A[i][m])

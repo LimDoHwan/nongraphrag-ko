@@ -1,0 +1,5102 @@
+[
+ {
+  "id": "sgl_0",
+  "retrieved": [
+   "980929",
+   "891649",
+   "954941",
+   "842542",
+   "892550"
+  ],
+  "supporting": [
+   "980929"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_1",
+  "retrieved": [
+   "842038",
+   "845527",
+   "1042160",
+   "879108",
+   "882735"
+  ],
+  "supporting": [
+   "842038"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_2",
+  "retrieved": [
+   "959955",
+   "941494",
+   "941533",
+   "957080",
+   "944054"
+  ],
+  "supporting": [
+   "941494"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_3",
+  "retrieved": [
+   "961630",
+   "898402",
+   "1016238",
+   "951978",
+   "961643"
+  ],
+  "supporting": [
+   "898402"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_4",
+  "retrieved": [
+   "966072",
+   "968452",
+   "889457",
+   "1030678",
+   "1030684"
+  ],
+  "supporting": [
+   "968452"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_5",
+  "retrieved": [
+   "960465",
+   "844634",
+   "948137",
+   "957780",
+   "959886"
+  ],
+  "supporting": [
+   "960465"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_6",
+  "retrieved": [
+   "884170",
+   "1030225",
+   "884161",
+   "845556",
+   "861631"
+  ],
+  "supporting": [
+   "884170"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_7",
+  "retrieved": [
+   "879980",
+   "860972",
+   "845877",
+   "889861",
+   "887050"
+  ],
+  "supporting": [
+   "846724"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_8",
+  "retrieved": [
+   "880066",
+   "877405",
+   "883907",
+   "880061",
+   "883824"
+  ],
+  "supporting": [
+   "880066"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_9",
+  "retrieved": [
+   "424642",
+   "407359",
+   "416294",
+   "423024",
+   "408289"
+  ],
+  "supporting": [
+   "407359"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_10",
+  "retrieved": [
+   "880756",
+   "880631",
+   "886552",
+   "878154",
+   "888103"
+  ],
+  "supporting": [
+   "880756"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_11",
+  "retrieved": [
+   "939889",
+   "894763",
+   "956224",
+   "979417",
+   "963841"
+  ],
+  "supporting": [
+   "939889"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_12",
+  "retrieved": [
+   "886041",
+   "416611",
+   "856798",
+   "861931",
+   "968262"
+  ],
+  "supporting": [
+   "886041"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_13",
+  "retrieved": [
+   "960691",
+   "955799",
+   "430399",
+   "947913",
+   "939969"
+  ],
+  "supporting": [
+   "955799"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_14",
+  "retrieved": [
+   "877485",
+   "896412",
+   "857813",
+   "840878",
+   "861153"
+  ],
+  "supporting": [
+   "857813"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_15",
+  "retrieved": [
+   "1016775",
+   "1016796",
+   "863063",
+   "948128",
+   "947580"
+  ],
+  "supporting": [
+   "1016796"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_16",
+  "retrieved": [
+   "855551",
+   "838136",
+   "840371",
+   "892570",
+   "838281"
+  ],
+  "supporting": [
+   "855551"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_17",
+  "retrieved": [
+   "896588",
+   "879700",
+   "885758",
+   "1017536",
+   "885693"
+  ],
+  "supporting": [
+   "885758"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_18",
+  "retrieved": [
+   "430442",
+   "430426",
+   "434684",
+   "433214",
+   "858902"
+  ],
+  "supporting": [
+   "430442"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_19",
+  "retrieved": [
+   "858033",
+   "1043205",
+   "939105",
+   "941711",
+   "889512"
+  ],
+  "supporting": [
+   "858033"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_20",
+  "retrieved": [
+   "843409",
+   "882698",
+   "886578",
+   "842832",
+   "861757"
+  ],
+  "supporting": [
+   "861757"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_21",
+  "retrieved": [
+   "877744",
+   "858956",
+   "861479",
+   "895735",
+   "877724"
+  ],
+  "supporting": [
+   "877744"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_22",
+  "retrieved": [
+   "885380",
+   "854553",
+   "843211",
+   "886208",
+   "857396"
+  ],
+  "supporting": [
+   "885380"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_23",
+  "retrieved": [
+   "894367",
+   "882945",
+   "891908",
+   "846369",
+   "837162"
+  ],
+  "supporting": [
+   "858663"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_24",
+  "retrieved": [
+   "856889",
+   "882646",
+   "892356",
+   "847960",
+   "881906"
+  ],
+  "supporting": [
+   "856889"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_25",
+  "retrieved": [
+   "839992",
+   "839944",
+   "889610",
+   "843526",
+   "858923"
+  ],
+  "supporting": [
+   "839944"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_26",
+  "retrieved": [
+   "432565",
+   "432551",
+   "430914",
+   "854365",
+   "854363"
+  ],
+  "supporting": [
+   "854365"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_27",
+  "retrieved": [
+   "862262",
+   "860925",
+   "881475",
+   "877937",
+   "887212"
+  ],
+  "supporting": [
+   "860925"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_28",
+  "retrieved": [
+   "944204",
+   "948968",
+   "896235",
+   "1040043",
+   "862349"
+  ],
+  "supporting": [
+   "944204"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_29",
+  "retrieved": [
+   "436715",
+   "842047",
+   "1016255",
+   "419919",
+   "894232"
+  ],
+  "supporting": [
+   "883649"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_30",
+  "retrieved": [
+   "894196",
+   "859627",
+   "848092",
+   "859610",
+   "862554"
+  ],
+  "supporting": [
+   "894196"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_31",
+  "retrieved": [
+   "1029479",
+   "1016147",
+   "950863",
+   "861627",
+   "952393"
+  ],
+  "supporting": [
+   "1029479"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_32",
+  "retrieved": [
+   "999644",
+   "1016067",
+   "956781",
+   "889776",
+   "895668"
+  ],
+  "supporting": [
+   "999644"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_33",
+  "retrieved": [
+   "959664",
+   "1017682",
+   "1029753",
+   "981470",
+   "957523"
+  ],
+  "supporting": [
+   "1017682"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_34",
+  "retrieved": [
+   "855842",
+   "879316",
+   "882897",
+   "838221",
+   "856817"
+  ],
+  "supporting": [
+   "855842"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_35",
+  "retrieved": [
+   "1017466",
+   "940563",
+   "425804",
+   "1029994",
+   "421854"
+  ],
+  "supporting": [
+   "421854"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_36",
+  "retrieved": [
+   "434799",
+   "886147",
+   "434713",
+   "939133",
+   "861894"
+  ],
+  "supporting": [
+   "434799"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_37",
+  "retrieved": [
+   "956240",
+   "896642",
+   "960630",
+   "960465",
+   "1030586"
+  ],
+  "supporting": [
+   "897739"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_38",
+  "retrieved": [
+   "407773",
+   "417389",
+   "897963",
+   "420818",
+   "418506"
+  ],
+  "supporting": [
+   "407773"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_39",
+  "retrieved": [
+   "861325",
+   "860970",
+   "860977",
+   "968106",
+   "889929"
+  ],
+  "supporting": [
+   "860970"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_40",
+  "retrieved": [
+   "429169",
+   "892673",
+   "862836",
+   "893022",
+   "893048"
+  ],
+  "supporting": [
+   "862836"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_41",
+  "retrieved": [
+   "894622",
+   "894638",
+   "959853",
+   "433353",
+   "862780"
+  ],
+  "supporting": [
+   "894638"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_42",
+  "retrieved": [
+   "881344",
+   "881368",
+   "402946",
+   "857115",
+   "856083"
+  ],
+  "supporting": [
+   "881344"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_43",
+  "retrieved": [
+   "896692",
+   "415986",
+   "420385",
+   "420773",
+   "435962"
+  ],
+  "supporting": [
+   "896692"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_44",
+  "retrieved": [
+   "859134",
+   "1028943",
+   "859060",
+   "859119",
+   "837802"
+  ],
+  "supporting": [
+   "859060"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_45",
+  "retrieved": [
+   "896592",
+   "896584",
+   "1017342",
+   "984398",
+   "885649"
+  ],
+  "supporting": [
+   "896592"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_46",
+  "retrieved": [
+   "840780",
+   "879217",
+   "847525",
+   "847507",
+   "844114"
+  ],
+  "supporting": [
+   "840780"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_47",
+  "retrieved": [
+   "885895",
+   "878388",
+   "878737",
+   "837888",
+   "857403"
+  ],
+  "supporting": [
+   "885895"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_48",
+  "retrieved": [
+   "880068",
+   "888125",
+   "885684",
+   "879980",
+   "838049"
+  ],
+  "supporting": [
+   "880068"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_49",
+  "retrieved": [
+   "879585",
+   "858598",
+   "879592",
+   "855625",
+   "857040"
+  ],
+  "supporting": [
+   "879585"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_50",
+  "retrieved": [
+   "1031083",
+   "967192",
+   "877435",
+   "942908",
+   "945422"
+  ],
+  "supporting": [
+   "431569"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_51",
+  "retrieved": [
+   "945600",
+   "961564",
+   "896985",
+   "999543",
+   "959635"
+  ],
+  "supporting": [
+   "945600"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_52",
+  "retrieved": [
+   "967098",
+   "1017533",
+   "888843",
+   "953348",
+   "881610"
+  ],
+  "supporting": [
+   "967098"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_53",
+  "retrieved": [
+   "1017003",
+   "1017013",
+   "940743",
+   "846444",
+   "947456"
+  ],
+  "supporting": [
+   "1017003"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_54",
+  "retrieved": [
+   "886331",
+   "962924",
+   "855303",
+   "1030474",
+   "854343"
+  ],
+  "supporting": [
+   "886331"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_55",
+  "retrieved": [
+   "857953",
+   "841016",
+   "885475",
+   "844292",
+   "883936"
+  ],
+  "supporting": [
+   "841016"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_56",
+  "retrieved": [
+   "437372",
+   "428482",
+   "416487",
+   "428352",
+   "436991"
+  ],
+  "supporting": [
+   "427343"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_57",
+  "retrieved": [
+   "888448",
+   "1030448",
+   "939551",
+   "1030434",
+   "425185"
+  ],
+  "supporting": [
+   "888448"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_58",
+  "retrieved": [
+   "406887",
+   "415926",
+   "407572",
+   "405540",
+   "415898"
+  ],
+  "supporting": [
+   "406887"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_59",
+  "retrieved": [
+   "1030021",
+   "882414",
+   "846988",
+   "847015",
+   "893848"
+  ],
+  "supporting": [
+   "847015"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_60",
+  "retrieved": [
+   "1041327",
+   "980731",
+   "943315",
+   "949324",
+   "1030782"
+  ],
+  "supporting": [
+   "1041327"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_61",
+  "retrieved": [
+   "956125",
+   "889799",
+   "1015765",
+   "963211",
+   "960320"
+  ],
+  "supporting": [
+   "956125"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_62",
+  "retrieved": [
+   "840851",
+   "860317",
+   "1030513",
+   "1030515",
+   "840826"
+  ],
+  "supporting": [
+   "840851"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_63",
+  "retrieved": [
+   "985363",
+   "877495",
+   "854499",
+   "882572",
+   "896912"
+  ],
+  "supporting": [
+   "985363"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_64",
+  "retrieved": [
+   "433214",
+   "408145",
+   "845281",
+   "431720",
+   "437967"
+  ],
+  "supporting": [
+   "408145"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_65",
+  "retrieved": [
+   "893199",
+   "858954",
+   "862262",
+   "885956",
+   "886379"
+  ],
+  "supporting": [
+   "858954"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_66",
+  "retrieved": [
+   "885150",
+   "841447",
+   "844052",
+   "1017028",
+   "888103"
+  ],
+  "supporting": [
+   "841447"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_67",
+  "retrieved": [
+   "839364",
+   "856445",
+   "892716",
+   "1030431",
+   "1030432"
+  ],
+  "supporting": [
+   "856445"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_68",
+  "retrieved": [
+   "894408",
+   "1031498",
+   "892317",
+   "1031102",
+   "944269"
+  ],
+  "supporting": [
+   "894408"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_69",
+  "retrieved": [
+   "424349",
+   "417768",
+   "938871",
+   "855703",
+   "431657"
+  ],
+  "supporting": [
+   "429682"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_70",
+  "retrieved": [
+   "885569",
+   "985219",
+   "885752",
+   "854634",
+   "1017299"
+  ],
+  "supporting": [
+   "885569"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_71",
+  "retrieved": [
+   "968451",
+   "845153",
+   "1016211",
+   "1045378",
+   "949085"
+  ],
+  "supporting": [
+   "968451"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_72",
+  "retrieved": [
+   "401921",
+   "947456",
+   "425225",
+   "895148",
+   "420569"
+  ],
+  "supporting": [
+   "420569"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_73",
+  "retrieved": [
+   "879014",
+   "847891",
+   "844762",
+   "860941",
+   "839882"
+  ],
+  "supporting": [
+   "847891"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_74",
+  "retrieved": [
+   "430777",
+   "433353",
+   "940308",
+   "435548",
+   "435234"
+  ],
+  "supporting": [
+   "430777"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_75",
+  "retrieved": [
+   "1016444",
+   "897923",
+   "958069",
+   "958031",
+   "1042340"
+  ],
+  "supporting": [
+   "1016444"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_76",
+  "retrieved": [
+   "886867",
+   "883393",
+   "846035",
+   "886522",
+   "893607"
+  ],
+  "supporting": [
+   "883393"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_77",
+  "retrieved": [
+   "427709",
+   "886173",
+   "431993",
+   "877500",
+   "437066"
+  ],
+  "supporting": [
+   "427709"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_78",
+  "retrieved": [
+   "423487",
+   "1016186",
+   "943007",
+   "857646",
+   "955302"
+  ],
+  "supporting": [
+   "423487"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_79",
+  "retrieved": [
+   "1030330",
+   "1028875",
+   "856891",
+   "1042343",
+   "958124"
+  ],
+  "supporting": [
+   "1028875"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_80",
+  "retrieved": [
+   "960306",
+   "859913",
+   "890014",
+   "960344",
+   "896018"
+  ],
+  "supporting": [
+   "890014"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_81",
+  "retrieved": [
+   "945887",
+   "839442",
+   "961240",
+   "897568",
+   "878252"
+  ],
+  "supporting": [
+   "945887"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_82",
+  "retrieved": [
+   "856834",
+   "856797",
+   "880850",
+   "1015827",
+   "838296"
+  ],
+  "supporting": [
+   "856834"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_83",
+  "retrieved": [
+   "968206",
+   "432961",
+   "431720",
+   "415729",
+   "415986"
+  ],
+  "supporting": [
+   "432961"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_84",
+  "retrieved": [
+   "883407",
+   "838450",
+   "841574",
+   "1017264",
+   "885331"
+  ],
+  "supporting": [
+   "883407"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_85",
+  "retrieved": [
+   "419134",
+   "1017358",
+   "419738",
+   "419729",
+   "981799"
+  ],
+  "supporting": [
+   "419134"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_86",
+  "retrieved": [
+   "855581",
+   "840569",
+   "962265",
+   "858485",
+   "955985"
+  ],
+  "supporting": [
+   "855581"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_87",
+  "retrieved": [
+   "889834",
+   "436195",
+   "877504",
+   "433843",
+   "893569"
+  ],
+  "supporting": [
+   "889834"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_88",
+  "retrieved": [
+   "854404",
+   "846885",
+   "960691",
+   "947913",
+   "943853"
+  ],
+  "supporting": [
+   "854404"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_89",
+  "retrieved": [
+   "940712",
+   "434061",
+   "434705",
+   "943357",
+   "893975"
+  ],
+  "supporting": [
+   "940712"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_90",
+  "retrieved": [
+   "942455",
+   "891077",
+   "890589",
+   "939832",
+   "883930"
+  ],
+  "supporting": [
+   "942455"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_91",
+  "retrieved": [
+   "886507",
+   "949488",
+   "855444",
+   "855450",
+   "942248"
+  ],
+  "supporting": [
+   "886507"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_92",
+  "retrieved": [
+   "859438",
+   "437648",
+   "430937",
+   "1042007",
+   "430857"
+  ],
+  "supporting": [
+   "859438"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_93",
+  "retrieved": [
+   "1017267",
+   "885147",
+   "880628",
+   "842064",
+   "1029675"
+  ],
+  "supporting": [
+   "1017267"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_94",
+  "retrieved": [
+   "1031560",
+   "1030938",
+   "897268",
+   "890943",
+   "979940"
+  ],
+  "supporting": [
+   "1030938"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_95",
+  "retrieved": [
+   "947858",
+   "947435",
+   "1017198",
+   "1017199",
+   "947358"
+  ],
+  "supporting": [
+   "1017198"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_96",
+  "retrieved": [
+   "886179",
+   "882078",
+   "880042",
+   "880994",
+   "887054"
+  ],
+  "supporting": [
+   "886179"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_97",
+  "retrieved": [
+   "857749",
+   "886701",
+   "878352",
+   "424931",
+   "856056"
+  ],
+  "supporting": [
+   "857749"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_98",
+  "retrieved": [
+   "882937",
+   "847860",
+   "939909",
+   "976694",
+   "888057"
+  ],
+  "supporting": [
+   "847860"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_99",
+  "retrieved": [
+   "945779",
+   "942122",
+   "1040406",
+   "943559",
+   "950810"
+  ],
+  "supporting": [
+   "945779"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_100",
+  "retrieved": [
+   "889928",
+   "950397",
+   "943470",
+   "401577",
+   "846435"
+  ],
+  "supporting": [
+   "889928"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_101",
+  "retrieved": [
+   "1030434",
+   "859461",
+   "846363",
+   "880853",
+   "885934"
+  ],
+  "supporting": [
+   "859461"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_102",
+  "retrieved": [
+   "839742",
+   "839710",
+   "1030225",
+   "858618",
+   "861599"
+  ],
+  "supporting": [
+   "839742"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_103",
+  "retrieved": [
+   "420373",
+   "432844",
+   "431341",
+   "431316",
+   "435392"
+  ],
+  "supporting": [
+   "434115"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_104",
+  "retrieved": [
+   "959718",
+   "1043866",
+   "959707",
+   "856939",
+   "1043358"
+  ],
+  "supporting": [
+   "1046898"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_105",
+  "retrieved": [
+   "958781",
+   "959642",
+   "949954",
+   "943572",
+   "1031364"
+  ],
+  "supporting": [
+   "959642"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_106",
+  "retrieved": [
+   "888120",
+   "896093",
+   "895705",
+   "1030953",
+   "896877"
+  ],
+  "supporting": [
+   "837498"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_107",
+  "retrieved": [
+   "959955",
+   "944054",
+   "957080",
+   "887677",
+   "959964"
+  ],
+  "supporting": [
+   "951354"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_108",
+  "retrieved": [
+   "839364",
+   "838825",
+   "839540",
+   "860580",
+   "854490"
+  ],
+  "supporting": [
+   "838825"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_109",
+  "retrieved": [
+   "947922",
+   "947953",
+   "947937",
+   "966061",
+   "954231"
+  ],
+  "supporting": [
+   "954231"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_110",
+  "retrieved": [
+   "882402",
+   "882557",
+   "897665",
+   "843526",
+   "883382"
+  ],
+  "supporting": [
+   "882402"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_111",
+  "retrieved": [
+   "1017263",
+   "1031122",
+   "894210",
+   "955635",
+   "1031151"
+  ],
+  "supporting": [
+   "1017263"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_112",
+  "retrieved": [
+   "402868",
+   "422136",
+   "428043",
+   "946729",
+   "400574"
+  ],
+  "supporting": [
+   "402868"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_113",
+  "retrieved": [
+   "886772",
+   "431665",
+   "428400",
+   "895450",
+   "956202"
+  ],
+  "supporting": [
+   "886772"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_114",
+  "retrieved": [
+   "838245",
+   "844911",
+   "884239",
+   "880489",
+   "877432"
+  ],
+  "supporting": [
+   "844911"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_115",
+  "retrieved": [
+   "1017600",
+   "1046878",
+   "980702",
+   "1017142",
+   "892373"
+  ],
+  "supporting": [
+   "1017600"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_116",
+  "retrieved": [
+   "844494",
+   "857610",
+   "880489",
+   "884726",
+   "860964"
+  ],
+  "supporting": [
+   "857610"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_117",
+  "retrieved": [
+   "860972",
+   "860926",
+   "844292",
+   "883026",
+   "844634"
+  ],
+  "supporting": [
+   "860926"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_118",
+  "retrieved": [
+   "981885",
+   "944011",
+   "886145",
+   "895985",
+   "941685"
+  ],
+  "supporting": [
+   "941685"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_119",
+  "retrieved": [
+   "939557",
+   "999101",
+   "963192",
+   "999109",
+   "953284"
+  ],
+  "supporting": [
+   "945923"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_120",
+  "retrieved": [
+   "968349",
+   "890026",
+   "1031323",
+   "985464",
+   "859171"
+  ],
+  "supporting": [
+   "985464"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_121",
+  "retrieved": [
+   "420669",
+   "417500",
+   "956178",
+   "407768",
+   "425076"
+  ],
+  "supporting": [
+   "420669"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_122",
+  "retrieved": [
+   "898580",
+   "858507",
+   "898608",
+   "954867",
+   "842963"
+  ],
+  "supporting": [
+   "898580"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_123",
+  "retrieved": [
+   "885649",
+   "885756",
+   "857105",
+   "861658",
+   "885747"
+  ],
+  "supporting": [
+   "885756"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_124",
+  "retrieved": [
+   "1016016",
+   "889610",
+   "1029344",
+   "1015846",
+   "843671"
+  ],
+  "supporting": [
+   "843671"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_125",
+  "retrieved": [
+   "942886",
+   "968035",
+   "892311",
+   "1043205",
+   "1046636"
+  ],
+  "supporting": [
+   "942886"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_126",
+  "retrieved": [
+   "882575",
+   "884822",
+   "843193",
+   "879554",
+   "893522"
+  ],
+  "supporting": [
+   "882575"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_127",
+  "retrieved": [
+   "880645",
+   "955436",
+   "845317",
+   "1030658",
+   "898021"
+  ],
+  "supporting": [
+   "880645"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_128",
+  "retrieved": [
+   "889645",
+   "1029367",
+   "897886",
+   "843210",
+   "847411"
+  ],
+  "supporting": [
+   "889645"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_129",
+  "retrieved": [
+   "897923",
+   "948342",
+   "960754",
+   "963368",
+   "948347"
+  ],
+  "supporting": [
+   "945990"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_130",
+  "retrieved": [
+   "397952",
+   "404977",
+   "421162",
+   "879954",
+   "878880"
+  ],
+  "supporting": [
+   "397952"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_131",
+  "retrieved": [
+   "417146",
+   "879592",
+   "881823",
+   "839364",
+   "879382"
+  ],
+  "supporting": [
+   "417146"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_132",
+  "retrieved": [
+   "1017261",
+   "430473",
+   "429780",
+   "437658",
+   "436481"
+  ],
+  "supporting": [
+   "1017261"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_133",
+  "retrieved": [
+   "840880",
+   "840961",
+   "841080",
+   "941268",
+   "883475"
+  ],
+  "supporting": [
+   "840880"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_134",
+  "retrieved": [
+   "433696",
+   "877411",
+   "427359",
+   "426846",
+   "956014"
+  ],
+  "supporting": [
+   "433696"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_135",
+  "retrieved": [
+   "880162",
+   "1029165",
+   "888625",
+   "1016422",
+   "854735"
+  ],
+  "supporting": [
+   "880162"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_136",
+  "retrieved": [
+   "886296",
+   "402590",
+   "844942",
+   "1029649",
+   "416760"
+  ],
+  "supporting": [
+   "424941"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_137",
+  "retrieved": [
+   "429689",
+   "897124",
+   "427557",
+   "434084",
+   "429978"
+  ],
+  "supporting": [
+   "428502"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_138",
+  "retrieved": [
+   "404807",
+   "425163",
+   "418035",
+   "407580",
+   "886992"
+  ],
+  "supporting": [
+   "404807"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_139",
+  "retrieved": [
+   "953751",
+   "947278",
+   "891389",
+   "1016597",
+   "958788"
+  ],
+  "supporting": [
+   "953751"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_140",
+  "retrieved": [
+   "428434",
+   "859999",
+   "420456",
+   "428656",
+   "427576"
+  ],
+  "supporting": [
+   "428434"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_141",
+  "retrieved": [
+   "845848",
+   "881306",
+   "878139",
+   "886607",
+   "1042317"
+  ],
+  "supporting": [
+   "845848"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_142",
+  "retrieved": [
+   "856266",
+   "883400",
+   "883399",
+   "877869",
+   "885449"
+  ],
+  "supporting": [
+   "856266"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_143",
+  "retrieved": [
+   "840960",
+   "840901",
+   "432034",
+   "883367",
+   "951007"
+  ],
+  "supporting": [
+   "840960"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_144",
+  "retrieved": [
+   "893577",
+   "879619",
+   "887206",
+   "837873",
+   "885752"
+  ],
+  "supporting": [
+   "887206"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_145",
+  "retrieved": [
+   "949087",
+   "961247",
+   "952532",
+   "950305",
+   "1016933"
+  ],
+  "supporting": [
+   "949087"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_146",
+  "retrieved": [
+   "844863",
+   "862367",
+   "857727",
+   "843959",
+   "862361"
+  ],
+  "supporting": [
+   "862367"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_147",
+  "retrieved": [
+   "1016122",
+   "411719",
+   "401789",
+   "406692",
+   "858279"
+  ],
+  "supporting": [
+   "411719"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_148",
+  "retrieved": [
+   "955750",
+   "882031",
+   "939969",
+   "843410",
+   "1046611"
+  ],
+  "supporting": [
+   "939969"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_149",
+  "retrieved": [
+   "844929",
+   "886947",
+   "844865",
+   "844942",
+   "861348"
+  ],
+  "supporting": [
+   "844929"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_150",
+  "retrieved": [
+   "416269",
+   "417880",
+   "416256",
+   "398173",
+   "417278"
+  ],
+  "supporting": [
+   "416269"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_151",
+  "retrieved": [
+   "893743",
+   "893048",
+   "840697",
+   "854352",
+   "854353"
+  ],
+  "supporting": [
+   "893743"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_152",
+  "retrieved": [
+   "1028845",
+   "886948",
+   "1030457",
+   "884467",
+   "881259"
+  ],
+  "supporting": [
+   "1028845"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_153",
+  "retrieved": [
+   "939783",
+   "880629",
+   "1030253",
+   "883644",
+   "879414"
+  ],
+  "supporting": [
+   "939783"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_154",
+  "retrieved": [
+   "858024",
+   "431097",
+   "432299",
+   "431004",
+   "1040017"
+  ],
+  "supporting": [
+   "858024"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_155",
+  "retrieved": [
+   "1029273",
+   "1029780",
+   "947511",
+   "1030105",
+   "879532"
+  ],
+  "supporting": [
+   "879532"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_156",
+  "retrieved": [
+   "842805",
+   "882698",
+   "854558",
+   "879740",
+   "843409"
+  ],
+  "supporting": [
+   "842805"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_157",
+  "retrieved": [
+   "1017371",
+   "856390",
+   "877723",
+   "886500",
+   "856990"
+  ],
+  "supporting": [
+   "877723"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_158",
+  "retrieved": [
+   "886891",
+   "897578",
+   "1031245",
+   "858074",
+   "880242"
+  ],
+  "supporting": [
+   "886891"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_159",
+  "retrieved": [
+   "889292",
+   "952586",
+   "889290",
+   "947926",
+   "984872"
+  ],
+  "supporting": [
+   "889292"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_160",
+  "retrieved": [
+   "881530",
+   "881531",
+   "885120",
+   "857215",
+   "887860"
+  ],
+  "supporting": [
+   "881530"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_161",
+  "retrieved": [
+   "882578",
+   "854959",
+   "886589",
+   "854914",
+   "878147"
+  ],
+  "supporting": [
+   "854959"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_162",
+  "retrieved": [
+   "886640",
+   "891110",
+   "878147",
+   "843003",
+   "958084"
+  ],
+  "supporting": [
+   "886640"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_163",
+  "retrieved": [
+   "886643",
+   "877966",
+   "877738",
+   "877782",
+   "879091"
+  ],
+  "supporting": [
+   "886643"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_164",
+  "retrieved": [
+   "952982",
+   "973146",
+   "940115",
+   "999358",
+   "940845"
+  ],
+  "supporting": [
+   "952982"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_165",
+  "retrieved": [
+   "857024",
+   "857044",
+   "1042828",
+   "982344",
+   "881368"
+  ],
+  "supporting": [
+   "857024"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_166",
+  "retrieved": [
+   "887212",
+   "846472",
+   "846806",
+   "1030207",
+   "846840"
+  ],
+  "supporting": [
+   "846472"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_167",
+  "retrieved": [
+   "895286",
+   "843505",
+   "878789",
+   "837820",
+   "845532"
+  ],
+  "supporting": [
+   "843505"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_168",
+  "retrieved": [
+   "942219",
+   "405483",
+   "950335",
+   "858739",
+   "946955"
+  ],
+  "supporting": [
+   "405483"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_169",
+  "retrieved": [
+   "941950",
+   "941938",
+   "945887",
+   "978221",
+   "952428"
+  ],
+  "supporting": [
+   "941950"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_170",
+  "retrieved": [
+   "858522",
+   "877963",
+   "879112",
+   "887212",
+   "858509"
+  ],
+  "supporting": [
+   "858522"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_171",
+  "retrieved": [
+   "882004",
+   "1030451",
+   "840913",
+   "840947",
+   "840901"
+  ],
+  "supporting": [
+   "1030451"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_172",
+  "retrieved": [
+   "836899",
+   "884701",
+   "859867",
+   "878587",
+   "883840"
+  ],
+  "supporting": [
+   "836899"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_173",
+  "retrieved": [
+   "1029912",
+   "881929",
+   "889457",
+   "1030678",
+   "1030684"
+  ],
+  "supporting": [
+   "889457"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_174",
+  "retrieved": [
+   "966061",
+   "947922",
+   "947937",
+   "952396",
+   "950949"
+  ],
+  "supporting": [
+   "947922"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_175",
+  "retrieved": [
+   "411963",
+   "422987",
+   "415844",
+   "424311",
+   "407580"
+  ],
+  "supporting": [
+   "422987"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_176",
+  "retrieved": [
+   "419083",
+   "411817",
+   "892570",
+   "959080",
+   "424642"
+  ],
+  "supporting": [
+   "411817"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_177",
+  "retrieved": [
+   "427122",
+   "436328",
+   "427052",
+   "841821",
+   "426903"
+  ],
+  "supporting": [
+   "427122"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_178",
+  "retrieved": [
+   "898406",
+   "855210",
+   "842290",
+   "963212",
+   "963221"
+  ],
+  "supporting": [
+   "855210"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_179",
+  "retrieved": [
+   "968131",
+   "968125",
+   "947020",
+   "955311",
+   "955985"
+  ],
+  "supporting": [
+   "968131"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_180",
+  "retrieved": [
+   "861432",
+   "895406",
+   "844694",
+   "886841",
+   "861492"
+  ],
+  "supporting": [
+   "861432"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_181",
+  "retrieved": [
+   "983284",
+   "983250",
+   "959258",
+   "955333",
+   "957791"
+  ],
+  "supporting": [
+   "983284"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_182",
+  "retrieved": [
+   "429344",
+   "428172",
+   "886879",
+   "880081",
+   "960295"
+  ],
+  "supporting": [
+   "429344"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_183",
+  "retrieved": [
+   "886130",
+   "894954",
+   "999101",
+   "884283",
+   "843335"
+  ],
+  "supporting": [
+   "886130"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_184",
+  "retrieved": [
+   "436290",
+   "877985",
+   "430937",
+   "895450",
+   "862173"
+  ],
+  "supporting": [
+   "436290"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_185",
+  "retrieved": [
+   "948139",
+   "877983",
+   "1042284",
+   "998317",
+   "428386"
+  ],
+  "supporting": [
+   "877983"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_186",
+  "retrieved": [
+   "841204",
+   "968452",
+   "966072",
+   "960295",
+   "423028"
+  ],
+  "supporting": [
+   "841204"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_187",
+  "retrieved": [
+   "895765",
+   "960344",
+   "960319",
+   "1040017",
+   "897173"
+  ],
+  "supporting": [
+   "895765"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_188",
+  "retrieved": [
+   "1031467",
+   "957840",
+   "1031061",
+   "940010",
+   "980918"
+  ],
+  "supporting": [
+   "960749"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_189",
+  "retrieved": [
+   "886188",
+   "878958",
+   "878989",
+   "887565",
+   "838226"
+  ],
+  "supporting": [
+   "838226"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_190",
+  "retrieved": [
+   "422483",
+   "396494",
+   "944180",
+   "402958",
+   "407572"
+  ],
+  "supporting": [
+   "402958"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_191",
+  "retrieved": [
+   "841350",
+   "939187",
+   "841737",
+   "950092",
+   "1017066"
+  ],
+  "supporting": [
+   "841350"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_192",
+  "retrieved": [
+   "859273",
+   "840259",
+   "853822",
+   "885714",
+   "839949"
+  ],
+  "supporting": [
+   "859273"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_193",
+  "retrieved": [
+   "860023",
+   "418595",
+   "845361",
+   "404283",
+   "845301"
+  ],
+  "supporting": [
+   "860023"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_194",
+  "retrieved": [
+   "854613",
+   "857813",
+   "839846",
+   "878105",
+   "846007"
+  ],
+  "supporting": [
+   "854613"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_195",
+  "retrieved": [
+   "1041315",
+   "960660",
+   "938927",
+   "956224",
+   "968566"
+  ],
+  "supporting": [
+   "1041315"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_196",
+  "retrieved": [
+   "428790",
+   "428006",
+   "428040",
+   "428430",
+   "431869"
+  ],
+  "supporting": [
+   "428790"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_197",
+  "retrieved": [
+   "886867",
+   "839847",
+   "890589",
+   "961408",
+   "945680"
+  ],
+  "supporting": [
+   "839847"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_198",
+  "retrieved": [
+   "949957",
+   "950267",
+   "895537",
+   "954466",
+   "950086"
+  ],
+  "supporting": [
+   "950267"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_199",
+  "retrieved": [
+   "855475",
+   "887901",
+   "963368",
+   "940239",
+   "940811"
+  ],
+  "supporting": [
+   "881929"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_200",
+  "retrieved": [
+   "425412",
+   "420456",
+   "428883",
+   "423103",
+   "425411"
+  ],
+  "supporting": [
+   "420456"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_201",
+  "retrieved": [
+   "962375",
+   "962323",
+   "962345",
+   "893996",
+   "953289"
+  ],
+  "supporting": [
+   "962375"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_202",
+  "retrieved": [
+   "960243",
+   "841966",
+   "889351",
+   "983688",
+   "887548"
+  ],
+  "supporting": [
+   "960243"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_203",
+  "retrieved": [
+   "840315",
+   "941373",
+   "842269",
+   "889634",
+   "886841"
+  ],
+  "supporting": [
+   "840315"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_204",
+  "retrieved": [
+   "424642",
+   "407359",
+   "406970",
+   "404977",
+   "408289"
+  ],
+  "supporting": [
+   "424642"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_205",
+  "retrieved": [
+   "893985",
+   "411263",
+   "401972",
+   "418595",
+   "406807"
+  ],
+  "supporting": [
+   "418595"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_206",
+  "retrieved": [
+   "983355",
+   "1042451",
+   "946064",
+   "947987",
+   "956781"
+  ],
+  "supporting": [
+   "983355"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_207",
+  "retrieved": [
+   "1030434",
+   "887860",
+   "837817",
+   "844436",
+   "878826"
+  ],
+  "supporting": [
+   "1030434"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_208",
+  "retrieved": [
+   "422260",
+   "422841",
+   "420433",
+   "877738",
+   "981227"
+  ],
+  "supporting": [
+   "422260"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_209",
+  "retrieved": [
+   "886615",
+   "947667",
+   "861565",
+   "880015",
+   "968117"
+  ],
+  "supporting": [
+   "886615"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_210",
+  "retrieved": [
+   "941640",
+   "881929",
+   "897113",
+   "940343",
+   "888824"
+  ],
+  "supporting": [
+   "430388"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_211",
+  "retrieved": [
+   "958420",
+   "1042720",
+   "957868",
+   "892538",
+   "954364"
+  ],
+  "supporting": [
+   "958420"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_212",
+  "retrieved": [
+   "940308",
+   "960420",
+   "896592",
+   "896584",
+   "1017342"
+  ],
+  "supporting": [
+   "896584"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_213",
+  "retrieved": [
+   "844535",
+   "947322",
+   "879080",
+   "960377",
+   "957080"
+  ],
+  "supporting": [
+   "844535"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_214",
+  "retrieved": [
+   "398493",
+   "411598",
+   "421377",
+   "404180",
+   "421978"
+  ],
+  "supporting": [
+   "398493"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_215",
+  "retrieved": [
+   "858036",
+   "837907",
+   "846724",
+   "860770",
+   "888834"
+  ],
+  "supporting": [
+   "837907"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_216",
+  "retrieved": [
+   "893199",
+   "886306",
+   "855996",
+   "846707",
+   "883179"
+  ],
+  "supporting": [
+   "846707"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_217",
+  "retrieved": [
+   "846885",
+   "848209",
+   "846859",
+   "853801",
+   "845335"
+  ],
+  "supporting": [
+   "846885"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_218",
+  "retrieved": [
+   "952396",
+   "952391",
+   "895946",
+   "967179",
+   "1028927"
+  ],
+  "supporting": [
+   "952396"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_219",
+  "retrieved": [
+   "1015836",
+   "1046808",
+   "955436",
+   "945538",
+   "842515"
+  ],
+  "supporting": [
+   "1015836"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_220",
+  "retrieved": [
+   "425456",
+   "1043110",
+   "412065",
+   "843400",
+   "859499"
+  ],
+  "supporting": [
+   "843400"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_221",
+  "retrieved": [
+   "959774",
+   "892735",
+   "945416",
+   "958974",
+   "957080"
+  ],
+  "supporting": [
+   "957080"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_222",
+  "retrieved": [
+   "843075",
+   "878889",
+   "966287",
+   "939463",
+   "888057"
+  ],
+  "supporting": [
+   "843075"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_223",
+  "retrieved": [
+   "402659",
+   "403461",
+   "404691",
+   "404668",
+   "422462"
+  ],
+  "supporting": [
+   "404668"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_224",
+  "retrieved": [
+   "838547",
+   "431210",
+   "1016933",
+   "415898",
+   "958765"
+  ],
+  "supporting": [
+   "838547"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_225",
+  "retrieved": [
+   "955970",
+   "963542",
+   "955985",
+   "946193",
+   "1030341"
+  ],
+  "supporting": [
+   "955985"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_226",
+  "retrieved": [
+   "953284",
+   "1017341",
+   "891709",
+   "980918",
+   "894504"
+  ],
+  "supporting": [
+   "953284"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_227",
+  "retrieved": [
+   "398949",
+   "1017502",
+   "398309",
+   "418246",
+   "398547"
+  ],
+  "supporting": [
+   "398309"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_228",
+  "retrieved": [
+   "846771",
+   "846637",
+   "846867",
+   "846749",
+   "846799"
+  ],
+  "supporting": [
+   "846771"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_229",
+  "retrieved": [
+   "843562",
+   "880489",
+   "844740",
+   "879115",
+   "892370"
+  ],
+  "supporting": [
+   "843562"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_230",
+  "retrieved": [
+   "846778",
+   "857884",
+   "436715",
+   "880068",
+   "839840"
+  ],
+  "supporting": [
+   "846778"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_231",
+  "retrieved": [
+   "859873",
+   "954611",
+   "951921",
+   "951520",
+   "884349"
+  ],
+  "supporting": [
+   "859873"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_232",
+  "retrieved": [
+   "406263",
+   "886023",
+   "854346",
+   "405889",
+   "399811"
+  ],
+  "supporting": [
+   "406263"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_233",
+  "retrieved": [
+   "423204",
+   "411212",
+   "415844",
+   "415986",
+   "424952"
+  ],
+  "supporting": [
+   "411212"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_234",
+  "retrieved": [
+   "893573",
+   "1031105",
+   "897782",
+   "889014",
+   "895329"
+  ],
+  "supporting": [
+   "893573"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_235",
+  "retrieved": [
+   "433895",
+   "419063",
+   "435138",
+   "891686",
+   "435000"
+  ],
+  "supporting": [
+   "433895"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_236",
+  "retrieved": [
+   "1044394",
+   "962399",
+   "422954",
+   "946978",
+   "1029404"
+  ],
+  "supporting": [
+   "1044394"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_237",
+  "retrieved": [
+   "847114",
+   "1041327",
+   "949324",
+   "980731",
+   "948335"
+  ],
+  "supporting": [
+   "847114"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_238",
+  "retrieved": [
+   "889603",
+   "880830",
+   "877485",
+   "886444",
+   "883026"
+  ],
+  "supporting": [
+   "889603"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_239",
+  "retrieved": [
+   "862152",
+   "861757",
+   "863007",
+   "862740",
+   "862274"
+  ],
+  "supporting": [
+   "862152"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_240",
+  "retrieved": [
+   "403489",
+   "408630",
+   "421580",
+   "886122",
+   "955313"
+  ],
+  "supporting": [
+   "403489"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_241",
+  "retrieved": [
+   "837388",
+   "855676",
+   "878670",
+   "837366",
+   "839676"
+  ],
+  "supporting": [
+   "837388"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_242",
+  "retrieved": [
+   "889627",
+   "953344",
+   "859499",
+   "859517",
+   "434892"
+  ],
+  "supporting": [
+   "889627"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_243",
+  "retrieved": [
+   "423144",
+   "411070",
+   "416700",
+   "957911",
+   "421391"
+  ],
+  "supporting": [
+   "411070"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_244",
+  "retrieved": [
+   "431308",
+   "955334",
+   "431506",
+   "427788",
+   "883052"
+  ],
+  "supporting": [
+   "431308"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_245",
+  "retrieved": [
+   "843548",
+   "843497",
+   "891931",
+   "883021",
+   "888663"
+  ],
+  "supporting": [
+   "843548"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_246",
+  "retrieved": [
+   "839759",
+   "841786",
+   "855383",
+   "860227",
+   "878840"
+  ],
+  "supporting": [
+   "839759"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_247",
+  "retrieved": [
+   "431205",
+   "1042224",
+   "431154",
+   "896933",
+   "1031420"
+  ],
+  "supporting": [
+   "431154"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_248",
+  "retrieved": [
+   "419168",
+   "941845",
+   "956224",
+   "1039978",
+   "1047171"
+  ],
+  "supporting": [
+   "419168"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_249",
+  "retrieved": [
+   "942294",
+   "953751",
+   "963588",
+   "958805",
+   "958788"
+  ],
+  "supporting": [
+   "942294"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_250",
+  "retrieved": [
+   "1044138",
+   "980482",
+   "838548",
+   "1017025",
+   "897768"
+  ],
+  "supporting": [
+   "1044138"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_251",
+  "retrieved": [
+   "425163",
+   "407580",
+   "425172",
+   "425256",
+   "404807"
+  ],
+  "supporting": [
+   "425163"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_252",
+  "retrieved": [
+   "837255",
+   "845777",
+   "845914",
+   "884726",
+   "882431"
+  ],
+  "supporting": [
+   "884726"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_253",
+  "retrieved": [
+   "425638",
+   "897578",
+   "428400",
+   "887002",
+   "887001"
+  ],
+  "supporting": [
+   "897578"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_254",
+  "retrieved": [
+   "418035",
+   "418391",
+   "888125",
+   "407580",
+   "416430"
+  ],
+  "supporting": [
+   "418035"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_255",
+  "retrieved": [
+   "854035",
+   "843842",
+   "853936",
+   "845877",
+   "877869"
+  ],
+  "supporting": [
+   "843842"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_256",
+  "retrieved": [
+   "941962",
+   "944180",
+   "836703",
+   "966033",
+   "962141"
+  ],
+  "supporting": [
+   "941962"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_257",
+  "retrieved": [
+   "427941",
+   "427833",
+   "426048",
+   "426149",
+   "429589"
+  ],
+  "supporting": [
+   "427941"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_258",
+  "retrieved": [
+   "1042135",
+   "943853",
+   "1040870",
+   "966293",
+   "946729"
+  ],
+  "supporting": [
+   "1042135"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_259",
+  "retrieved": [
+   "954364",
+   "939117",
+   "939133",
+   "1044138",
+   "980482"
+  ],
+  "supporting": [
+   "954364"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_260",
+  "retrieved": [
+   "880035",
+   "891798",
+   "892570",
+   "889696",
+   "402272"
+  ],
+  "supporting": [
+   "880035"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_261",
+  "retrieved": [
+   "884898",
+   "1030272",
+   "844083",
+   "417567",
+   "840747"
+  ],
+  "supporting": [
+   "841329"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_262",
+  "retrieved": [
+   "888824",
+   "942253",
+   "1016933",
+   "959413",
+   "861108"
+  ],
+  "supporting": [
+   "942253"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_263",
+  "retrieved": [
+   "882464",
+   "843281",
+   "857032",
+   "838745",
+   "837162"
+  ],
+  "supporting": [
+   "882464"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_264",
+  "retrieved": [
+   "897501",
+   "436174",
+   "1047124",
+   "436980",
+   "879060"
+  ],
+  "supporting": [
+   "436174"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_265",
+  "retrieved": [
+   "1041443",
+   "898115",
+   "400303",
+   "888620",
+   "1046643"
+  ],
+  "supporting": [
+   "1041443"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_266",
+  "retrieved": [
+   "983122",
+   "1041706",
+   "981799",
+   "894637",
+   "952829"
+  ],
+  "supporting": [
+   "1041706"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_267",
+  "retrieved": [
+   "861347",
+   "887301",
+   "853932",
+   "883335",
+   "886416"
+  ],
+  "supporting": [
+   "861347"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_268",
+  "retrieved": [
+   "420708",
+   "418070",
+   "402244",
+   "422106",
+   "423747"
+  ],
+  "supporting": [
+   "886283"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_269",
+  "retrieved": [
+   "411071",
+   "402994",
+   "416294",
+   "408325",
+   "424876"
+  ],
+  "supporting": [
+   "402994"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_270",
+  "retrieved": [
+   "431565",
+   "837465",
+   "431657",
+   "429894",
+   "429166"
+  ],
+  "supporting": [
+   "431565"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_271",
+  "retrieved": [
+   "980796",
+   "980791",
+   "976868",
+   "896058",
+   "948342"
+  ],
+  "supporting": [
+   "980796"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_272",
+  "retrieved": [
+   "880015",
+   "846707",
+   "959886",
+   "861596",
+   "883026"
+  ],
+  "supporting": [
+   "880015"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_273",
+  "retrieved": [
+   "877968",
+   "847372",
+   "857785",
+   "856957",
+   "948139"
+  ],
+  "supporting": [
+   "856957"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_274",
+  "retrieved": [
+   "853844",
+   "858008",
+   "858954",
+   "878420",
+   "884898"
+  ],
+  "supporting": [
+   "853844"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_275",
+  "retrieved": [
+   "878252",
+   "839490",
+   "878180",
+   "878242",
+   "839442"
+  ],
+  "supporting": [
+   "878180"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_276",
+  "retrieved": [
+   "844217",
+   "844067",
+   "843998",
+   "844200",
+   "844339"
+  ],
+  "supporting": [
+   "844217"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_277",
+  "retrieved": [
+   "842332",
+   "895266",
+   "940706",
+   "887050",
+   "845877"
+  ],
+  "supporting": [
+   "842332"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_278",
+  "retrieved": [
+   "999657",
+   "960729",
+   "960371",
+   "895052",
+   "888997"
+  ],
+  "supporting": [
+   "999657"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_279",
+  "retrieved": [
+   "981632",
+   "968411",
+   "968426",
+   "1016211",
+   "857808"
+  ],
+  "supporting": [
+   "981632"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_280",
+  "retrieved": [
+   "860176",
+   "955405",
+   "953234",
+   "854285",
+   "979817"
+  ],
+  "supporting": [
+   "955405"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_281",
+  "retrieved": [
+   "418506",
+   "437444",
+   "878332",
+   "428430",
+   "431392"
+  ],
+  "supporting": [
+   "400579"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": false,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_282",
+  "retrieved": [
+   "434084",
+   "886334",
+   "897768",
+   "940471",
+   "428502"
+  ],
+  "supporting": [
+   "434084"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_283",
+  "retrieved": [
+   "886117",
+   "1042334",
+   "883311",
+   "426385",
+   "896887"
+  ],
+  "supporting": [
+   "886117"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_284",
+  "retrieved": [
+   "856568",
+   "1043358",
+   "858204",
+   "973110",
+   "845873"
+  ],
+  "supporting": [
+   "856568"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_285",
+  "retrieved": [
+   "860864",
+   "861024",
+   "860861",
+   "860840",
+   "895735"
+  ],
+  "supporting": [
+   "860864"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_286",
+  "retrieved": [
+   "939081",
+   "437559",
+   "437582",
+   "411602",
+   "434809"
+  ],
+  "supporting": [
+   "437559"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_287",
+  "retrieved": [
+   "982042",
+   "844735",
+   "854629",
+   "860312",
+   "427510"
+  ],
+  "supporting": [
+   "982042"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_288",
+  "retrieved": [
+   "846491",
+   "953010",
+   "408391",
+   "968303",
+   "859454"
+  ],
+  "supporting": [
+   "846491"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_289",
+  "retrieved": [
+   "879399",
+   "1029715",
+   "885474",
+   "966171",
+   "966190"
+  ],
+  "supporting": [
+   "879399"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_290",
+  "retrieved": [
+   "882829",
+   "888511",
+   "882813",
+   "882797",
+   "842344"
+  ],
+  "supporting": [
+   "882829"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_291",
+  "retrieved": [
+   "884780",
+   "844808",
+   "887710",
+   "879080",
+   "854763"
+  ],
+  "supporting": [
+   "844808"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_292",
+  "retrieved": [
+   "857172",
+   "847076",
+   "415743",
+   "847127",
+   "883594"
+  ],
+  "supporting": [
+   "847076"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_293",
+  "retrieved": [
+   "1031167",
+   "881287",
+   "893342",
+   "942073",
+   "888879"
+  ],
+  "supporting": [
+   "1031167"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_294",
+  "retrieved": [
+   "432777",
+   "429478",
+   "430133",
+   "428723",
+   "428656"
+  ],
+  "supporting": [
+   "428656"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_295",
+  "retrieved": [
+   "426701",
+   "838049",
+   "426794",
+   "887149",
+   "855551"
+  ],
+  "supporting": [
+   "838049"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_296",
+  "retrieved": [
+   "955402",
+   "947632",
+   "973118",
+   "940444",
+   "984699"
+  ],
+  "supporting": [
+   "955402"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_297",
+  "retrieved": [
+   "879611",
+   "844083",
+   "883700",
+   "857174",
+   "856246"
+  ],
+  "supporting": [
+   "857174"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_298",
+  "retrieved": [
+   "861250",
+   "839687",
+   "889669",
+   "861272",
+   "858911"
+  ],
+  "supporting": [
+   "839687"
+  ],
+  "prediction": null,
+  "contain": false,
+  "gpt4o": true,
+  "prediction_withheld": true
+ },
+ {
+  "id": "sgl_299",
+  "retrieved": [
+   "843396",
+   "838342",
+   "837280",
+   "1030080",
+   "1030076"
+  ],
+  "supporting": [
+   "843396"
+  ],
+  "prediction": null,
+  "contain": true,
+  "gpt4o": true,
+  "prediction_withheld": true
+ }
+]
