@@ -54,11 +54,17 @@ GPU와 원천 데이터 없이, 저장소에 든 문항별 결과만으로 논�
 ```bash
 cd analysis
 python integrated_table.py     # 통합 결과표 RESULTS.md: 부록 B 41개 시스템 + 탐색 실험 10개 행
-python master_table.py        # 부록 B <표 46>: 41개 시스템 × 4개 집합, 논문 수록값(수정본)과 자동 대조
-python hypothesis_tests.py    # 제4장 <표 22>·<표 23>, <표 25>~<표 27>, <표 35>·<표 36>: 정확 McNemar 검정, 95% 신뢰구간
-python cost.py                # 제4장 <표 30>, <표 31>, <표 33>, <표 34>: 토큰, GPU-시간, ICER
+python master_table.py        # 부록 B <표 53>의 41개 시스템 행 × 4개 집합, 논문 수록값과 자동 대조 (탐색 조건 10행은 explore_compsp.py·integrated_table.py)
+python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 27>(H3 (가)), <표 30>, <표 41>·<표 42>(H5 보조): 정확 McNemar 검정, 95% 신뢰구간
+python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·화폐 환산, <표 38> ICER, <표 36> 비용 구조
 ```
 
+- **스크립트와 원고 표의 대응**(2026-10-19 원고 번호 기준)
+  - `integrated_table.py` → `RESULTS.md`: 부록 B <표 53> 전체(41개 시스템 + 탐색 조건 10행)
+  - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 39>, <표 40>, 부록 C <표 64>, <표 66>
+  - `pnw_sweep.py`: <표 43>, <그림 4>
+  - `explore_compsp.py`: <표 25>, 부록 B <표 53> ☆행, 부록 C <표 65>, <표 67>
+  - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
 - `analysis/reference/appendix_b.csv`: 원고 부록 B의 수록값입니다. wiki_ko 재실행으로 바뀐 LinearRAG 계열 74칸과 원고의 이중 반올림 6칸을 수정한 값(2026-10-15)이며, `master_table.py`는 이 값과 모두 일치해야 합니다.
 - `results/track_02/graph_connectivity.csv`: 제4장 <표 24>의 추출 방식별 그래프 연결성 지표(고유·다리 엔티티 수, 허브 끈 비율, 끈 없는 언급 비율, 고립 문서 비율). `scripts/graph_connectivity.py`의 출력이며, 입력인 색인 캐시는 원문 조각이 들어 있어 공개하지 않으므로 결과를 파일로 제공합니다. wiki_ko는 `wiki_ko_v2` 색인 기준입니다.
@@ -136,7 +142,7 @@ python -m src.track_02.data.filter_adversarial --distractors 10000 --topk 5   # 
 
 ## 4. 탐색적 추가 실험: compsp·gazcompsp·compsp + 검색 조정
 
-논문의 가설 검정을 마친 뒤 결과를 보고 설계한 **탐색적 실험**입니다(2026-10-17~18). 부록 B의 41개 시스템과 분리해 `analysis/systems_explore.csv`에 따로 두었고, 논문 표 재생성(`master_table.py`)에는 들어가지 않습니다.
+논문의 가설 검정을 마친 뒤 결과를 보고 설계한 **탐색적 실험**입니다(2026-10-17~18). 원고에서는 제4장 H2·H3 (나)·H5와 부록 B·C에 **탐색적 결과로 보고**합니다(사전 등록된 확증 검정이 아님). 부록 B의 41개 시스템과 분리해 `analysis/systems_explore.csv`에 따로 두었고, 논문 표 재생성(`master_table.py`)에는 들어가지 않습니다.
 
 **동기.** comp는 연속 명사를 띄어쓰기와 상관없이 묶습니다. 행정문서의 붙여 쓴 복합명사("농업재해보험심의회")에는 유리하지만, 위키의 띄어 쓴 이름("미망인 마로지아")을 "미망인마로지아"로 붙여 다른 문서의 "마로지아"와 끊어 버립니다. 그래서 wiki_ko에서 comp가 noun보다 크게 낮았습니다.
 
@@ -194,7 +200,7 @@ python explore_compsp.py      # GPT-Acc·Contain·R@5 표, 정확 McNemar 짝 �
 
 ## 5. 가설 재정리용 추가 검정·측정 (2026-10-18)
 
-논문 가설을 다시 정리하면서 추가한 짝 검정과 비용 실측입니다. 새 응답 생성이나 판정 없이 기존 결과만 씁니다(측정 제외).
+논문 가설을 H1~H5로 다시 정리하면서 추가한 짝 검정과 비용 실측입니다. 원고 제4장(H3 (나)·H4·H5)과 부록 C 8절에 탐색적 결과로 들어갑니다. 새 응답 생성이나 판정 없이 기존 결과만 씁니다(측정 제외).
 
 ```bash
 cd analysis
@@ -216,7 +222,7 @@ python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 
 
 ## 6. dense 가중치(pnw) 스윕 (2026-10-18~19, admin R@5)
 
-LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
+원고 제4장 제5절 4항(<표 43>, <그림 4>)의 근거입니다. LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
 
 ```bash
 cd analysis
@@ -258,7 +264,7 @@ python pnw_sweep.py    # R@5 곡선, 추출 방식별 full 최고 pnw, 정확 Mc
 
 ## 원고 부록 E의 파일 해시와 공개본
 
-논문 부록 E <표 67>의 파일과 이 저장소의 대응입니다. 해시는 SHA-256 앞 12자리입니다.
+논문 부록 E <표 78>의 파일과 이 저장소의 대응입니다. 해시는 SHA-256 앞 12자리입니다.
 
 | 부록 E 파일 | 공개본 경로 | 부록 E 해시 | 공개본 해시 | 차이 |
 |:--|:--|:--|:--|:--|

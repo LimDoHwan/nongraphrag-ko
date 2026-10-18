@@ -11,6 +11,8 @@ compsp +조정 : comp와 같은 검색 조정 6종(dense-seed 0.5/1.0 × PRF 없
 같은 조정의 comp 행과만 비교하고, compsp 기본과는 R@5(응답과 무관)로 비교한다.
 실험 코드: scripts/explore_compsp/ (README 참조).
 
+원고 대응(2026-10-19 번호): <표 25>, 부록 B <표 53> ☆행, 부록 C <표 65>, <표 67>.
+
 실행: python analysis/explore_compsp.py
 """
 import csv
@@ -63,7 +65,7 @@ def main():
             compare("compsp", b, metric, ds)
         for a, b in SAME_DICT.items():                      # 공백 조각의 효과(같은 사전)
             compare(a, b, metric, ds)
-        for b in ("gazcompsp(4B 증류 NER+RE)", "gazcompsp(31B 증류 NER+RE)"):   # compsp 위의 H2-b
+        for b in ("gazcompsp(4B 증류 NER+RE)", "gazcompsp(31B 증류 NER+RE)"):   # compsp 위의 H3 (가) 사전 출처 대응쌍
             compare("gazcompsp(PMI)", b, metric, ds)
 
     print("\n## 검색 조정 6종: compsp +조정 대 같은 조정의 comp (GPT-Acc, 정확 McNemar)\n")

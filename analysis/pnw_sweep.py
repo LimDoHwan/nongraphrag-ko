@@ -8,6 +8,8 @@
 - 질문 엔티티가 없어 밀집 검색으로 대체된 문항 수, pnw 0에서 시작 벡터가 비어 전역 PageRank가 된 문항 수
 다중 비교 보정 없음.
 
+원고 대응(2026-10-19 번호): <표 43>, <그림 4>.
+
 실행: python analysis/pnw_sweep.py
 """
 import json
