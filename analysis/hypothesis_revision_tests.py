@@ -3,6 +3,7 @@
 요청 1 (H3) compsp·noun 대 LLM 증류 사전
 요청 2 (H4) 증류 사전 대 HippoRAG2 관계 그래프
 요청 4 (H5) 검색 조정 대 조정 없음 (부록 C <표 48>의 구성)
+추가 (H5) comp + 검색 조정 6종 대 HippoRAG2 31B·4B 그래프 (admin)
 
 검정은 문항 단위 정확 McNemar(양측), 95% 신뢰구간은 짝지은 비율 차이의 정규 근사
 (차이 ± 1.96 × √(b + c − (b − c)²/n) / n). 지표는 admin R@5·GPT-Acc, wiki_ko GPT-Acc.
@@ -52,13 +53,15 @@ def line(a, b, d, metric):
             f"{star}{diff:+.1f}{star} | [{lo:+.1f}, {hi:+.1f}] | {star}{fmt_p(p)}{star} |")
 
 
-def block(title, pairs, datasets, metrics):
+def block(title, pairs, datasets, metrics, skip_incomparable=False):
     print(f"\n## {title}\n")
     print(HEAD)
     for a, b in pairs:
         for d in datasets:
             for m in metrics:
                 if m == "r5" and d == "wiki_ko":
+                    continue
+                if skip_incomparable and m == "acc" and not (long_answer(a) and long_answer(b)):
                     continue
                 print(line(a, b, d, m))
 
@@ -74,6 +77,10 @@ def main():
     block("요청 4 (H5). 검색 조정 대 조정 없음 — 사전 계열 (admin)", pairs, ADMIN, ["r5"])
     block("요청 4 (H5). 검색 조정 대 조정 없음 — comp (wiki_ko)",
           [(f"comp {s}", "comp") for s in STACK_COMP], ["wiki_ko"], ["acc"])
+    # 추가 요청(2026-10-18): GPT-Acc는 ◆ 쌍(comp +dense0.5 +PRF(문장))만 내고, 256토큰 행은 생략
+    for g in (H31B, H4B):
+        block(f"추가 (H5). comp + 검색 조정 6종 대 {g} (admin)",
+              [(f"comp {s}", g) for s in STACK_COMP], ADMIN, ["r5", "acc"], skip_incomparable=True)
 
 
 if __name__ == "__main__":

@@ -194,7 +194,7 @@ python explore_compsp.py      # GPT-Acc·Contain·R@5 표, 정확 McNemar 짝 �
 
 ```bash
 cd analysis
-python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 사전 대 HippoRAG2, 검색 조정 대 조정 없음
+python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 사전 대 HippoRAG2, 검색 조정 대 조정 없음, comp+조정 대 HippoRAG2
 ```
 
 - 정확 McNemar(양측)와 95% 신뢰구간(짝지은 비율 차이의 정규 근사)을 냅니다. GPT-Acc는 두 조건 모두 출력 한도 2,000일 때만 내고, 256토큰 행이 끼면 "비교 불가"로 표시합니다.
