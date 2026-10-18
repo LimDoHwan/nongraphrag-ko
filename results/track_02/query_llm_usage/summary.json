@@ -1,0 +1,187 @@
+{
+ "dataset": "admin_full",
+ "n_sample": 50,
+ "seed": 42,
+ "server": "31B 사내 서버(RTX PRO 6000 ×1, vLLM 0.27.1)",
+ "model": "gemma-4-31B-it",
+ "concurrency": 1,
+ "load_before": {
+  "running": 0.0,
+  "waiting": 0.0
+ },
+ "started": "2026-10-18 16:48:12",
+ "filter": {
+  "graphrag-org": {
+   "calls_per_query": 1,
+   "prompt_tokens": {
+    "n": 50,
+    "mean": 231.9,
+    "median": 231.5,
+    "min": 197,
+    "max": 268
+   },
+   "completion_tokens": {
+    "n": 50,
+    "mean": 35.24,
+    "median": 34.0,
+    "min": 6,
+    "max": 104
+   },
+   "seconds": {
+    "n": 50,
+    "mean": 1.58,
+    "median": 1.52,
+    "min": 0.28,
+    "max": 4.61
+   },
+   "top5_same_as_stored": 48,
+   "ppr_mode": 37
+  },
+  "graphrag-4b": {
+   "calls_per_query": 1,
+   "prompt_tokens": {
+    "n": 50,
+    "mean": 230,
+    "median": 227.0,
+    "min": 192,
+    "max": 269
+   },
+   "completion_tokens": {
+    "n": 50,
+    "mean": 34.78,
+    "median": 34.0,
+    "min": 6,
+    "max": 85
+   },
+   "seconds": {
+    "n": 50,
+    "mean": 1.55,
+    "median": 1.52,
+    "min": 0.29,
+    "max": 3.77
+   },
+   "top5_same_as_stored": 49,
+   "ppr_mode": 38
+  }
+ },
+ "qa": {
+  "vanillarag": {
+   "calls_per_query": 1,
+   "prompt_tokens": {
+    "n": 50,
+    "mean": 2023.02,
+    "median": 2002.0,
+    "min": 1429,
+    "max": 2817
+   },
+   "completion_tokens": {
+    "n": 50,
+    "mean": 240.96,
+    "median": 187.5,
+    "min": 77,
+    "max": 2000
+   },
+   "seconds": {
+    "n": 50,
+    "mean": 11.18,
+    "median": 8.79,
+    "min": 3.74,
+    "max": 89.96
+   },
+   "answer_same_as_stored": 38
+  },
+  "graphrag-org": {
+   "calls_per_query": 1,
+   "prompt_tokens": {
+    "n": 50,
+    "mean": 2118.6,
+    "median": 2165.5,
+    "min": 1429,
+    "max": 2850
+   },
+   "completion_tokens": {
+    "n": 50,
+    "mean": 214.74,
+    "median": 194.0,
+    "min": 82,
+    "max": 756
+   },
+   "seconds": {
+    "n": 50,
+    "mean": 10.03,
+    "median": 9.06,
+    "min": 4.25,
+    "max": 34.2
+   },
+   "answer_same_as_stored": 42
+  },
+  "linearrag-new-comp": {
+   "calls_per_query": 1,
+   "prompt_tokens": {
+    "n": 50,
+    "mean": 2031.5,
+    "median": 2080.0,
+    "min": 1398,
+    "max": 2653
+   },
+   "completion_tokens": {
+    "n": 50,
+    "mean": 206.24,
+    "median": 194.5,
+    "min": 61,
+    "max": 390
+   },
+   "seconds": {
+    "n": 50,
+    "mean": 9.62,
+    "median": 9.13,
+    "min": 3.15,
+    "max": 17.83
+   },
+   "answer_same_as_stored": 44
+  },
+  "linearrag-new-gazcomp-llm4b": {
+   "calls_per_query": 1,
+   "prompt_tokens": {
+    "n": 50,
+    "mean": 2108.32,
+    "median": 2129.0,
+    "min": 1483,
+    "max": 2815
+   },
+   "completion_tokens": {
+    "n": 50,
+    "mean": 196.08,
+    "median": 189.0,
+    "min": 98,
+    "max": 372
+   },
+   "seconds": {
+    "n": 50,
+    "mean": 9.19,
+    "median": 8.88,
+    "min": 4.84,
+    "max": 16.98
+   },
+   "answer_same_as_stored": 42
+  }
+ },
+ "linearrag_retrieval": {
+  "system": "comp +dense0.5 +PRF(문장)",
+  "generative_llm_calls": 0,
+  "queries": 50,
+  "top5_same_as_stored": 50,
+  "seconds_cpu": {
+   "n": 50,
+   "mean": 4.3,
+   "median": 3.84,
+   "min": 2.53,
+   "max": 8.24
+  }
+ },
+ "load_after": {
+  "running": 0.0,
+  "waiting": 0.0
+ },
+ "finished": "2026-10-18 17:31:21"
+}

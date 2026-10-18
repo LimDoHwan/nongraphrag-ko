@@ -1,0 +1,300 @@
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_5", "prompt_tokens": 215, "completion_tokens": 36, "seconds": 1.623, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_19", "prompt_tokens": 253, "completion_tokens": 62, "seconds": 2.767, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_21", "prompt_tokens": 237, "completion_tokens": 37, "seconds": 1.655, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_26", "prompt_tokens": 259, "completion_tokens": 82, "seconds": 3.642, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_27", "prompt_tokens": 268, "completion_tokens": 39, "seconds": 1.747, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_39", "prompt_tokens": 242, "completion_tokens": 56, "seconds": 2.494, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_40", "prompt_tokens": 210, "completion_tokens": 34, "seconds": 1.522, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_61", "prompt_tokens": 222, "completion_tokens": 53, "seconds": 2.36, "mode": "ppr", "top5_same_as_stored": false}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_67", "prompt_tokens": 231, "completion_tokens": 31, "seconds": 1.391, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_72", "prompt_tokens": 239, "completion_tokens": 11, "seconds": 0.509, "mode": "dense_fallback", "top5_same_as_stored": false}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_81", "prompt_tokens": 248, "completion_tokens": 30, "seconds": 1.344, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_84", "prompt_tokens": 242, "completion_tokens": 60, "seconds": 2.669, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_86", "prompt_tokens": 237, "completion_tokens": 28, "seconds": 1.261, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_87", "prompt_tokens": 242, "completion_tokens": 6, "seconds": 0.29, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_94", "prompt_tokens": 223, "completion_tokens": 6, "seconds": 0.285, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_105", "prompt_tokens": 256, "completion_tokens": 11, "seconds": 0.51, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_117", "prompt_tokens": 225, "completion_tokens": 38, "seconds": 1.698, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_131", "prompt_tokens": 259, "completion_tokens": 32, "seconds": 1.436, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_134", "prompt_tokens": 234, "completion_tokens": 42, "seconds": 1.875, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_144", "prompt_tokens": 244, "completion_tokens": 37, "seconds": 1.657, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_180", "prompt_tokens": 232, "completion_tokens": 34, "seconds": 1.524, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_185", "prompt_tokens": 227, "completion_tokens": 25, "seconds": 1.127, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_204", "prompt_tokens": 227, "completion_tokens": 33, "seconds": 1.485, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_205", "prompt_tokens": 199, "completion_tokens": 6, "seconds": 0.289, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_206", "prompt_tokens": 221, "completion_tokens": 33, "seconds": 1.477, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_211", "prompt_tokens": 213, "completion_tokens": 6, "seconds": 0.29, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_213", "prompt_tokens": 255, "completion_tokens": 33, "seconds": 1.478, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_217", "prompt_tokens": 229, "completion_tokens": 52, "seconds": 2.315, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_226", "prompt_tokens": 252, "completion_tokens": 69, "seconds": 3.068, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_243", "prompt_tokens": 233, "completion_tokens": 56, "seconds": 2.493, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_248", "prompt_tokens": 239, "completion_tokens": 61, "seconds": 2.712, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_251", "prompt_tokens": 197, "completion_tokens": 11, "seconds": 0.509, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_257", "prompt_tokens": 203, "completion_tokens": 35, "seconds": 1.567, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_259", "prompt_tokens": 248, "completion_tokens": 11, "seconds": 0.511, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_301", "prompt_tokens": 224, "completion_tokens": 32, "seconds": 1.434, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_306", "prompt_tokens": 230, "completion_tokens": 43, "seconds": 1.919, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_309", "prompt_tokens": 227, "completion_tokens": 104, "seconds": 4.608, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_319", "prompt_tokens": 201, "completion_tokens": 34, "seconds": 1.521, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_322", "prompt_tokens": 251, "completion_tokens": 6, "seconds": 0.291, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_325", "prompt_tokens": 200, "completion_tokens": 6, "seconds": 0.289, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_329", "prompt_tokens": 217, "completion_tokens": 29, "seconds": 1.303, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_338", "prompt_tokens": 199, "completion_tokens": 6, "seconds": 0.29, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_339", "prompt_tokens": 221, "completion_tokens": 6, "seconds": 0.292, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_366", "prompt_tokens": 251, "completion_tokens": 45, "seconds": 2.009, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_369", "prompt_tokens": 217, "completion_tokens": 57, "seconds": 2.533, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_390", "prompt_tokens": 232, "completion_tokens": 47, "seconds": 2.096, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_394", "prompt_tokens": 252, "completion_tokens": 57, "seconds": 2.538, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_398", "prompt_tokens": 226, "completion_tokens": 55, "seconds": 2.447, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_434", "prompt_tokens": 229, "completion_tokens": 6, "seconds": 0.291, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-org", "id": "anc_456", "prompt_tokens": 257, "completion_tokens": 33, "seconds": 1.481, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_5", "prompt_tokens": 205, "completion_tokens": 28, "seconds": 1.255, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_19", "prompt_tokens": 226, "completion_tokens": 6, "seconds": 0.293, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_21", "prompt_tokens": 269, "completion_tokens": 59, "seconds": 2.627, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_26", "prompt_tokens": 267, "completion_tokens": 34, "seconds": 1.527, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_27", "prompt_tokens": 257, "completion_tokens": 85, "seconds": 3.773, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_39", "prompt_tokens": 221, "completion_tokens": 11, "seconds": 0.506, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_40", "prompt_tokens": 197, "completion_tokens": 28, "seconds": 1.253, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_61", "prompt_tokens": 237, "completion_tokens": 33, "seconds": 1.479, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_67", "prompt_tokens": 226, "completion_tokens": 44, "seconds": 1.958, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_72", "prompt_tokens": 252, "completion_tokens": 11, "seconds": 0.511, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_81", "prompt_tokens": 236, "completion_tokens": 72, "seconds": 3.197, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_84", "prompt_tokens": 239, "completion_tokens": 62, "seconds": 2.757, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_86", "prompt_tokens": 261, "completion_tokens": 41, "seconds": 1.832, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_87", "prompt_tokens": 221, "completion_tokens": 25, "seconds": 1.122, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_94", "prompt_tokens": 223, "completion_tokens": 43, "seconds": 1.916, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_105", "prompt_tokens": 254, "completion_tokens": 11, "seconds": 0.507, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_117", "prompt_tokens": 215, "completion_tokens": 6, "seconds": 0.286, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_131", "prompt_tokens": 244, "completion_tokens": 34, "seconds": 1.518, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_134", "prompt_tokens": 231, "completion_tokens": 34, "seconds": 1.522, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_144", "prompt_tokens": 220, "completion_tokens": 11, "seconds": 0.506, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_180", "prompt_tokens": 239, "completion_tokens": 40, "seconds": 1.787, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_185", "prompt_tokens": 214, "completion_tokens": 25, "seconds": 1.12, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_204", "prompt_tokens": 224, "completion_tokens": 6, "seconds": 0.286, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_205", "prompt_tokens": 192, "completion_tokens": 26, "seconds": 1.163, "mode": "ppr", "top5_same_as_stored": false}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_206", "prompt_tokens": 217, "completion_tokens": 30, "seconds": 1.342, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_211", "prompt_tokens": 217, "completion_tokens": 11, "seconds": 0.505, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_213", "prompt_tokens": 245, "completion_tokens": 35, "seconds": 1.568, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_217", "prompt_tokens": 244, "completion_tokens": 36, "seconds": 1.611, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_226", "prompt_tokens": 228, "completion_tokens": 32, "seconds": 1.434, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_243", "prompt_tokens": 224, "completion_tokens": 44, "seconds": 1.959, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_248", "prompt_tokens": 240, "completion_tokens": 69, "seconds": 3.065, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_251", "prompt_tokens": 217, "completion_tokens": 54, "seconds": 2.399, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_257", "prompt_tokens": 205, "completion_tokens": 34, "seconds": 1.517, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_259", "prompt_tokens": 255, "completion_tokens": 6, "seconds": 0.29, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_301", "prompt_tokens": 215, "completion_tokens": 49, "seconds": 2.177, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_306", "prompt_tokens": 240, "completion_tokens": 65, "seconds": 2.88, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_309", "prompt_tokens": 227, "completion_tokens": 29, "seconds": 1.297, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_319", "prompt_tokens": 215, "completion_tokens": 34, "seconds": 1.517, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_322", "prompt_tokens": 241, "completion_tokens": 6, "seconds": 0.289, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_325", "prompt_tokens": 227, "completion_tokens": 11, "seconds": 0.51, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_329", "prompt_tokens": 205, "completion_tokens": 29, "seconds": 1.296, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_338", "prompt_tokens": 210, "completion_tokens": 6, "seconds": 0.287, "mode": "dense_fallback", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_339", "prompt_tokens": 205, "completion_tokens": 28, "seconds": 1.251, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_366", "prompt_tokens": 224, "completion_tokens": 30, "seconds": 1.34, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_369", "prompt_tokens": 234, "completion_tokens": 43, "seconds": 1.917, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_390", "prompt_tokens": 255, "completion_tokens": 83, "seconds": 3.685, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_394", "prompt_tokens": 231, "completion_tokens": 60, "seconds": 2.664, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_398", "prompt_tokens": 221, "completion_tokens": 59, "seconds": 2.618, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_434", "prompt_tokens": 239, "completion_tokens": 46, "seconds": 2.047, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "filter", "graph": "graphrag-4b", "id": "anc_456", "prompt_tokens": 249, "completion_tokens": 35, "seconds": 1.563, "mode": "ppr", "top5_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_5", "prompt_tokens": 1667, "completion_tokens": 176, "seconds": 8.157, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_19", "prompt_tokens": 2542, "completion_tokens": 138, "seconds": 6.674, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_21", "prompt_tokens": 2280, "completion_tokens": 220, "seconds": 10.304, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_26", "prompt_tokens": 2283, "completion_tokens": 196, "seconds": 9.232, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_27", "prompt_tokens": 1668, "completion_tokens": 193, "seconds": 8.951, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_39", "prompt_tokens": 2117, "completion_tokens": 214, "seconds": 9.986, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_40", "prompt_tokens": 1987, "completion_tokens": 202, "seconds": 9.426, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_61", "prompt_tokens": 1837, "completion_tokens": 130, "seconds": 6.185, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_67", "prompt_tokens": 2359, "completion_tokens": 149, "seconds": 7.136, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_72", "prompt_tokens": 1868, "completion_tokens": 511, "seconds": 23.227, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_81", "prompt_tokens": 1761, "completion_tokens": 182, "seconds": 8.476, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_84", "prompt_tokens": 2283, "completion_tokens": 96, "seconds": 4.759, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_86", "prompt_tokens": 2733, "completion_tokens": 197, "seconds": 9.37, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_87", "prompt_tokens": 2817, "completion_tokens": 411, "seconds": 18.981, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_94", "prompt_tokens": 2159, "completion_tokens": 307, "seconds": 14.151, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_105", "prompt_tokens": 2060, "completion_tokens": 160, "seconds": 7.554, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_117", "prompt_tokens": 1696, "completion_tokens": 105, "seconds": 5.021, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_131", "prompt_tokens": 2081, "completion_tokens": 387, "seconds": 17.723, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_134", "prompt_tokens": 2188, "completion_tokens": 343, "seconds": 15.758, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_144", "prompt_tokens": 2477, "completion_tokens": 204, "seconds": 9.625, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_180", "prompt_tokens": 1954, "completion_tokens": 105, "seconds": 5.085, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_185", "prompt_tokens": 2014, "completion_tokens": 127, "seconds": 6.073, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_204", "prompt_tokens": 1760, "completion_tokens": 2000, "seconds": 89.957, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_205", "prompt_tokens": 1718, "completion_tokens": 169, "seconds": 7.861, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_206", "prompt_tokens": 2061, "completion_tokens": 189, "seconds": 8.85, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_211", "prompt_tokens": 2358, "completion_tokens": 314, "seconds": 14.527, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_213", "prompt_tokens": 2123, "completion_tokens": 231, "seconds": 10.746, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_217", "prompt_tokens": 1928, "completion_tokens": 174, "seconds": 8.159, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_226", "prompt_tokens": 1996, "completion_tokens": 192, "seconds": 8.98, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_243", "prompt_tokens": 2045, "completion_tokens": 175, "seconds": 8.223, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_248", "prompt_tokens": 2210, "completion_tokens": 201, "seconds": 9.449, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_251", "prompt_tokens": 1731, "completion_tokens": 186, "seconds": 8.655, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_257", "prompt_tokens": 2008, "completion_tokens": 165, "seconds": 7.774, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_259", "prompt_tokens": 1429, "completion_tokens": 192, "seconds": 8.844, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_301", "prompt_tokens": 1889, "completion_tokens": 520, "seconds": 23.63, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_306", "prompt_tokens": 2279, "completion_tokens": 185, "seconds": 8.74, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_309", "prompt_tokens": 1935, "completion_tokens": 174, "seconds": 8.159, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_319", "prompt_tokens": 2301, "completion_tokens": 209, "seconds": 9.812, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_322", "prompt_tokens": 1980, "completion_tokens": 181, "seconds": 8.488, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_325", "prompt_tokens": 2172, "completion_tokens": 147, "seconds": 6.993, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_329", "prompt_tokens": 1520, "completion_tokens": 77, "seconds": 3.737, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_338", "prompt_tokens": 2560, "completion_tokens": 176, "seconds": 8.381, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_339", "prompt_tokens": 1906, "completion_tokens": 143, "seconds": 6.773, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_366", "prompt_tokens": 1607, "completion_tokens": 156, "seconds": 7.289, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_369", "prompt_tokens": 1601, "completion_tokens": 191, "seconds": 8.855, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_390", "prompt_tokens": 1642, "completion_tokens": 177, "seconds": 8.233, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_394", "prompt_tokens": 1804, "completion_tokens": 192, "seconds": 8.927, "answer_same_as_stored": false}
+{"stage": "qa", "system": "vanillarag", "id": "anc_398", "prompt_tokens": 1904, "completion_tokens": 205, "seconds": 9.544, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_434", "prompt_tokens": 1751, "completion_tokens": 164, "seconds": 7.672, "answer_same_as_stored": true}
+{"stage": "qa", "system": "vanillarag", "id": "anc_456", "prompt_tokens": 2102, "completion_tokens": 210, "seconds": 9.808, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_5", "prompt_tokens": 1489, "completion_tokens": 321, "seconds": 14.623, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_19", "prompt_tokens": 2726, "completion_tokens": 142, "seconds": 6.907, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_21", "prompt_tokens": 2268, "completion_tokens": 210, "seconds": 9.853, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_26", "prompt_tokens": 2487, "completion_tokens": 207, "seconds": 9.759, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_27", "prompt_tokens": 1668, "completion_tokens": 237, "seconds": 10.917, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_39", "prompt_tokens": 2487, "completion_tokens": 276, "seconds": 12.85, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_40", "prompt_tokens": 2153, "completion_tokens": 292, "seconds": 13.477, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_61", "prompt_tokens": 1837, "completion_tokens": 130, "seconds": 6.184, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_67", "prompt_tokens": 2215, "completion_tokens": 86, "seconds": 4.305, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_72", "prompt_tokens": 2069, "completion_tokens": 215, "seconds": 10.014, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_81", "prompt_tokens": 1534, "completion_tokens": 145, "seconds": 6.776, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_84", "prompt_tokens": 2850, "completion_tokens": 82, "seconds": 4.249, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_86", "prompt_tokens": 2192, "completion_tokens": 127, "seconds": 6.1, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_87", "prompt_tokens": 2817, "completion_tokens": 411, "seconds": 18.982, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_94", "prompt_tokens": 2159, "completion_tokens": 307, "seconds": 14.154, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_105", "prompt_tokens": 2060, "completion_tokens": 160, "seconds": 7.553, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_117", "prompt_tokens": 1741, "completion_tokens": 275, "seconds": 12.634, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_131", "prompt_tokens": 1897, "completion_tokens": 756, "seconds": 34.195, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_134", "prompt_tokens": 2836, "completion_tokens": 229, "seconds": 10.814, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_144", "prompt_tokens": 2216, "completion_tokens": 185, "seconds": 8.735, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_180", "prompt_tokens": 2319, "completion_tokens": 105, "seconds": 5.163, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_185", "prompt_tokens": 2278, "completion_tokens": 140, "seconds": 6.727, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_204", "prompt_tokens": 2249, "completion_tokens": 315, "seconds": 14.551, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_205", "prompt_tokens": 1718, "completion_tokens": 169, "seconds": 7.897, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_206", "prompt_tokens": 2273, "completion_tokens": 201, "seconds": 9.45, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_211", "prompt_tokens": 2358, "completion_tokens": 314, "seconds": 14.529, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_213", "prompt_tokens": 2311, "completion_tokens": 202, "seconds": 9.501, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_217", "prompt_tokens": 2450, "completion_tokens": 229, "seconds": 10.732, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_226", "prompt_tokens": 2523, "completion_tokens": 257, "seconds": 12.008, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_243", "prompt_tokens": 2300, "completion_tokens": 188, "seconds": 8.875, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_248", "prompt_tokens": 2210, "completion_tokens": 213, "seconds": 9.984, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_251", "prompt_tokens": 1731, "completion_tokens": 186, "seconds": 8.652, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_257", "prompt_tokens": 1905, "completion_tokens": 255, "seconds": 11.78, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_259", "prompt_tokens": 1429, "completion_tokens": 192, "seconds": 8.843, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_301", "prompt_tokens": 1846, "completion_tokens": 170, "seconds": 7.981, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_306", "prompt_tokens": 2538, "completion_tokens": 194, "seconds": 9.18, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_309", "prompt_tokens": 2322, "completion_tokens": 171, "seconds": 8.117, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_319", "prompt_tokens": 2362, "completion_tokens": 343, "seconds": 15.827, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_322", "prompt_tokens": 1980, "completion_tokens": 181, "seconds": 8.487, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_325", "prompt_tokens": 2172, "completion_tokens": 147, "seconds": 6.994, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_329", "prompt_tokens": 1978, "completion_tokens": 194, "seconds": 9.067, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_338", "prompt_tokens": 2560, "completion_tokens": 176, "seconds": 8.382, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_339", "prompt_tokens": 1906, "completion_tokens": 143, "seconds": 6.772, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_366", "prompt_tokens": 1477, "completion_tokens": 159, "seconds": 7.395, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_369", "prompt_tokens": 1505, "completion_tokens": 208, "seconds": 9.586, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_390", "prompt_tokens": 1830, "completion_tokens": 158, "seconds": 7.436, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_394", "prompt_tokens": 1849, "completion_tokens": 194, "seconds": 9.049, "answer_same_as_stored": false}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_398", "prompt_tokens": 1997, "completion_tokens": 128, "seconds": 6.119, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_434", "prompt_tokens": 1751, "completion_tokens": 164, "seconds": 7.671, "answer_same_as_stored": true}
+{"stage": "qa", "system": "graphrag-org", "id": "anc_456", "prompt_tokens": 2102, "completion_tokens": 248, "seconds": 11.504, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_5", "prompt_tokens": 2121, "completion_tokens": 194, "seconds": 9.082, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_19", "prompt_tokens": 1975, "completion_tokens": 191, "seconds": 8.931, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_21", "prompt_tokens": 1906, "completion_tokens": 244, "seconds": 11.242, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_26", "prompt_tokens": 2279, "completion_tokens": 195, "seconds": 9.183, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_27", "prompt_tokens": 1748, "completion_tokens": 210, "seconds": 9.726, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_39", "prompt_tokens": 1929, "completion_tokens": 283, "seconds": 13.035, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_40", "prompt_tokens": 2167, "completion_tokens": 61, "seconds": 3.148, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_61", "prompt_tokens": 1821, "completion_tokens": 366, "seconds": 16.707, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_67", "prompt_tokens": 2405, "completion_tokens": 165, "seconds": 7.859, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_72", "prompt_tokens": 2014, "completion_tokens": 390, "seconds": 17.835, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_81", "prompt_tokens": 1720, "completion_tokens": 219, "seconds": 10.125, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_84", "prompt_tokens": 2150, "completion_tokens": 81, "seconds": 4.041, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_86", "prompt_tokens": 2324, "completion_tokens": 184, "seconds": 8.7, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_87", "prompt_tokens": 2510, "completion_tokens": 187, "seconds": 8.866, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_94", "prompt_tokens": 2219, "completion_tokens": 317, "seconds": 14.639, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_105", "prompt_tokens": 2082, "completion_tokens": 178, "seconds": 8.374, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_117", "prompt_tokens": 2030, "completion_tokens": 244, "seconds": 11.307, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_131", "prompt_tokens": 1431, "completion_tokens": 305, "seconds": 13.892, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_134", "prompt_tokens": 2537, "completion_tokens": 270, "seconds": 12.593, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_144", "prompt_tokens": 2380, "completion_tokens": 209, "seconds": 9.828, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_180", "prompt_tokens": 1682, "completion_tokens": 133, "seconds": 6.27, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_185", "prompt_tokens": 2157, "completion_tokens": 127, "seconds": 6.098, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_204", "prompt_tokens": 2192, "completion_tokens": 248, "seconds": 11.512, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_205", "prompt_tokens": 1800, "completion_tokens": 293, "seconds": 13.441, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_206", "prompt_tokens": 2244, "completion_tokens": 228, "seconds": 10.656, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_211", "prompt_tokens": 2535, "completion_tokens": 272, "seconds": 12.681, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_213", "prompt_tokens": 1720, "completion_tokens": 132, "seconds": 6.237, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_217", "prompt_tokens": 2119, "completion_tokens": 178, "seconds": 8.375, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_226", "prompt_tokens": 2204, "completion_tokens": 306, "seconds": 14.111, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_243", "prompt_tokens": 2101, "completion_tokens": 215, "seconds": 10.029, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_248", "prompt_tokens": 1613, "completion_tokens": 185, "seconds": 8.593, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_251", "prompt_tokens": 1958, "completion_tokens": 216, "seconds": 10.047, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_257", "prompt_tokens": 2183, "completion_tokens": 197, "seconds": 9.231, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_259", "prompt_tokens": 1708, "completion_tokens": 186, "seconds": 8.65, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_301", "prompt_tokens": 1884, "completion_tokens": 177, "seconds": 8.289, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_306", "prompt_tokens": 2279, "completion_tokens": 191, "seconds": 9.007, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_309", "prompt_tokens": 2078, "completion_tokens": 190, "seconds": 8.897, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_319", "prompt_tokens": 2169, "completion_tokens": 274, "seconds": 12.677, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_322", "prompt_tokens": 2195, "completion_tokens": 181, "seconds": 8.517, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_325", "prompt_tokens": 2106, "completion_tokens": 168, "seconds": 7.929, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_329", "prompt_tokens": 1624, "completion_tokens": 149, "seconds": 6.98, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_338", "prompt_tokens": 2653, "completion_tokens": 132, "seconds": 6.438, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_339", "prompt_tokens": 2005, "completion_tokens": 160, "seconds": 7.551, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_366", "prompt_tokens": 1415, "completion_tokens": 210, "seconds": 9.646, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_369", "prompt_tokens": 1919, "completion_tokens": 213, "seconds": 9.9, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_390", "prompt_tokens": 1962, "completion_tokens": 158, "seconds": 7.456, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_394", "prompt_tokens": 1570, "completion_tokens": 236, "seconds": 10.865, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_398", "prompt_tokens": 1727, "completion_tokens": 91, "seconds": 4.406, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_434", "prompt_tokens": 1398, "completion_tokens": 140, "seconds": 6.516, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-comp", "id": "anc_456", "prompt_tokens": 2627, "completion_tokens": 233, "seconds": 10.962, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_5", "prompt_tokens": 1824, "completion_tokens": 198, "seconds": 9.187, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_19", "prompt_tokens": 1974, "completion_tokens": 232, "seconds": 10.767, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_21", "prompt_tokens": 2033, "completion_tokens": 185, "seconds": 8.671, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_26", "prompt_tokens": 2370, "completion_tokens": 212, "seconds": 9.962, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_27", "prompt_tokens": 1713, "completion_tokens": 178, "seconds": 8.292, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_39", "prompt_tokens": 2174, "completion_tokens": 220, "seconds": 10.261, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_40", "prompt_tokens": 2260, "completion_tokens": 175, "seconds": 8.285, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_61", "prompt_tokens": 1734, "completion_tokens": 115, "seconds": 5.479, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_67", "prompt_tokens": 2277, "completion_tokens": 117, "seconds": 5.696, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_72", "prompt_tokens": 1992, "completion_tokens": 146, "seconds": 6.924, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_81", "prompt_tokens": 1819, "completion_tokens": 372, "seconds": 16.978, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_84", "prompt_tokens": 2222, "completion_tokens": 98, "seconds": 4.841, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_86", "prompt_tokens": 2388, "completion_tokens": 169, "seconds": 8.034, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_87", "prompt_tokens": 2605, "completion_tokens": 232, "seconds": 10.915, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_94", "prompt_tokens": 2222, "completion_tokens": 157, "seconds": 7.477, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_105", "prompt_tokens": 2219, "completion_tokens": 210, "seconds": 9.849, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_117", "prompt_tokens": 1831, "completion_tokens": 245, "seconds": 11.325, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_131", "prompt_tokens": 1919, "completion_tokens": 328, "seconds": 15.044, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_134", "prompt_tokens": 2266, "completion_tokens": 185, "seconds": 8.735, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_144", "prompt_tokens": 2291, "completion_tokens": 131, "seconds": 6.324, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_180", "prompt_tokens": 2073, "completion_tokens": 113, "seconds": 5.452, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_185", "prompt_tokens": 2278, "completion_tokens": 162, "seconds": 7.709, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_204", "prompt_tokens": 2569, "completion_tokens": 119, "seconds": 5.829, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_205", "prompt_tokens": 2641, "completion_tokens": 335, "seconds": 15.535, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_206", "prompt_tokens": 2476, "completion_tokens": 223, "seconds": 10.473, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_211", "prompt_tokens": 2507, "completion_tokens": 184, "seconds": 8.731, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_213", "prompt_tokens": 2004, "completion_tokens": 218, "seconds": 10.142, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_217", "prompt_tokens": 2067, "completion_tokens": 106, "seconds": 5.137, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_226", "prompt_tokens": 2260, "completion_tokens": 234, "seconds": 10.925, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_243", "prompt_tokens": 2230, "completion_tokens": 135, "seconds": 6.496, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_248", "prompt_tokens": 1613, "completion_tokens": 203, "seconds": 9.39, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_251", "prompt_tokens": 2157, "completion_tokens": 227, "seconds": 10.572, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_257", "prompt_tokens": 2163, "completion_tokens": 222, "seconds": 10.347, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_259", "prompt_tokens": 1670, "completion_tokens": 233, "seconds": 10.736, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_301", "prompt_tokens": 2126, "completion_tokens": 182, "seconds": 8.553, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_306", "prompt_tokens": 2422, "completion_tokens": 264, "seconds": 12.295, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_309", "prompt_tokens": 2067, "completion_tokens": 262, "seconds": 12.116, "answer_same_as_stored": false}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_319", "prompt_tokens": 2169, "completion_tokens": 354, "seconds": 16.255, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_322", "prompt_tokens": 2117, "completion_tokens": 167, "seconds": 7.882, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_325", "prompt_tokens": 2239, "completion_tokens": 189, "seconds": 8.91, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_329", "prompt_tokens": 1558, "completion_tokens": 117, "seconds": 5.526, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_338", "prompt_tokens": 2815, "completion_tokens": 165, "seconds": 7.942, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_339", "prompt_tokens": 1483, "completion_tokens": 159, "seconds": 7.395, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_366", "prompt_tokens": 2028, "completion_tokens": 189, "seconds": 8.848, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_369", "prompt_tokens": 1601, "completion_tokens": 195, "seconds": 9.034, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_390", "prompt_tokens": 1985, "completion_tokens": 163, "seconds": 7.683, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_394", "prompt_tokens": 1867, "completion_tokens": 225, "seconds": 10.432, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_398", "prompt_tokens": 1840, "completion_tokens": 150, "seconds": 7.077, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_434", "prompt_tokens": 2127, "completion_tokens": 197, "seconds": 9.225, "answer_same_as_stored": true}
+{"stage": "qa", "system": "linearrag-new-gazcomp-llm4b", "id": "anc_456", "prompt_tokens": 2131, "completion_tokens": 207, "seconds": 9.672, "answer_same_as_stored": true}
