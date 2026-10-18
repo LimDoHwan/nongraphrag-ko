@@ -1,0 +1,12 @@
+{
+ "dataset": "wiki_ko_v2",
+ "system": "linearrag-new-compsp-pnw0.5-prf0.6sent",
+ "n": 1000,
+ "gpt4o_acc": 0.786,
+ "contain_acc": 0.662,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_new": 892,
+ "note": "탐색적 추가 실험(2026-10-17~18): linearrag-new-compsp-pnw0.5-prf0.6sent"
+}

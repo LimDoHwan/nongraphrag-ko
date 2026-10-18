@@ -1,17 +1,19 @@
-"""탐색적 추가 실험(논문 가설 검정 이후, 2026-10-17): compsp·gazcompsp 결과표 재생성.
+"""탐색적 추가 실험(논문 가설 검정 이후, 2026-10-17~18): compsp·gazcompsp·compsp+검색 조정 결과표 재생성.
 
 compsp    : comp 엔티티(연속 명사 결합) + 공백으로 나뉜 어절 조각.
             예) "미망인 마로지아" → 미망인마로지아, 미망인, 마로지아 / "농업재해보험심의회" → 그대로 하나
 gazcompsp : gazcomp(사전 최장 일치 우선) + 사전에 안 잡힌 명사에 compsp 규칙. 사전은 논문의 PMI·4B·31B 증류 사전.
+compsp +조정 : comp와 같은 검색 조정 6종(dense-seed 0.5/1.0 × PRF 없음/문서/문장, β=0.6).
 
 부록 B 41개 시스템과 분리된 목록(analysis/systems_explore.csv)을 쓴다. 응답 생성·판정 조건은 논문의
-10개 비교 시스템(◆)과 같다(gemma-4-31B-it, QA_SYS, 출력 한도 2,000, gpt-4o 판정).
+10개 비교 시스템(◆)과 같다(gemma-4-31B-it, QA_SYS, 출력 한도 2,000, gpt-4o 판정). 단 compsp +조정 6종의 출력 한도는
+짝이 되는 comp +조정 행과 같게 했다(dense0.5 +PRF(문장)만 2,000, 나머지 256). 그래서 이 5개 행의 GPT-Acc·Contain은
+같은 조정의 comp 행과만 비교하고, compsp 기본과는 R@5(응답과 무관)로 비교한다.
 실험 코드: scripts/explore_compsp/ (README 참조).
 
 실행: python analysis/explore_compsp.py
 """
 import csv
-import json
 
 from common import RESULTS, ROOT, load, mcnemar, fmt_p, rate, system
 
@@ -19,7 +21,10 @@ DATASETS = ["wiki_ko", "admin_single", "admin_full", "admin_hard"]
 EXPLORE = list(csv.DictReader(open(ROOT / "analysis" / "systems_explore.csv", encoding="utf-8")))
 EX = {r["name"]: r for r in EXPLORE}
 BASE = ["comp", "gazcomp(PMI)", "gazcomp(4B 증류 NER+RE)", "gazcomp(31B 증류 NER+RE)", "noun",
-        "HippoRAG2 (31B 그래프)", "comp +dense0.5 +PRF(문장)"]
+        "HippoRAG2 (31B 그래프)"]
+STACKS = ["+dense0.5", "+dense1.0", "+dense0.5 +PRF(문서)", "+dense1.0 +PRF(문서)", "+dense0.5 +PRF(문장)",
+          "+dense1.0 +PRF(문장)"]
+BASE += [f"comp {t}" for t in STACKS]
 SAME_DICT = {"gazcompsp(PMI)": "gazcomp(PMI)", "gazcompsp(4B 증류 NER+RE)": "gazcomp(4B 증류 NER+RE)",
              "gazcompsp(31B 증류 NER+RE)": "gazcomp(31B 증류 NER+RE)"}
 
@@ -61,15 +66,22 @@ def main():
         for b in ("gazcompsp(4B 증류 NER+RE)", "gazcompsp(31B 증류 NER+RE)"):   # compsp 위의 H2-b
             compare("gazcompsp(PMI)", b, metric, ds)
 
-    print("\n## 검색 조정(dense0.5 + PRF(문장)) R@5 — 검색만 실행\n")
-    print("| 집합 | compsp + 조정 | compsp | comp + 조정 | comp |")
-    print("|:--|--:|--:|--:|--:|")
-    for d in DATASETS[1:]:
-        rows = json.load(open(RESULTS / f"linearrag-new-compsp-pnw0.5-prf0.6sent_{d}" / "predictions.json",
-                              encoding="utf-8"))
-        r5 = sum(set(map(str, r["supporting"])) <= set(map(str, r["retrieved"][:5])) for r in rows) / len(rows)
-        vals = [rate(load(row(n), d), "r5") for n in ("compsp", "comp +dense0.5 +PRF(문장)", "comp")]
-        print(f"| {d} | {r5:.3f} | {vals[0]:.3f} | {vals[1]:.3f} | {vals[2]:.3f} |")
+    print("\n## 검색 조정 6종: compsp +조정 대 같은 조정의 comp (GPT-Acc, 정확 McNemar)\n")
+    print("| 비교 | " + " | ".join(DATASETS) + " |")
+    print("|:--|" + ":--|" * len(DATASETS))
+    for t in STACKS:
+        compare(f"compsp {t}", f"comp {t}", "acc", DATASETS)
+    for metric in ("r5",):
+        print(f"\n## 검색 조정 6종 ({metric}): 같은 조정의 comp, compsp 기본과 비교\n")
+        print("| 비교 | " + " | ".join(DATASETS[1:]) + " |")
+        print("|:--|" + ":--|" * 3)
+        for t in STACKS:
+            compare(f"compsp {t}", f"comp {t}", metric, DATASETS[1:])
+            compare(f"compsp {t}", "compsp", metric, DATASETS[1:])
+    print("\n(◆ 조건이 같은 dense0.5 +PRF(문장)만 compsp 기본과 GPT-Acc를 직접 비교)\n")
+    print("| 비교 | " + " | ".join(DATASETS) + " |")
+    print("|:--|" + ":--|" * len(DATASETS))
+    compare("compsp +dense0.5 +PRF(문장)", "compsp", "acc", DATASETS)
 
     print("\n## 그래프 연결성 (comp 대 compsp)\n")
     rows = list(csv.DictReader(open(RESULTS / "explore_compsp_connectivity.csv", encoding="utf-8")))

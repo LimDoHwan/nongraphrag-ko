@@ -3,3 +3,9 @@ compsp,linearrag-new-compsp,wiki_ko_v2,linearrag-new-compsp,comp 엔티티 + 공
 gazcompsp(PMI),linearrag-new-gazcompsp,wiki_ko_v2,linearrag-new-gazcompsp,gazcomp(PMI) + 나머지 명사의 공백 조각
 gazcompsp(4B 증류 NER+RE),linearrag-new-gazcompsp_llm4b,wiki_ko_v2,linearrag-new-gazcompsp_llm4b,gazcomp(4B 증류) + 나머지 명사의 공백 조각
 gazcompsp(31B 증류 NER+RE),linearrag-new-gazcompsp_llm,wiki_ko_v2,linearrag-new-gazcompsp_llm,gazcomp(31B 증류) + 나머지 명사의 공백 조각
+compsp +dense0.5,linearrag-new-compsp-pnw0.5,wiki_ko_v2,linearrag-new-compsp-pnw0.5,compsp + dense-seed 0.5 (출력 한도 256)
+compsp +dense1.0,linearrag-new-compsp-pnw1,wiki_ko_v2,linearrag-new-compsp-pnw1,compsp + dense-seed 1.0 (출력 한도 256)
+compsp +dense0.5 +PRF(문서),linearrag-new-compsp-pnw0.5-prf0.6,wiki_ko_v2,linearrag-new-compsp-pnw0.5-prf0.6,"compsp + dense0.5 + PRF(문서, β=0.6) (출력 한도 256)"
+compsp +dense1.0 +PRF(문서),linearrag-new-compsp-pnw1-prf0.6,wiki_ko_v2,linearrag-new-compsp-pnw1-prf0.6,"compsp + dense1.0 + PRF(문서, β=0.6) (출력 한도 256)"
+compsp +dense0.5 +PRF(문장),linearrag-new-compsp-pnw0.5-prf0.6sent,wiki_ko_v2,linearrag-new-compsp-pnw0.5-prf0.6sent,"compsp + dense0.5 + PRF(문장, β=0.6) (◆ 조건, 출력 한도 2,000)"
+compsp +dense1.0 +PRF(문장),linearrag-new-compsp-pnw1-prf0.6sent,wiki_ko_v2,linearrag-new-compsp-pnw1-prf0.6sent,"compsp + dense1.0 + PRF(문장, β=0.6) (출력 한도 256)"

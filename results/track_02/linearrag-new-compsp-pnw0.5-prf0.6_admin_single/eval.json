@@ -1,0 +1,12 @@
+{
+ "dataset": "admin_single",
+ "system": "linearrag-new-compsp-pnw0.5-prf0.6",
+ "n": 300,
+ "gpt4o_acc": 0.9333,
+ "contain_acc": 0.8533,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 256,
+ "qa_new": 66,
+ "note": "탐색적 추가 실험(2026-10-17~18): linearrag-new-compsp-pnw0.5-prf0.6"
+}

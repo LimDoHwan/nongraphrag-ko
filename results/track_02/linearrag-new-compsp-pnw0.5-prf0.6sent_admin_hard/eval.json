@@ -2,6 +2,11 @@
  "dataset": "admin_hard",
  "system": "linearrag-new-compsp-pnw0.5-prf0.6sent",
  "n": 103,
- "r5": 0.4272,
- "note": "탐색적 추가 실험(2026-10-17): compsp + dense0.5 + PRF(문장, β 0.6). 검색만 실행(답변 생성 없음)"
+ "gpt4o_acc": 0.4175,
+ "contain_acc": 0.3204,
+ "gen_model": "gemma-4-31B-it",
+ "qa_prompt": "linearrag.QA_SYS",
+ "qa_max_tokens": 2000,
+ "qa_new": 0,
+ "note": "탐색적 추가 실험(2026-10-17~18): linearrag-new-compsp-pnw0.5-prf0.6sent"
 }
