@@ -1,4 +1,4 @@
-"""dense 가중치(pnw) 스윕 분석 (2026-10-18, admin R@5, 검색만).
+"""H5: dense 가중치(pnw) 스윕 분석 (2026-10-18, admin R@5, 검색만).
 
 입력: results/track_02/pnw_sweep/{추출}[_prf]_{집합}.json  (scripts/pnw_sweep/pnw_sweep.py 출력, pnw 별 문항 상위 5개)
 - R@5 곡선(추출 방식 × pnw × single·full·hard)과 Vanilla 기준선
@@ -8,7 +8,7 @@
 - 질문 엔티티가 없어 밀집 검색으로 대체된 문항 수, pnw 0에서 시작 벡터가 비어 전역 PageRank가 된 문항 수
 다중 비교 보정 없음.
 
-원고 대응(2026-10-19 번호): <표 43>, <그림 4>.
+원고 대응(2026-10-19 번호): <표 43>, <그림 4>. 2026-10-28 가설 재정의로 H5의 주 근거(대 Vanilla 검정·판정표는 h5_tests.py).
 
 실행: python analysis/pnw_sweep.py
 """
@@ -60,7 +60,7 @@ def cell(a, b):
 def report(prf):
     tag = "PRF(문장) 켬" if prf else "PRF 끔"
     vanilla = {d: rate(load("Vanilla RAG", d)) for d in SETS}
-    print(f"\n# dense 가중치 스윕 — {tag} (R@5)\n")
+    print(f"\n# H5: dense 가중치 스윕 — {tag} (R@5)\n")
     best_tbl = []
     for x, name in NAMES.items():
         S, meta = load_sweep(x, prf)
@@ -109,7 +109,7 @@ CONFIRM = {  # 확인용 GPT-Acc 점(◆ 조건: 31B, QA_SYS, 출력 한도 2,00
 
 def confirm():
     """확인용 점의 GPT-Acc: 0.05 대비 정확 McNemar. 최고점은 full R@5 를 보고 고른 점이다."""
-    print("\n# 확인용 GPT-Acc (◆ 조건, PRF 끔)\n")
+    print("\n# H5 확인용 GPT-Acc (◆ 조건, PRF 끔)\n")
     print("| 추출 | pnw | single | full | hard | single 대 0.05 | full 대 0.05 | hard 대 0.05 |")
     print("|:--|--:|--:|--:|--:|:--|:--|:--|")
     for name, pts in CONFIRM.items():

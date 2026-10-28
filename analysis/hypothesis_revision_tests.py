@@ -1,9 +1,10 @@
-"""가설 재정리(2026-10-18)에 필요한 짝 검정: H3·H4·H5.
+"""가설 재정리(2026-10-18)에 필요한 짝 검정: H3·H4·H5 보조.
 
 요청 1 (H3) compsp·noun 대 LLM 증류 사전
 요청 2 (H4) 증류 사전 대 HippoRAG2 관계 그래프
-요청 4 (H5) 검색 조정 대 조정 없음 (부록 C <표 60>의 구성)
-추가 (H5) comp + 검색 조정 6종 대 HippoRAG2 31B·4B 그래프 (admin)
+요청 4 (H5 보조) 검색 조정 대 조정 없음 (부록 C <표 60>의 구성)
+추가 (H5 보조, 관계 그래프 대비) comp + 검색 조정 6종 대 HippoRAG2 31B·4B 그래프 (admin)
+2026-10-28 가설 재정의로 H5는 dense 가중치 스윕(pnw_sweep.py, h5_tests.py)이 되고, 이 파일의 두 검정은 H5 보조 결과다.
 
 검정은 문항 단위 정확 McNemar(양측), 95% 신뢰구간은 짝지은 비율 차이의 정규 근사
 (차이 ± 1.96 × √(b + c − (b − c)²/n) / n). 지표는 admin R@5·GPT-Acc, wiki_ko GPT-Acc.
@@ -76,12 +77,12 @@ def main():
           [(D4B, H31B), (D4B, H4B), (D31B, H31B)], DATASETS, ["r5", "acc"])
     pairs = ([(f"{D4B} {s}", D4B) for s in STACK4] + [(f"{D31B} {s}", D31B) for s in STACK4]
              + [(f"gazcomp(PMI) {s}", "gazcomp(PMI)") for s in STACK_PMI])
-    block("요청 4 (H5). 검색 조정 대 조정 없음 — 사전 계열 (admin)", pairs, ADMIN, ["r5"])
-    block("요청 4 (H5). 검색 조정 대 조정 없음 — comp (wiki_ko)",
+    block("요청 4 (H5 보조). 검색 조정 대 조정 없음 — 사전 계열 (admin)", pairs, ADMIN, ["r5"])
+    block("요청 4 (H5 보조). 검색 조정 대 조정 없음 — comp (wiki_ko)",
           [(f"comp {s}", "comp") for s in STACK_COMP], ["wiki_ko"], ["acc"])
     # 추가 요청(2026-10-18): GPT-Acc는 ◆ 쌍(comp +dense0.5 +PRF(문장))만 내고, 256토큰 행은 생략
     for g in (H31B, H4B):
-        block(f"추가 (H5). comp + 검색 조정 6종 대 {g} (admin)",
+        block(f"추가 (H5 보조, 관계 그래프 대비). comp + 검색 조정 6종 대 {g} (admin)",
               [(f"comp {s}", g) for s in STACK_COMP], ADMIN, ["r5", "acc"], skip_incomparable=True)
 
 

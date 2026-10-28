@@ -62,7 +62,8 @@ python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·�
 - **스크립트와 원고 표의 대응**(2026-10-19 원고 번호 기준)
   - `integrated_table.py` → `RESULTS.md`: 부록 B <표 53> 전체(41개 시스템 + 탐색 조건 10행)
   - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 39>, <표 40>, 부록 C <표 64>, <표 66>
-  - `pnw_sweep.py`: <표 43>, <그림 4>
+  - `pnw_sweep.py`: <표 43>, <그림 4> (H5)
+  - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가, 원고 표 번호 미정)
   - `explore_compsp.py`: <표 25>, 부록 B <표 53> ☆행, 부록 C <표 65>, <표 67>
   - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
@@ -200,11 +201,11 @@ python explore_compsp.py      # GPT-Acc·Contain·R@5 표, 정확 McNemar 짝 �
 
 ## 5. 가설 재정리용 추가 검정·측정 (2026-10-18)
 
-논문 가설을 H1~H5로 다시 정리하면서 추가한 짝 검정과 비용 실측입니다. 원고 제4장(H3 (나)·H4·H5)과 부록 C 8절에 탐색적 결과로 들어갑니다. 새 응답 생성이나 판정 없이 기존 결과만 씁니다(측정 제외).
+논문 가설을 H1~H5로 다시 정리하면서 추가한 짝 검정과 비용 실측입니다. 원고 제4장(H3 (나)·H4·H5 보조)과 부록 C 8절에 탐색적 결과로 들어갑니다. 새 응답 생성이나 판정 없이 기존 결과만 씁니다(측정 제외).
 
 ```bash
 cd analysis
-python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 사전 대 HippoRAG2, 검색 조정 대 조정 없음, comp+조정 대 HippoRAG2
+python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 사전 대 HippoRAG2, 검색 조정 대 조정 없음, comp+조정 대 HippoRAG2(H5 보조, 관계 그래프 대비)
 ```
 
 - 정확 McNemar(양측)와 95% 신뢰구간(짝지은 비율 차이의 정규 근사)을 냅니다. GPT-Acc는 두 조건 모두 출력 한도 2,000일 때만 내고, 256토큰 행이 끼면 "비교 불가"로 표시합니다.
@@ -220,14 +221,22 @@ python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 
 
 다시 측정하려면 OpenAI 호환 vLLM 서버(`gemma-4-31B-it`)가 필요합니다(`.env`의 `GEMMA_URL`·`GEMMA_MODEL`·`GEMMA_COOKIE`).
 
-## 6. dense 가중치(pnw) 스윕 (2026-10-18~19, admin R@5)
+## 6. H5: dense 가중치(pnw) 스윕 (2026-10-18~19, admin R@5)
 
-원고 제4장 제5절 4항(<표 43>, <그림 4>)의 근거입니다. LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
+원고 제4장 제5절 4항(<표 43>, <그림 4>)의 근거이며, 2026-10-28 가설 재정의로 **H5의 주 근거**가 되었습니다(5절의 검색 조정 대 HippoRAG2 검정은 H5 보조). LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
 
 ```bash
 cd analysis
 python pnw_sweep.py    # R@5 곡선, 추출 방식별 full 최고 pnw, 정확 McNemar(최고점 대비·0.05 대비), 확인용 GPT-Acc
+python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc 대 Vanilla ◆, H5 판정표, full 최고 pnw 부트스트랩 분포
 ```
+
+`h5_tests.py`(2026-10-28)는 새 검색·응답 생성 없이 위 스윕 결과와 Vanilla RAG 문항별 결과만 씁니다.
+
+- 대상: 8개 계열(위 6종 + PRF(문장)을 켠 comp·4B 증류 사전) × pnw 11개
+- 판정용 점: 계열별 full R@5 최고 pnw(같은 값이면 가장 작은 pnw). 이 점을 결과를 보고 골랐으므로 검정은 탐색적이며, 다중 비교 보정은 하지 않았습니다.
+- 판정표 열: ① 최고점 single 대 0.05, ② 최고점 single 대 Vanilla RAG(차이·95% CI·p), ③-1 full 2.0·5.0 대 full 최고점, ③-2 hard 정점(같은 규칙)과 hard 2.0·5.0 대 hard 정점
+- 정점 위치의 불확실성: admin_full 문항 단위 부트스트랩 2,000회(시드 20261028)에서 각 pnw가 full 최고점이 된 비율. 판정에는 쓰지 않습니다.
 
 다시 실행하기:
 
