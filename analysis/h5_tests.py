@@ -16,7 +16,7 @@ H5. 질의–문단 유사도의 가중 계수(pnw)를 원논문 기본값(0.05)
 정확 McNemar(양측), 95% CI는 짝지은 비율 차이의 정규 근사(common.mcnemar). 차이는 A − B (%p). 다중 비교 보정 없음.
 최고점은 full R@5를 보고 고른 점이므로 ①·② 검정은 탐색적이다.
 
-원고 대응: 원고 제4장 제5절 재배치 전이라 표 번호 미정(2026-10-28 요청 R5~R7).
+원고 대응(2026-10-29 14단계 번호): 제4장 제5절 1항 <표 39>(R6 판정표), <표 40>(R7 부트스트랩).
 
 실행: python analysis/h5_tests.py
 """
@@ -101,7 +101,7 @@ def main():
             res = load({"admin_folder": f, "wiki_folder": f}, "admin_single")
             print(line(f"{name} · {p}", test(res, van["admin_single"], "acc")))
 
-    print("\n## R6. H5 판정표 (admin R@5, 차이는 A − B %p, 괄호는 b/c와 p)\n")
+    print("\n## R6. H5 판정표 (원고 <표 39>, admin R@5, 차이는 A − B %p, 괄호는 b/c와 p)\n")
     print("| 계열 | full 최고 pnw | single (0.05 → 최고점) | ① 최고점 대 0.05 | ② 최고점 대 Vanilla [95% CI] "
           "| ③-1 full 2.0 대 최고점 | ③-1 full 5.0 대 최고점 | ③-2 hard 정점 | ③-2 hard 2.0 대 정점 | ③-2 hard 5.0 대 정점 |")
     print("|:--|--:|--:|:--|:--|:--|:--|--:|:--|:--|")
@@ -112,7 +112,7 @@ def main():
               f"{short(r['r1'])} | {short(r['r2'], ci=True)} | {short(r['r31']['2.0'])} | {short(r['r31']['5.0'])} | "
               f"{tie(r['hpeak'], r['hties'])} | {h[0]} | {h[1]} |")
 
-    print(f"\n## R7. full 최고 pnw의 부트스트랩 분포 (admin_full 문항 단위, {N_BOOT:,}회, 시드 {SEED}, "
+    print(f"\n## R7. full 최고 pnw의 부트스트랩 분포 (원고 <표 40>, admin_full 문항 단위, {N_BOOT:,}회, 시드 {SEED}, "
           "같은 값이면 가장 작은 pnw)\n")
     pnws = boot[0][2]
     print("| 계열 | 표본 최고점 | 최빈값 | " + " | ".join(pnws) + " |")

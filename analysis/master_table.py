@@ -1,4 +1,4 @@
-"""부록 B <표 53>의 41개 시스템 행 (× 4개 집합의 GPT-Acc·R@5·Contain) 재생성. 탐색 조건 10행은 integrated_table.py.
+"""부록 B <표 54>의 41개 시스템 행 (× 4개 집합의 GPT-Acc·R@5·Contain) 재생성. 탐색 조건 10행은 integrated_table.py.
 
 문항별 결과에서 지표를 다시 계산하고, analysis/reference/appendix_b.csv(논문 수록값)와 비교한다.
 불일치가 있으면 종료 코드 1.
