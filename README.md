@@ -55,13 +55,13 @@ GPU와 원천 데이터 없이, 저장소에 든 문항별 결과만으로 논�
 cd analysis
 python integrated_table.py     # 통합 결과표 RESULTS.md: 부록 B 41개 시스템 + 탐색 실험 10개 행
 python master_table.py        # 부록 B <표 54>의 41개 시스템 행 × 4개 집합, 논문 수록값과 자동 대조 (탐색 조건 10행은 explore_compsp.py·integrated_table.py)
-python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 27>(H3 (가)), <표 30>, <표 43>·<표 44>(H5 관련, 제4장 제5절 제3항·제4항: 검색 조정 대 comp): 정확 McNemar 검정, 95% 신뢰구간
+python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 27>(H3 (가)), <표 30>, <표 43>(H5 관련, 제4장 제5절 제3항: 검색 조정 대 comp, 다중 도약)·<표 42>의 single 대 comp 열(단일 도약, R@5 값은 <표 44>): 정확 McNemar 검정, 95% 신뢰구간
 python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·화폐 환산, <표 38> ICER, <표 36> 비용 구조
 ```
 
 - **스크립트와 원고 표의 대응**(2026-10-31 원고 15단계 번호 기준)
   - `integrated_table.py` → `RESULTS.md`: 부록 B <표 54> 전체(41개 시스템 + 탐색 조건 10행)
-  - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>
+  - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>(H5 관련 추가 분석), 제4장 제5절 제5항 본문
   - `pnw_sweep.py`: <표 39>의 최고 계수·①·③ 열, <그림 4>, 부록 F <표 81>~<표 83>(단일 도약·다중 도약 혼합·탐색 필수 집합의 R@5 곡선) (H5)
   - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정, ③의 2.0·5.0 비교 포함), <표 40>(부트스트랩)
   - `explore_compsp.py`: <표 25>, 부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>
@@ -201,11 +201,11 @@ python explore_compsp.py      # GPT-Acc·Contain·R@5 표, 정확 McNemar 짝 �
 
 ## 5. 가설 재정리용 추가 검정·측정 (2026-10-18)
 
-논문 가설을 H1~H5로 다시 정리하면서 추가한 짝 검정과 비용 실측입니다. 원고 제4장(H3 (나)·H4·H5 보조)과 부록 C 8절에 탐색적 결과로 들어갑니다. 새 응답 생성이나 판정 없이 기존 결과만 씁니다(측정 제외).
+논문 가설을 H1~H5로 다시 정리하면서 추가한 짝 검정과 비용 실측입니다. 원고 제4장(H3 (나)·H4·H5 보조·H5 관련 추가 분석)과 부록 C 8절에 탐색적 결과로 들어갑니다. 새 응답 생성이나 판정 없이 기존 결과만 씁니다(측정 제외).
 
 ```bash
 cd analysis
-python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 사전 대 HippoRAG2, 검색 조정 대 조정 없음, comp+조정 대 HippoRAG2(H5 보조, 관계 그래프 대비)
+python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 사전 대 HippoRAG2, 검색 조정 대 조정 없음(H5 관련 추가 분석), comp+조정 대 HippoRAG2(H5 보조, 관계 그래프 대비)
 ```
 
 - 정확 McNemar(양측)와 95% 신뢰구간(짝지은 비율 차이의 정규 근사)을 냅니다. GPT-Acc는 두 조건 모두 출력 한도 2,000일 때만 내고, 256토큰 행이 끼면 "비교 불가"로 표시합니다.

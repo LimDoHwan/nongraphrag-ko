@@ -1,10 +1,10 @@
-"""가설 재정리(2026-10-18)에 필요한 짝 검정: H3·H4·H5 보조.
+"""가설 재정리(2026-10-18)에 필요한 짝 검정: H3·H4·H5 관련 추가 분석·H5 보조.
 
 요청 1 (H3) compsp·noun 대 LLM 증류 사전
 요청 2 (H4) 증류 사전 대 HippoRAG2 관계 그래프
-요청 4 (H5 보조) 검색 조정 대 조정 없음 (부록 C <표 61>의 구성)
+요청 4 (H5 관련 추가 분석) 검색 조정 대 조정 없음: 사전 계열 admin은 부록 C <표 67>, comp wiki_ko는 제4장 제5절 제5항 본문
 추가 (H5 보조, 관계 그래프 대비) comp + 검색 조정 6종 대 HippoRAG2 31B·4B 그래프 (admin)
-2026-10-28 가설 재정의로 H5는 dense 가중치 스윕(pnw_sweep.py, h5_tests.py)이 되고, 이 파일의 두 검정은 H5 보조 결과다.
+2026-10-28 가설 재정의로 H5는 dense 가중치 스윕(pnw_sweep.py, h5_tests.py)이 되었다. 이 파일에서 "H5 보조"는 관계 그래프 대비 검정(<표 41>·<표 42>)만 가리키고, 요청 4는 "H5 관련 추가 분석"이다.
 
 검정은 문항 단위 정확 McNemar(양측), 95% 신뢰구간은 짝지은 비율 차이의 정규 근사
 (차이 ± 1.96 × √(b + c − (b − c)²/n) / n). 지표는 admin R@5·GPT-Acc, wiki_ko GPT-Acc.
@@ -12,7 +12,7 @@ GPT-Acc는 두 조건의 응답 조건이 모두 출력 한도 2,000(◆ 또는 
 한쪽이라도 256토큰 행이면 "비교 불가"로 표시한다(R@5는 응답과 무관해 항상 비교 가능).
 다중 비교 보정은 하지 않았다(원고의 다른 검정과 같음).
 
-원고 대응(2026-10-29 14단계 번호): <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>.
+원고 대응(2026-10-31 15단계 번호): <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>(H5 관련 추가 분석), 제4장 제5절 제5항 본문(wiki_ko comp 검색 조정).
 
 실행: python analysis/hypothesis_revision_tests.py
 """
@@ -77,12 +77,12 @@ def main():
           [(D4B, H31B), (D4B, H4B), (D31B, H31B)], DATASETS, ["r5", "acc"])
     pairs = ([(f"{D4B} {s}", D4B) for s in STACK4] + [(f"{D31B} {s}", D31B) for s in STACK4]
              + [(f"gazcomp(PMI) {s}", "gazcomp(PMI)") for s in STACK_PMI])
-    block("요청 4 (H5 보조). 검색 조정 대 조정 없음 — 사전 계열 (admin)", pairs, ADMIN, ["r5"])
-    block("요청 4 (H5 보조). 검색 조정 대 조정 없음 — comp (wiki_ko)",
+    block("요청 4 (H5 관련 추가 분석, 부록 C <표 67>). 검색 조정 대 조정 없음 — 사전 계열 (admin)", pairs, ADMIN, ["r5"])
+    block("요청 4 (H5 관련 추가 분석, 제4장 제5절 제5항 본문). 검색 조정 대 조정 없음 — comp (wiki_ko)",
           [(f"comp {s}", "comp") for s in STACK_COMP], ["wiki_ko"], ["acc"])
     # 추가 요청(2026-10-18): GPT-Acc는 ◆ 쌍(comp +dense0.5 +PRF(문장))만 내고, 256토큰 행은 생략
     for g in (H31B, H4B):
-        block(f"추가 (H5 보조, 관계 그래프 대비). comp + 검색 조정 6종 대 {g} (admin)",
+        block(f"추가 (H5 보조, 관계 그래프 대비, <표 41>·<표 42>). comp + 검색 조정 6종 대 {g} (admin)",
               [(f"comp {s}", g) for s in STACK_COMP], ADMIN, ["r5", "acc"], skip_incomparable=True)
 
 
