@@ -11,7 +11,8 @@ compsp +조정 : comp와 같은 검색 조정 6종(dense-seed 0.5/1.0 × PRF 없
 같은 조정의 comp 행과만 비교하고, compsp 기본과는 R@5(응답과 무관)로 비교한다.
 실험 코드: scripts/explore_compsp/ (README 참조).
 
-원고 대응(2026-10-29 14단계 번호): <표 25>, 부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>.
+원고 대응(2026-11-01 21단계): <표 25> H2 검정 결과: compsp(A) 대 comp·noun(B), GPT-Acc(짝 비교 acc 표의 compsp 대 comp·noun 행),
+부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>.
 
 실행: python analysis/explore_compsp.py
 """

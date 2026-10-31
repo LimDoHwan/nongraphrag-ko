@@ -1,14 +1,15 @@
 """제4장 가설 검정표 재생성 (정확 McNemar, 양측).
 
-  <표 22> H1  : noun 대 nnp
-  <표 23> 추가 분석: comp 대 noun, gazcomp(PMI) 대 comp
+  <표 22> H1 보조 비교(추출 범위): noun 대 nnp
+  <표 23> 복합명사 결합과 통계 사전의 효과: comp 대 noun(H2의 근거), gazcomp(PMI) 대 comp(추가 분석)
   <표 26> H3 (가) 대표 조건: comp·gazcomp(PMI) 대 HippoRAG2(31B)
   <표 27> H3 (가) 사전 출처 대응쌍: gazcomp(PMI) 대 4B·31B 증류 사전
   <표 30> 구축 LLM 규모: 4B 대 31B (증류 사전, HippoRAG2 그래프)
   <표 43> H5 관련(제4장 제5절 제3항): 검색 조정 6개 구성 대 comp (다중 도약 R@5)
   <표 42>의 single 대 comp 열(R@5 값은 <표 44>): 검색 조정 6개 구성 대 comp (단일 도약 R@5)
 
-표 번호는 2026-10-31 원고 15단계 기준(14단계와 같음). 판정 유의수준: H1 0.05/3, H5 관련(<표 43>) 0.05 (보정 없음), H3 (가) 0.05 (보정 없음, 제3장 제5절).
+표 번호는 2026-11-01 원고 21단계 기준(15단계와 같음). noun 대 nnp는 H1의 보조 비교로 판정에 쓰지 않음(H1 판정은 h1_vanilla_tests.py, 0.05/4).
+판정 유의수준: H5 관련(<표 43>) 0.05 (보정 없음), H3 (가) 0.05 (보정 없음, 제3장 제5절).
 표의 "b/c"는 A만 맞힌 문항 수 / B만 맞힌 문항 수, 차이는 A − B (%p)와 95% 신뢰구간.
 
 실행: python analysis/hypothesis_tests.py
@@ -41,11 +42,11 @@ def full_plan(r5_single=True):
 
 
 def main():
-    table("<표 22> H1", "noun", "nnp (원논문 대응)", full_plan())
+    table("<표 22> H1 보조 비교(추출 범위): noun 대 nnp", "noun", "nnp (원논문 대응)", full_plan())
 
-    print("\n## <표 23> 추가 분석 (탐색적)")
-    table("comp 대 noun", "comp", "noun", [(d, "acc") for d in MULTI] + [(d, "r5") for d in ADMIN])
-    table("gazcomp(PMI) 대 comp", "gazcomp(PMI)", "comp", [(d, "acc") for d in MULTI] + [(d, "r5") for d in ADMIN])
+    print("\n## <표 23> 복합명사 결합과 통계 사전의 효과")
+    table("comp 대 noun (H2의 근거)", "comp", "noun", [(d, "acc") for d in MULTI] + [(d, "r5") for d in ADMIN])
+    table("gazcomp(PMI) 대 comp (추가 분석)", "gazcomp(PMI)", "comp", [(d, "acc") for d in MULTI] + [(d, "r5") for d in ADMIN])
 
     print("\n## <표 26> H3 (가) 대표 조건")
     for a in ("comp", "gazcomp(PMI)"):

@@ -1,6 +1,6 @@
-"""H1(새) 대 Vanilla RAG: 형태소 기반 추출 조건 대 Vanilla RAG (2026-10-31 원고 요청 R12).
+"""<표 22> H1 검정 결과와 추출 범위의 보조 비교: 형태소 기반 추출 조건 대 Vanilla RAG (2026-10-31 원고 요청 R12).
 
-H1(새): 형태소 분석기로 추출한 엔티티만으로도, 관계 없는 그래프 RAG는 그래프 없는 밀집 검색보다
+H1: 형태소 분석기로 추출한 엔티티만으로도, 관계 없는 그래프 RAG는 그래프 없는 밀집 검색보다
 다중 도약 질의의 정확도가 높을 것이다.
 
 A 조건: 호출 0회 후보 nnp, noun, comp, gazcomp(PMI) + 보고용 compsp(탐색), comp +dense0.5 +PRF(문장)(대표 구성)
@@ -13,7 +13,8 @@ admin_hard는 제외(적대적 필터의 정의상 Vanilla RAG의 R@5가 0).
 다중 비교 보정은 하지 않고 원 p값을 낸다. 판정(comp·gazcomp(PMI) × wiki_ko·admin_full GPT-Acc 4개,
 Bonferroni α = 0.05/4)은 원고 쪽이 한다.
 
-원고 대응: 제4장 제2절 "H1(새) 대 Vanilla RAG"(표 번호 미정).
+원고 대응(2026-11-01 21단계): 제4장 제2절 <표 22> H1 검정 결과와 추출 범위의 보조 비교의 Vanilla RAG와의 비교 행(nnp·noun·comp·gazcomp(PMI)의
+wiki_ko GPT-Acc, admin full GPT-Acc·R@5, admin single GPT-Acc). admin single R@5와 보고용 compsp·대표 구성 블록은 원고 미수록.
 
 실행: python analysis/h1_vanilla_tests.py
 """
@@ -55,11 +56,11 @@ def block(title, names, plan):
 
 
 def main():
-    print(f"# H1(새) 대 Vanilla RAG (정확 McNemar 양측, 보정 없는 원 p값, B = {B})")
+    print(f"# <표 22> H1 검정 결과와 추출 범위의 보조 비교: Vanilla RAG와의 비교 (정확 McNemar 양측, 보정 없는 원 p값, B = {B})")
     block("판정용 4개 비교 (comp·gazcomp(PMI) × wiki_ko·admin_full GPT-Acc, 판정은 원고 쪽, α = 0.05/4)",
           PRIMARY, [("wiki_ko", "acc"), ("admin_full", "acc")])
     block("호출 0회 후보 4개 조건 대 Vanilla RAG (전체)", ZERO_CALL, PLAN)
-    block("보고용: compsp(탐색), 대표 구성(검색 조정 포함) 대 Vanilla RAG", REPORT, PLAN)
+    block("보고용(원고 미수록): compsp(탐색), 대표 구성(검색 조정 포함) 대 Vanilla RAG", REPORT, PLAN)
 
 
 if __name__ == "__main__":
