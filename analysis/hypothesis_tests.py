@@ -5,10 +5,10 @@
   <표 26> H3 (가) 대표 조건: comp·gazcomp(PMI) 대 HippoRAG2(31B)
   <표 27> H3 (가) 사전 출처 대응쌍: gazcomp(PMI) 대 4B·31B 증류 사전
   <표 30> 구축 LLM 규모: 4B 대 31B (증류 사전, HippoRAG2 그래프)
-  <표 43> H5 보조: 검색 조정 6개 구성 대 comp (다중 도약 R@5)
-  <표 44> 관련: 검색 조정 6개 구성 대 comp (단일 도약 R@5)
+  <표 43> H5 관련(제4장 제5절 제3항): 검색 조정 6개 구성 대 comp (다중 도약 R@5)
+  <표 44> H5 관련(제4장 제5절 제4항): 검색 조정 6개 구성 대 comp (단일 도약 R@5)
 
-표 번호는 2026-10-29 원고 14단계 기준. 판정 유의수준: H1 0.05/3, H5 보조(<표 43>) 0.05/2 (Bonferroni), H3 (가) 0.05 (보정 없음, 제3장 제5절).
+표 번호는 2026-10-31 원고 15단계 기준(14단계와 같음). 판정 유의수준: H1 0.05/3, H5 관련(<표 43>) 0.05/2 (Bonferroni), H3 (가) 0.05 (보정 없음, 제3장 제5절).
 표의 "b/c"는 A만 맞힌 문항 수 / B만 맞힌 문항 수, 차이는 A − B (%p)와 95% 신뢰구간.
 
 실행: python analysis/hypothesis_tests.py
@@ -62,10 +62,10 @@ def main():
 
     configs = ["comp +dense0.5 +PRF(문장)", "comp +dense0.5", "comp +dense1.0",
                "comp +dense0.5 +PRF(문서)", "comp +dense1.0 +PRF(문서)", "comp +dense1.0 +PRF(문장)"]
-    print("\n## <표 43> H5 보조: 검색 조정 구성 대 comp (R@5)")
+    print("\n## <표 43> H5 관련(제4장 제5절 제3항): 검색 조정 구성 대 comp (R@5)")
     for c in configs:
         table(c, c, "comp", [(d, "r5") for d in ADMIN])
-    print("\n## <표 44> 관련: 단일 도약 R@5, 검색 조정 구성 대 comp")
+    print("\n## <표 44> H5 관련(제4장 제5절 제4항): 단일 도약 R@5, 검색 조정 구성 대 comp")
     for c in configs:
         table(c, c, "comp", [("admin_single", "r5")])
 

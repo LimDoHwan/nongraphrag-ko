@@ -55,7 +55,7 @@ GPU와 원천 데이터 없이, 저장소에 든 문항별 결과만으로 논�
 cd analysis
 python integrated_table.py     # 통합 결과표 RESULTS.md: 부록 B 41개 시스템 + 탐색 실험 10개 행
 python master_table.py        # 부록 B <표 54>의 41개 시스템 행 × 4개 집합, 논문 수록값과 자동 대조 (탐색 조건 10행은 explore_compsp.py·integrated_table.py)
-python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 27>(H3 (가)), <표 30>, <표 43>·<표 44>(검색 조정 대 comp): 정확 McNemar 검정, 95% 신뢰구간
+python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 27>(H3 (가)), <표 30>, <표 43>·<표 44>(H5 관련, 제4장 제5절 제3항·제4항: 검색 조정 대 comp): 정확 McNemar 검정, 95% 신뢰구간
 python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·화폐 환산, <표 38> ICER, <표 36> 비용 구조
 ```
 
