@@ -12,11 +12,13 @@ H5. 질의–문단 유사도의 가중 계수(pnw)를 원논문 기본값(0.05)
       ③-1 full 2.0·5.0 대 full 최고점, ③-2 hard 정점(같은 규칙)과 hard 2.0·5.0 대 hard 정점
   R7  정점 위치의 불확실성: admin_full 문항 단위 부트스트랩(2,000회, 시드 고정)으로 full 최고 pnw의 분포.
       판정에는 쓰지 않는다
+  R13 ④ 다중 도약 유지(2026-11-01 원고 요청, 스윕 결과를 본 뒤 추가한 기준): full 최고점 대 0.05의
+      admin full·hard R@5. 보정 없는 0.05에서 유의하게 낮지 않으면 충족(판정은 원고 쪽)
 
 정확 McNemar(양측), 95% CI는 짝지은 비율 차이의 정규 근사(common.mcnemar). 차이는 A − B (%p). 다중 비교 보정 없음.
 최고점은 full R@5를 보고 고른 점이므로 ①·② 검정은 탐색적이다.
 
-원고 대응(2026-10-31 15단계 번호): 제4장 제5절 1항 <표 39>(R6 판정표, ③의 2.0·5.0 비교 포함), <표 40>(R7 부트스트랩).
+원고 대응(2026-11-01 22절): 제4장 제5절 1항 <표 39>(R6 판정표, ③의 2.0·5.0 비교 포함, R13 ④), <표 40>(R7 부트스트랩).
 
 실행: python analysis/h5_tests.py
 """
@@ -91,6 +93,9 @@ def main():
             r1=test(S["admin_single"][best], S["admin_single"][BASE_P]),
             r2=test(S["admin_single"][best], van["admin_single"]),
             r31={p: test(S["admin_full"][p], S["admin_full"][best]) for p in HIGH},
+            r4={d: test(S[d][best], S[d][BASE_P]) for d in ("admin_full", "admin_hard")},
+            base4={d: rate(S[d][BASE_P]) for d in ("admin_full", "admin_hard")},
+            best4={d: rate(S[d][best]) for d in ("admin_full", "admin_hard")},
             r32={p: test(S["admin_hard"][p], S["admin_hard"][hpeak]) for p in HIGH if p != hpeak}))
         boot.append((name, best, pnws, S["admin_full"]))
 
@@ -111,6 +116,16 @@ def main():
         print(f"| {r['name']} | {tie(r['best'], r['ties'])} | {r['s_base']:.3f} → {r['s_best']:.3f} | "
               f"{short(r['r1'])} | {short(r['r2'], ci=True)} | {short(r['r31']['2.0'])} | {short(r['r31']['5.0'])} | "
               f"{tie(r['hpeak'], r['hties'])} | {h[0]} | {h[1]} |")
+
+    print("\n## R13. <표 39> ④ 최고점 대 0.05 (다중 도약 유지): full / hard "
+          "(admin R@5, A = full 최고점, B = 0.05, 괄호는 b/c와 p)\n")
+    print("| 계열 | full 최고 pnw | full (0.05 → 최고점) | ④ full 최고점 대 0.05 [95% CI] "
+          "| hard (0.05 → 최고점) | ④ hard 최고점 대 0.05 [95% CI] |")
+    print("|:--|--:|--:|:--|--:|:--|")
+    for r in rows:
+        cells = [f"{r['base4'][d]:.3f} → {r['best4'][d]:.3f} | {short(r['r4'][d], ci=True)}"
+                 for d in ("admin_full", "admin_hard")]
+        print(f"| {r['name']} | {r['best']} | {cells[0]} | {cells[1]} |")
 
     print(f"\n## R7. full 최고 pnw의 부트스트랩 분포 (원고 <표 40>, admin_full 문항 단위, {N_BOOT:,}회, 시드 {SEED}, "
           "같은 값이면 가장 작은 pnw)\n")

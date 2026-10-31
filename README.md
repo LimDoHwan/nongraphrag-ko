@@ -64,7 +64,7 @@ python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·�
   - `integrated_table.py` → `RESULTS.md`: 부록 B <표 54> 전체(41개 시스템 + 탐색 조건 10행)
   - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>(H5 관련 추가 분석), 제4장 제5절 제5항 본문
   - `pnw_sweep.py`: <표 39>의 최고 계수·①·③ 열, <그림 4>, 부록 F <표 81>~<표 83>(단일 도약·다중 도약 혼합·탐색 필수 집합의 R@5 곡선) (H5)
-  - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정, ③의 2.0·5.0 비교 포함), <표 40>(부트스트랩)
+  - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정, ③의 2.0·5.0 비교, ④ 다중 도약 유지 포함), <표 40>(부트스트랩)
   - `h1_vanilla_tests.py`: <표 22> H1 검정 결과와 추출 범위의 보조 비교의 Vanilla RAG와의 비교 행 (2026-10-31 추가). 판정용 4개 비교는 comp·gazcomp(PMI) × wiki_ko·admin full GPT-Acc(0.05/4). 보고용 compsp·대표 구성 블록은 원고 미수록
   - `explore_compsp.py`: <표 25> H2 검정 결과(compsp 대 comp·noun, GPT-Acc), 부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>
   - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
@@ -230,7 +230,7 @@ python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 
 ```bash
 cd analysis
 python pnw_sweep.py    # R@5 곡선, 추출 방식별 full 최고 pnw, 정확 McNemar(최고점 대비·0.05 대비), 확인용 GPT-Acc
-python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc 대 Vanilla ◆, H5 판정표, full 최고 pnw 부트스트랩 분포
+python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc 대 Vanilla ◆, H5 판정표, ④ full 최고점 대 0.05(full·hard, 2026-11-01 추가), full 최고 pnw 부트스트랩 분포
 ```
 
 `h5_tests.py`(2026-10-28)는 새 검색·응답 생성 없이 위 스윕 결과와 Vanilla RAG 문항별 결과만 씁니다.
