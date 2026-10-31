@@ -56,6 +56,7 @@ cd analysis
 python integrated_table.py     # 통합 결과표 RESULTS.md: 부록 B 41개 시스템 + 탐색 실험 10개 행
 python master_table.py        # 부록 B <표 54>의 41개 시스템 행 × 4개 집합, 논문 수록값과 자동 대조 (탐색 조건 10행은 explore_compsp.py·integrated_table.py)
 python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 27>(H3 (가)), <표 30>, <표 43>(H5 관련, 제4장 제5절 제3항: 검색 조정 대 comp, 다중 도약)·<표 42>의 single 대 comp 열(단일 도약, R@5 값은 <표 44>): 정확 McNemar 검정, 95% 신뢰구간
+python h1_vanilla_tests.py   # H1(새) 대 Vanilla RAG (제4장 제2절, 2026-10-31 추가): nnp·noun·comp·gazcomp(PMI)·compsp·대표 구성 대 Vanilla RAG, 정확 McNemar, 보정 없는 원 p값
 python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·화폐 환산, <표 38> ICER, <표 36> 비용 구조
 ```
 
@@ -64,6 +65,7 @@ python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·�
   - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>(H5 관련 추가 분석), 제4장 제5절 제5항 본문
   - `pnw_sweep.py`: <표 39>의 최고 계수·①·③ 열, <그림 4>, 부록 F <표 81>~<표 83>(단일 도약·다중 도약 혼합·탐색 필수 집합의 R@5 곡선) (H5)
   - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정, ③의 2.0·5.0 비교 포함), <표 40>(부트스트랩)
+  - `h1_vanilla_tests.py`: H1(새) 대 Vanilla RAG (2026-10-31 추가, 제4장 제2절, 표 번호 미정). 판정용 4개 비교는 comp·gazcomp(PMI) × wiki_ko·admin full GPT-Acc
   - `explore_compsp.py`: <표 25>, 부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>
   - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
