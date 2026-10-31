@@ -59,11 +59,11 @@ python hypothesis_tests.py    # 제4장 <표 22>(H1)·<표 23>, <표 26>·<표 2
 python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·화폐 환산, <표 38> ICER, <표 36> 비용 구조
 ```
 
-- **스크립트와 원고 표의 대응**(2026-10-29 원고 14단계 번호 기준)
+- **스크립트와 원고 표의 대응**(2026-10-31 원고 15단계 번호 기준)
   - `integrated_table.py` → `RESULTS.md`: 부록 B <표 54> 전체(41개 시스템 + 탐색 조건 10행)
   - `hypothesis_revision_tests.py`: <표 28>(wiki noun 행), <표 35>, <표 41>·<표 42>(H5 보조), 부록 C <표 65>, <표 67>
-  - `pnw_sweep.py`: <표 39>의 최고 계수·①·③ 열, <그림 4> (H5)
-  - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정), <표 40>(부트스트랩)
+  - `pnw_sweep.py`: <표 39>의 최고 계수·①·③ 열, <그림 4>, 부록 F <표 81>~<표 83>(단일 도약·다중 도약 혼합·탐색 필수 집합의 R@5 곡선) (H5)
+  - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정, ③의 2.0·5.0 비교 포함), <표 40>(부트스트랩)
   - `explore_compsp.py`: <표 25>, 부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>
   - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
@@ -223,7 +223,7 @@ python hypothesis_revision_tests.py    # compsp·noun 대 증류 사전, 증류 
 
 ## 6. H5: dense 가중치(pnw) 스윕 (2026-10-18~19, admin R@5)
 
-원고 제4장 제5절 1항(<표 39>, <그림 4>)의 근거이며, 2026-10-28 가설 재정의로 **H5의 주 근거**가 되었습니다(5절의 검색 조정 대 HippoRAG2 검정은 H5 보조). LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
+원고 제4장 제5절 1항(<표 39>, <그림 4>)과 부록 F(<표 81>~<표 83>, 계수별 R@5 원자료)의 근거이며, 2026-10-28 가설 재정의로 **H5의 주 근거**가 되었습니다(5절의 검색 조정 대 HippoRAG2 검정은 H5 보조). LinearRAG의 PPR 시작 벡터에서 문서 쪽 점수에 곱하는 가중치 `passage_node_weight`(pnw)를 0~5.0의 11개 값으로 바꿔 가며 R@5를 쟀습니다. 대상은 추출 방식 6종(comp, noun, gazcomp(PMI), 4B·31B 증류 사전, compsp)이고, PRF(문장)를 켠 스윕은 comp·4B 증류 사전만 했습니다. 검색만 하므로 LLM 호출은 없습니다. 확인용으로 comp·4B의 몇 개 점에서만 ◆ 조건 GPT-Acc를 냈습니다.
 
 ```bash
 cd analysis
