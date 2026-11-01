@@ -266,7 +266,7 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
 - **admin single의 선별 스크립트가 없습니다.** 300문항의 목록(`questions_admin_single_ids.json`)으로 정확히 복원할 수는 있지만, 고른 규칙은 코드로 남아 있지 않습니다. 데이터로 확인되는 사실은 다음과 같습니다. 300문항 모두 Validation 분할의 원본 질의응답이며, 문서당 1문항입니다. 카테고리 구성은 Validation 분할의 구성 비율을 따릅니다. 방해 문서 10,000개는 정답 문서를 뺀 원천 풀에서 뽑았습니다.
 - **증류 사전 구축 스크립트(`distill_glossary.py`)는 복원본입니다.** 원 스크립트가 남아 있지 않아 산출물을 대조해 규칙을 복원했습니다. wiki_ko 4B 사전은 (낱말, 빈도) 집합까지 같게 재현됩니다.
 - **실행 시 어떤 사전을 썼는지는 기록되지 않았습니다.** `systems.csv`의 사전 파일은 색인 캐시를 각 후보 사전으로 다시 추출해 정확히 일치하는 것을 찾아 정했습니다. compdict(admin)만은 표본 문서에서 `glossary.json`과 거의 같은 `glossary_clean.json`이 구별되지 않아, 다른 PMI 조건과 같은 `glossary.json`으로 두었습니다.
-- **HippoRAG2는 공식 패키지가 아니라 원논문을 따라 재구현했습니다**(`src/track_02/graphrag/hipporag2.py`, `src/track_01/graph_rag/hipporag2_korean.py`). OpenIE 프롬프트는 원 저장소(OSU-NLP-Group/HippoRAG, MIT)의 템플릿을 한국어로 번역한 것입니다(`THIRD_PARTY_NOTICES.md`).
+- **HippoRAG2는 공식 패키지가 아니라 원논문을 따라 재구현했습니다**(`src/track_02/graphrag/hipporag2.py`, `src/track_01/graph_rag/hipporag2_korean.py`). OpenIE 프롬프트와 질의응답 프롬프트는 원 저장소(OSU-NLP-Group/HippoRAG, MIT)의 템플릿을 한국어로 번역한 것입니다(`THIRD_PARTY_NOTICES.md`).
 - **LinearRAG도 원 저장소 코드가 아니라 원 저장소(DEEP-PolyU/LinearRAG) 구현을 따라 재구현했습니다**(`src/track_02/linearrag/engine.py`).
   - 같은 점: 씨앗 엔티티 선택, 문장 단위 활성화 전파, 문서 점수(정규화 유사도 × passage_ratio + log(1 + 엔티티 보너스)), 문서–엔티티 끈 무게(등장 횟수 비율), 개인화 페이지랭크(prpack)의 계산식이 원 저장소와 같습니다. 설정값 7개(top-5, 반복 3, 문장 1, passage_ratio 1.5, passage_node_weight 0.05, damping 0.5, 임계값 0.5)는 원 저장소 `config.py`의 기본값입니다. 원 저장소의 2wiki 실행 스크립트는 임계값 0.4·passage_ratio 0.05를 쓰는데, 이 연구는 두 코퍼스 모두 기본값을 썼습니다.
   - 입력 처리: 처음 실험한 wiki_ko 로더는 문서 앞의 번호를 떼어 원 구현의 인접 문단 간선이 생기지 않았습니다. 이를 바로잡은 `wiki_ko_v2`로 LinearRAG 계열을 다시 실행했고, 논문과 이 저장소의 wiki_ko 결과는 모두 `wiki_ko_v2` 결과입니다(위 "wiki_ko_v2"). admin 문서는 번호로 시작하지 않아 원 저장소에서도 이 간선이 생기지 않으므로 영향이 없습니다.
@@ -319,4 +319,4 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
 - **wiki_ko**: 2WikiMultiHopQA(Ho et al., 2020, Apache-2.0)의 1,000문항 서브셋을 LinearRAG 배포본(`Zly0523/linear-rag`, 커밋 `f7971bb8`)에서 받아 한국어로 기계 번역했습니다. `data/2wiki_ko/LICENSE`와 `NOTICE`를 참조하세요.
 - **admin**: 이 연구는 과학기술정보통신부의 재원으로 한국지능정보사회진흥원의 지원을 받아 구축된 '행정 문서 대상 기계독해 데이터'를 활용하여 수행된 연구입니다. 본 연구에 활용된 데이터는 AI 허브(aihub.or.kr)에서 다운로드할 수 있습니다.
   This research used datasets from 'The Open AI Dataset Project (AI-Hub, S. Korea)'. All data information can be accessed through 'AI-Hub (www.aihub.or.kr)'.
-- **코드**: Apache License 2.0 (`LICENSE`). HippoRAG(MIT)의 OpenIE 프롬프트를 번역해 쓴 부분은 원 저작권 고지와 MIT 라이선스 전문을 `THIRD_PARTY_NOTICES.md`에 두었습니다. 데이터의 라이선스는 위 출처별 조건을 따릅니다. 특히 admin 관련 파일(합성 질의, 사전, 결과)을 쓸 때는 AI-Hub 출처 표기가 필요합니다.
+- **코드**: Apache License 2.0 (`LICENSE`). HippoRAG(MIT)의 OpenIE·질의응답 프롬프트를 번역해 쓴 부분은 원 저작권 고지와 MIT 라이선스 전문을 `THIRD_PARTY_NOTICES.md`에 두었습니다. 데이터의 라이선스는 위 출처별 조건을 따릅니다. 특히 admin 관련 파일(합성 질의, 사전, 결과)을 쓸 때는 AI-Hub 출처 표기가 필요합니다.

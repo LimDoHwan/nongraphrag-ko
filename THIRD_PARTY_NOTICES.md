@@ -7,9 +7,10 @@
 - 원 저장소: https://github.com/OSU-NLP-Group/HippoRAG (라이선스 확인 시점 커밋 `d5c8329422e0a0b834a15874545cb6a74b4f9b26`)
 - 이 저장소의 HippoRAG2는 공식 패키지를 쓰지 않고 원논문과 원 저장소를 따라 재구현했습니다. 그 가운데 원 저장소에서 가져온 부분은 다음과 같습니다.
   - `src/track_01/graph_rag/hipporag2_korean.py`의 OpenIE 프롬프트(`NER_SYSTEM`, `ONE_SHOT_PARA`, `ONE_SHOT_NER_OUT`, `RE_SYSTEM`, `RE_FRAME`, `ONE_SHOT_RE_OUT`): 원 저장소 `src/hipporag/prompts/templates/ner.py`와 `triple_extraction.py`를 한국어로 번역했습니다(one-shot 예시와 JSON 출력 형식 포함).
-  - 같은 파일의 기본 설정값(동의어 간선 임계값 0.8, `passage_node_weight` 0.05, damping 0.5 등)은 원 저장소의 기본값을 따랐습니다.
-- 위 프롬프트는 `src/track_02/graphrag/hipporag2.py`, `openie_4b.py`, `openie_4b_rerun.py`가 가져다 씁니다.
-- 사실 필터 프롬프트(`FILTER_PROMPT`)와 질의응답 프롬프트(`QA_SYS`)는 원 저장소의 문구를 옮긴 것이 아니라 새로 작성했습니다.
+  - 질의응답 시스템 프롬프트(`src/track_01/graph_rag/hipporag2_korean.py`와 `src/track_02/linearrag/engine.py`의 `QA_SYS`): 원 저장소 `src/hipporag/prompts/templates/rag_qa_musique.py`의 시스템 프롬프트("As an advanced reading comprehension assistant …", Thought/Answer 형식)를 한국어로 번역했습니다. LinearRAG 원 저장소도 같은 영어 프롬프트를 씁니다.
+  - `hipporag2_korean.py`의 기본 설정값(동의어 간선 임계값 0.8, `passage_node_weight` 0.05, damping 0.5 등)은 원 저장소의 기본값을 따랐습니다.
+- OpenIE 프롬프트는 `src/track_02/graphrag/hipporag2.py`, `openie_4b.py`, `openie_4b_rerun.py`가, `engine.py`의 `QA_SYS`는 `src/track_02/common/`의 응답 재생성 스크립트와 `scripts/rerun_wiki_v2.py`, `scripts/explore_compsp/compsp_eval.py`가 가져다 씁니다.
+- 사실 필터 프롬프트(`FILTER_PROMPT`)는 원 저장소의 문구를 옮긴 것이 아니라 새로 작성했습니다.
 - 원고 부록 E에 기록한 파일 해시를 유지하려고 소스 파일 안에는 고지를 넣지 않고 이 파일에 둡니다.
 
 원 저장소의 라이선스 전문은 다음과 같습니다.
