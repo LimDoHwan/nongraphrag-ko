@@ -277,15 +277,15 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
 
 ## 원고 부록 E의 파일 해시와 공개본
 
-논문 부록 E <표 79>의 파일과 이 저장소의 대응입니다. 해시는 SHA-256 앞 12자리입니다.
+논문 부록 E <표 79>의 파일과 이 저장소의 대응입니다. 해시는 SHA-256 앞 12자리입니다. 부록 E는 공개본의 해시를 싣습니다. 실험 당시 작업본과 해시가 다른 두 파일은 "차이" 열에 이전 값과 바뀐 이유를 적었습니다.
 
 | 부록 E 파일 | 공개본 경로 | 부록 E 해시 | 공개본 해시 | 차이 |
 |:--|:--|:--|:--|:--|
 | `hipporag2_korean.py` | `src/track_01/graph_rag/hipporag2_korean.py` | `9d2fd188b65e` | `9d2fd188b65e` | 같음 |
-| `graphrag/hipporag2.py` | `src/track_02/graphrag/hipporag2.py` | `50f83806b21c` | `efdb985ef65e` | 부록 E의 해시를 기록한 뒤(2026-09-14), wiki_ko의 4B 재추출판을 돌리려고 실행 옵션 `--variant 4bv2`를 추가했다. 바뀐 곳은 캐시·결과 경로, 결과 폴더 이름 표기, 옵션 선택지, OpenIE 단계 실행 조건 4곳뿐이다. 이 4곳을 되돌리면 부록 E의 해시 `50f83806b21c`가 그대로 나온다. 검색 함수(`run_retrieval_qa`)는 바뀌지 않았으므로 31B·4B 그래프 결과는 변경 전 코드와 같다. 공개본은 실험 작업본과 같은 파일이다 |
+| `graphrag/hipporag2.py` | `src/track_02/graphrag/hipporag2.py` | `efdb985ef65e` | `efdb985ef65e` | 같음. 처음 기록한 해시는 `50f83806b21c`(2026-09-14)이다. 그 뒤 wiki_ko의 4B 재추출판을 돌리려고 실행 옵션 `--variant 4bv2`를 추가했다. 바뀐 곳은 캐시·결과 경로, 결과 폴더 이름 표기, 옵션 선택지, OpenIE 단계 실행 조건 4곳뿐이다. 이 4곳을 되돌리면 `50f83806b21c`가 그대로 나온다. 검색 함수(`run_retrieval_qa`)는 바뀌지 않았으므로 31B·4B 그래프 결과는 변경 전 코드와 같다. 공개본은 실험 작업본과 같은 파일이다 |
 | `linearrag/engine.py` | `src/track_02/linearrag/engine.py` | `74c3c47ee54f` | `74c3c47ee54f` | 같음 |
 | `vanillarag/run.py` | `src/track_02/vanillarag/run.py` | `351787976145` | `351787976145` | 같음 |
-| `openie_4b.py` | `src/track_02/graphrag/openie_4b.py` | `f841466e0c45` | `abf34607b72a` | 공개 정제: 내부 서버 주소를 환경변수 `OPENIE_4B_URL`로 바꾸고 `import os` 추가. 그 밖에는 같음 |
+| `openie_4b.py` | `src/track_02/graphrag/openie_4b.py` | `abf34607b72a` | `abf34607b72a` | 같음. 실험 작업본의 해시는 `f841466e0c45`이다. 공개 정제로 내부 서버 주소를 환경변수 `OPENIE_4B_URL`로 바꾸고 `import os`를 추가했다. 그 밖에는 같다 |
 | `rejudge_gpt4o.py` | `src/track_02/common/rejudge_gpt4o.py` | `43287b60c14c` | `43287b60c14c` | 같음 |
 | BAAI/bge-m3 `pytorch_model.bin` | (포함하지 않음, Hugging Face에서 내려받음) | `b5e0ce3470ab` | — | — |
 
