@@ -38,3 +38,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## LinearRAG (DEEP-PolyU/LinearRAG, GPL-3.0)
+
+- 원 저장소: https://github.com/DEEP-PolyU/LinearRAG (커밋 `5da5262231fff421f05fa8654528987cc252ac8d`)
+- `src/track_02/linearrag/engine.py`: LinearRAG 원 저장소(DEEP-PolyU/LinearRAG, 커밋 5da5262, 2026-06-11 취득, GPL-3.0)의 코드를 참고해 계산식과 기본값을 맞추었으나, 원 코드를 복사하지 않고 새로 작성했습니다. 원 저장소 코드는 이 저장소에 포함되어 있지 않습니다.
+- 질의응답 프롬프트(`QA_SYS`)는 LinearRAG 원 저장소도 쓰는 HippoRAG 프롬프트의 번역이며, 위 HippoRAG 절에 적었습니다.

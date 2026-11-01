@@ -268,6 +268,7 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
 - **실행 시 어떤 사전을 썼는지는 기록되지 않았습니다.** `systems.csv`의 사전 파일은 색인 캐시를 각 후보 사전으로 다시 추출해 정확히 일치하는 것을 찾아 정했습니다. compdict(admin)만은 표본 문서에서 `glossary.json`과 거의 같은 `glossary_clean.json`이 구별되지 않아, 다른 PMI 조건과 같은 `glossary.json`으로 두었습니다.
 - **HippoRAG2는 공식 패키지가 아니라 원논문을 따라 재구현했습니다**(`src/track_02/graphrag/hipporag2.py`, `src/track_01/graph_rag/hipporag2_korean.py`). OpenIE 프롬프트와 질의응답 프롬프트는 원 저장소(OSU-NLP-Group/HippoRAG, MIT)의 템플릿을 한국어로 번역한 것입니다(`THIRD_PARTY_NOTICES.md`).
 - **LinearRAG도 원 저장소 코드가 아니라 원 저장소(DEEP-PolyU/LinearRAG) 구현을 따라 재구현했습니다**(`src/track_02/linearrag/engine.py`).
+  - 라이선스: LinearRAG 원 저장소(DEEP-PolyU/LinearRAG, 커밋 5da5262, 2026-06-11 취득, GPL-3.0)의 코드를 참고해 계산식과 기본값을 맞추었으나, 원 코드를 복사하지 않고 새로 작성했습니다. 원 저장소 코드는 이 저장소에 포함되어 있지 않습니다.
   - 같은 점: 씨앗 엔티티 선택, 문장 단위 활성화 전파, 문서 점수(정규화 유사도 × passage_ratio + log(1 + 엔티티 보너스)), 문서–엔티티 끈 무게(등장 횟수 비율), 개인화 페이지랭크(prpack)의 계산식이 원 저장소와 같습니다. 설정값 7개(top-5, 반복 3, 문장 1, passage_ratio 1.5, passage_node_weight 0.05, damping 0.5, 임계값 0.5)는 원 저장소 `config.py`의 기본값입니다. 원 저장소의 2wiki 실행 스크립트는 임계값 0.4·passage_ratio 0.05를 쓰는데, 이 연구는 두 코퍼스 모두 기본값을 썼습니다.
   - 입력 처리: 처음 실험한 wiki_ko 로더는 문서 앞의 번호를 떼어 원 구현의 인접 문단 간선이 생기지 않았습니다. 이를 바로잡은 `wiki_ko_v2`로 LinearRAG 계열을 다시 실행했고, 논문과 이 저장소의 wiki_ko 결과는 모두 `wiki_ko_v2` 결과입니다(위 "wiki_ko_v2"). admin 문서는 번호로 시작하지 않아 원 저장소에서도 이 간선이 생기지 않으므로 영향이 없습니다.
   - 남은 차이: 원 저장소는 엔티티 등장 횟수를 셀 때 소문자로 바꿔 셉니다(한국어에는 영향이 거의 없음). 2wiki 전용 실행값(임계값 0.4·passage_ratio 0.05)은 쓰지 않았습니다.
