@@ -58,6 +58,7 @@ python integrated_table.py     # 통합 결과표 RESULTS.md: 부록 B 41개 시
 python master_table.py        # 부록 B <표 54>의 41개 시스템 행 × 4개 집합, 논문 수록값과 자동 대조 (탐색 조건 10행은 explore_compsp.py·integrated_table.py)
 python hypothesis_tests.py    # 제4장 <표 22> H1 보조 비교(noun 대 nnp)·<표 23> 복합명사 결합과 통계 사전의 효과, <표 26>·<표 27>(H3 (가)), <표 30>, <표 43>(H5 관련, 제4장 제5절 제3항: 검색 조정 대 comp, 다중 도약)·<표 42>의 single 대 comp 열(단일 도약, R@5 값은 <표 44>): 정확 McNemar 검정, 95% 신뢰구간
 python h1_vanilla_tests.py   # 제4장 <표 22> H1 검정 결과와 추출 범위의 보조 비교(Vanilla RAG와의 비교 행, 2026-10-31 추가): nnp·noun·comp·gazcomp(PMI)·compsp·대표 구성 대 Vanilla RAG, 정확 McNemar, 보정 없는 원 p값
+python item_level_csv.py      # 제출용 문항별 결과 CSV 3개(부록 B <표 54> 51행 × 4개 집합, 문단 가중 계수 스윕, 스윕 확인용)와 데이터 딕셔너리 → item_level/ (2026-11-02 추가)
 python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·화폐 환산, <표 38> ICER, <표 36> 비용 구조
 ```
 
@@ -68,6 +69,7 @@ python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·�
   - `h5_tests.py`: H5 단일 도약 대 Vanilla 검정, H5 판정표, 정점 위치 부트스트랩 (2026-10-28 추가): <표 39>(H5 판정, ③의 2.0·5.0 비교, ④ 다중 도약 유지 포함), <표 40>(부트스트랩)
   - `h1_vanilla_tests.py`: <표 22> H1 검정 결과와 추출 범위의 보조 비교의 Vanilla RAG와의 비교 행 (2026-10-31 추가). 판정용 4개 비교는 comp·gazcomp(PMI) × wiki_ko·admin full GPT-Acc(0.05/4). 보고용 compsp·대표 구성 블록은 원고 미수록
   - `explore_compsp.py`: <표 25> H2 검정 결과(compsp 대 comp·noun, GPT-Acc), 부록 B <표 54> ☆행, 부록 C <표 66>, <표 68>
+  - `item_level_csv.py`: 문항별 결과의 긴 형식 CSV(한 행 = 집합 × 시스템 × 문항, 질의·정답 문장 없이 문항 ID로 식별). 집계하면 제4장 <표 21>, 부록 B <표 54>, 부록 F <표 81>~<표 83>이 되며, 쓴 뒤 부록 B 수록값과 자동 대조. 열 설명은 `item_level_data_dictionary.md`
   - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
 - `analysis/reference/appendix_b.csv`: 원고 부록 B의 수록값입니다. wiki_ko 재실행으로 바뀐 LinearRAG 계열 74칸과 원고의 이중 반올림 6칸을 수정한 값(2026-10-15)이며, `master_table.py`는 이 값과 모두 일치해야 합니다.

@@ -8,6 +8,7 @@ data/admin_ko/chunks_*.json
 data/admin_ko/questions_admin_single.json
 
 # 실행 중 생기는 것
+item_level/
 cache/
 models/
 logs/
