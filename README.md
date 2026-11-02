@@ -93,9 +93,9 @@ python scripts/run_system.py --system "HippoRAG2 (31B 그래프)" --dataset wiki
 
 ### admin (AI-Hub 원천 필요)
 
-행정문서 원문은 AI-Hub 이용정책상 재배포할 수 없어, 이 저장소에는 **문서 ID 목록과 체크섬만** 있습니다. 다음 순서로 같은 코퍼스를 복원합니다.
+행정문서 원문은 AI 허브 데이터 이용정책상 재배포할 수 없어, 이 저장소에는 **문서 ID 목록과 체크섬만** 있습니다. 다음 순서로 같은 코퍼스를 복원합니다.
 
-1. [AI-Hub](https://aihub.or.kr)에서 「행정 문서 대상 기계독해 데이터」(데이터셋 번호 569)를 신청해 내려받습니다. AI-Hub 정책상 내국인만 신청할 수 있습니다.
+1. [AI-Hub](https://aihub.or.kr)에서 「행정 문서 대상 기계독해 데이터」(데이터셋 번호 569)를 신청해 내려받습니다. [AI 허브 데이터 이용정책](https://aihub.or.kr/intrcn/guid/usagepolicy.do)상 국외에 소재하는 법인·단체·개인은 수행기관 등 및 한국지능정보사회진흥원과 별도의 합의가 있어야 이용할 수 있습니다.
 2. span_extraction 라벨링 데이터 두 파일을 아래 위치에 둡니다. 두 분할은 같은 문단 10,654개를 서로 다른 질의응답과 함께 중복 수록하고 있어, 문서 레코드는 75,917건이지만 고유 문단은 65,263개입니다. 복원 스크립트는 Training → Validation 순으로 읽어 같은 ID는 Validation 레코드를 씁니다(실험과 동일).
 
    | 경로 | MD5 |
@@ -256,7 +256,7 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
 
 | 항목 | 이유 | 대신 제공하는 것 |
 |:--|:--|:--|
-| AI-Hub 원문, 원문이 든 검색 코퍼스 | AI-Hub 이용정책: 원본·단순 전처리본 재배포 금지 | 코퍼스별 문서 ID 목록 + 체크섬, 복원 스크립트 |
+| AI-Hub 원문, 원문이 든 검색 코퍼스 | AI 허브 데이터 이용정책: 원본·단순 전처리본 재배포 금지 | 코퍼스별 문서 ID 목록 + 체크섬, 복원 스크립트 |
 | admin single 질의·정답 텍스트와 모델 출력 | AI-Hub 원본 질의응답의 부분집합. 맞힌 모델 출력은 원본 정답과 같은 문자열이라, 문항 ID 목록과 합치면 원본 정답이 복원됨 | (문항 ID, 문서 ID, 원본 QA 순번) 목록. 결과 파일의 정오 판정(`gpt4o`, `contain`)과 검색 결과는 그대로. 출력 12,300건은 `prediction: null`, `prediction_withheld: true` |
 | admin full·hard·hard2k 결과 중 추론 과정이 든 긴 모델 출력 (1,965건) | 출력 한도에 걸려 최종 답 없이 추론 과정만 남은 출력으로, 원문 인용이 들어 있을 수 있음. 기준: 200자 초과 또는 "Thought" 포함 | 정오 판정은 그대로. 해당 항목은 `prediction: null`, `prediction_withheld: true`. full·hard·hard2k의 나머지 단답 14,212건과 wiki_ko 출력 41,000건은 공개 |
 | 색인 캐시(OpenIE 결과, 임베딩) | 원문 조각 포함, 용량 | 재실행으로 생성 |
