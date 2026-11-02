@@ -1,6 +1,6 @@
 # nongraphRAG-ko
 
-**관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가**의 재현 저장소입니다.
+**관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 어디에서 성능으로 이어지는가**의 재현 저장소입니다.
 
 관계 추출 없이 엔티티만으로 그래프를 만드는 LinearRAG(Zhuang et al., 2026)를 한국어 코퍼스 두 개(영어 위키 기원 `wiki_ko`, AI-Hub 행정문서 `admin`)에 적용했습니다. 이 저장소로 다음 세 가지를 비교·재현할 수 있습니다.
 
@@ -73,7 +73,7 @@ python cost.py                # 제4장 <표 32> 토큰, <표 33> GPU-시간·�
   - `scripts/measure_query_llm.py`(결과 `results/track_02/query_llm_usage/`): <표 34>
 - `analysis/systems.csv`: 논문의 시스템 이름과 결과 폴더, 실행 설정, 사용한 엔티티 사전 파일을 잇는 목록입니다. `wiki_dataset` 열은 wiki_ko 결과 폴더의 접미사(`wiki_ko` 또는 `wiki_ko_v2`)입니다. `main10 = 1`은 가설 검정에 쓴 10개 비교 시스템(응답 생성 조건 동일)입니다.
 - `analysis/reference/appendix_b.csv`: 원고 부록 B의 수록값입니다. wiki_ko 재실행으로 바뀐 LinearRAG 계열 74칸과 원고의 이중 반올림 6칸을 수정한 값(2026-10-15)이며, `master_table.py`는 이 값과 모두 일치해야 합니다.
-- `results/track_02/graph_connectivity.csv`: 제4장 <표 24>의 추출 방식별 그래프 연결성 지표(고유·다리 엔티티 수, 허브 끈 비율, 끈 없는 언급 비율, 고립 문서 비율). `scripts/graph_connectivity.py`의 출력이며, 입력인 색인 캐시는 원문 조각이 들어 있어 공개하지 않으므로 결과를 파일로 제공합니다. wiki_ko는 `wiki_ko_v2` 색인 기준입니다.
+- `results/track_02/graph_connectivity.csv`: 제4장 <표 24>의 추출 방식별 그래프 연결성 지표(고유·다리 엔티티 수, 허브 끈 비율, 끈 없는 언급 비율, 고립 문서 비율, 문서당 엔티티 수와 끈 수). `scripts/graph_connectivity.py`의 출력이며, 입력인 색인 캐시는 원문 조각이 들어 있어 공개하지 않으므로 결과를 파일로 제공합니다. wiki_ko는 `wiki_ko_v2` 색인 기준입니다.
 - 비용 표의 입력(`analysis/cost_inputs.csv`)에 대한 설명은 다음과 같습니다.
   - 입력 토큰: 실제 요청을 재구성해 센 정확값
   - 출력 토큰: 저장된 추출 결과로 계산한 하한값
@@ -131,7 +131,7 @@ python scripts/run_system.py --system "HippoRAG2 (31B 그래프)" --dataset wiki
 | HippoRAG2 (31B) | `python scripts/run_system.py --system "HippoRAG2 (31B 그래프)" --dataset admin_full` | OpenIE를 문서당 2회 호출 (admin full 21,108회) |
 | HippoRAG2 (4B) | `python -m src.track_02.graphrag.openie_4b --dataset admin_full` 후 run_system | wiki_ko는 `openie_4b_rerun.py`로 다시 추출한 판(`4bv2`) 사용 |
 | LLM 증류 사전 | `python -m src.track_02.data.distill_glossary --openie <OpenIE 캐시> --mode nerre --out <사전>` | HippoRAG2의 OpenIE 결과에서 엔티티 표층형만 회수. 검색 코퍼스 전체(정답 문서 포함)의 OpenIE 결과를 쓰며, 질의·정답 정보는 사용하지 않음 |
-| 통계(PMI) 사전 | `python -m src.track_02.data.build_glossary` | 평가 코퍼스 본문으로 구축. 질의·정답 정보는 사용하지 않음(구축 풀에는 평가 집합의 정답 문서도 포함됨) |
+| 통계(PMI) 사전 | `python -m src.track_02.data.build_glossary` | AI 허브 원천 문서 풀(학습·검증 분할)에서 예비실험 질의(`questions_admin.json`, 240문항)의 정답 문서 326개를 뺀 풀로 구축. 질의·정답 정보는 사용하지 않음(admin single·full·hard 평가 집합의 정답 문서는 빼지 않았으며, 326개와 겹치는 7개만 빠짐) |
 
 ### admin full·hard 질의 합성 (참고)
 
@@ -275,7 +275,7 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
   - 입력 처리: 처음 실험한 wiki_ko 로더는 문서 앞의 번호를 떼어 원 구현의 인접 문단 간선이 생기지 않았습니다. 이를 바로잡은 `wiki_ko_v2`로 LinearRAG 계열을 다시 실행했고, 논문과 이 저장소의 wiki_ko 결과는 모두 `wiki_ko_v2` 결과입니다(위 "wiki_ko_v2"). admin 문서는 번호로 시작하지 않아 원 저장소에서도 이 간선이 생기지 않으므로 영향이 없습니다.
   - 남은 차이: 원 저장소는 엔티티 등장 횟수를 셀 때 소문자로 바꿔 셉니다(한국어에는 영향이 거의 없음). 2wiki 전용 실행값(임계값 0.4·passage_ratio 0.05)은 쓰지 않았습니다.
   - 대조: 원 저장소 코드로 낸 wiki_ko 검색 결과(같은 bge-m3·고유명사 추출·2wiki 실행값)와 상위 5개 문서를 1,000문항에서 비교했습니다. `wiki_ko_v2`에서 849문항이 순서까지 같았고 평균 겹침은 96.8%입니다. 번호를 뗀 이전 로더에서는 64문항(평균 겹침 70%)이었습니다. 계산식은 원 저장소와 같고, 차이는 입력 처리에서 왔다는 뜻입니다.
-- **gpt-4o 판정자는 모델 별칭으로 호출했습니다.** 10개 비교 시스템을 판정한 2026-09-15에 응답한 모델은 `gpt-4o-2024-08-06`입니다.
+- **gpt-4o 판정자는 모델 별칭으로 호출했습니다.** 응답 모델을 확인한 것은 2026-09-14~15 판정분(`gpt-4o-2024-08-06`)뿐입니다. 판정은 문항별로 비어 있는 것만 채우고 같은 (질의, 정답, 응답)의 판정은 다시 쓰므로, 10개 비교 시스템의 최종 판정에는 2026-06-18 무렵(최초 판정), 08-15, 09-14~15, 10-14(wiki_ko 재실행, 512건)의 판정이 섞여 있습니다.
 
 ## 원고 부록 E의 파일 해시와 공개본
 
@@ -302,14 +302,14 @@ python h5_tests.py     # H5: pnw별 single R@5 대 Vanilla, 확인용 GPT-Acc �
 
 이 저장소를 사용하면 다음 논문을 인용해 주세요. `CITATION.cff`에도 같은 정보가 있습니다.
 
-> 임도환 (2027). 관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가. 경희대학교 경영학 석사학위논문.
+> 임도환 (2027). 관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 어디에서 성능으로 이어지는가. 경희대학교 경영학 석사학위논문.
 >
-> Lim, D. (2027). *A Cost-Effectiveness Analysis of Entity Extraction Methods for Korean in Relation-Free Graph RAG: Does Investment in LLM-Based Indexing Translate into Performance?* Master's thesis, Kyung Hee University.
+> Lim, D. (2027). *A Cost-Effectiveness Analysis of Entity Extraction Methods for Korean in Relation-Free Graph RAG: Where Does Investment in LLM-Based Indexing Translate into Performance?* Master's thesis, Kyung Hee University.
 
 ```bibtex
 @mastersthesis{lim2027nongraphrag,
   author = {임도환},
-  title  = {관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가},
+  title  = {관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 어디에서 성능으로 이어지는가},
   school = {경희대학교},
   type   = {경영학 석사학위논문},
   year   = {2027},

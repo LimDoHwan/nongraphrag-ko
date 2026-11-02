@@ -27,7 +27,7 @@
 | `system_group` | 문자 | 시스템 구분 | `비교 시스템(◆)` = 원고의 10개 비교 시스템 / `기타 시스템` = 부록 B의 나머지 31개 / `탐색 조건(☆)` | 없음 |
 | `answer_max_tokens` | 정수 | 응답 생성의 출력 한도(토큰) | `2000` = ◆와 같은 응답 조건 / `256` = 일부 답이 잘린 조건이라 GPT-Acc·Contain은 참고값(부록 B <표 54> 주) | 없음 |
 | `question_id` | 문자 | 문항 ID | 3절 | 없음 |
-| `gpt_acc` | 정수(0/1) | GPT-Acc: gpt-4o(`gpt-4o-2024-08-06`)가 응답이 정답과 의미상 일치한다고 판정했는지 | 1 = 정답, 0 = 오답 | 없음 |
+| `gpt_acc` | 정수(0/1) | GPT-Acc: gpt-4o(별칭 호출. 세부 버전은 2026-09-14~15 판정분만 `gpt-4o-2024-08-06`으로 확인)가 응답이 정답과 의미상 일치한다고 판정했는지. 판정 시점은 2026년 6월부터 10월 사이로 문항마다 다를 수 있다 | 1 = 정답, 0 = 오답 | 없음 |
 | `contain` | 정수(0/1) | Contain: 조사를 떼고 정규화한 정답 문자열이 응답 안에 들어 있는지 | 1 = 포함, 0 = 미포함 | 없음 |
 | `r5` | 정수(0/1) | R@5: 문항의 정답 근거 문서가 **모두** 검색 상위 5개 안에 있는지 | 1 = 모두 포함, 0 = 아님 | **wiki_ko는 모든 행이 빈칸.** 번역 코퍼스에서 정답 근거 문서 대응을 산출할 수 없다(제3장 제2절). admin_hard의 Vanilla RAG는 적대적 필터의 정의상 모두 0이며 빈칸이 아니다 |
 
@@ -55,7 +55,7 @@
 |:--|:--|:--|
 | wiki_ko | 2WikiMultiHopQA의 문항 ID(32자리 16진수) | `data/2wiki_ko/questions.json`의 `id` (한국어 번역 질의·정답 포함) |
 | admin_single | `sgl_0`~`sgl_299` | `data/admin_ko/questions_admin_single_ids.json`: (문항 ID, AI 허브 문서 ID, 원본 질의응답 순번). 질의·정답 문장은 AI 허브 원천 데이터에서 복원한다(README) |
-| admin_full | `anc_0`~`anc_278` | `data/admin_ko/questions_anchored.json`의 `id` (합성 질의) |
+| admin_full | `anc_0`~`anc_464` 사이의 비연속 279개 | `data/admin_ko/questions_anchored.json`의 `id` (합성 질의) |
 | admin_hard | `admh_0`~`admh_102` | `data/admin_ko/questions_admin_hard.json`의 `id` (합성 질의) |
 
 ## 4. 시스템 이름과 원고 조건 이름의 대응, 원천 파일

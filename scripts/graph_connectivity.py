@@ -8,6 +8,8 @@ LinearRAG engine._build_graph 와 같은 규칙(text.count(e) > 0 일 때만 문
   - 허브 끈 비율    : 전체 문서–엔티티 끈 중, 문서의 5% 이상과 이어진 엔티티에 걸린 끈의 비율
   - 끈 없는 언급    : (문서, 엔티티) 언급 중 원문에 그 문자열이 그대로 없어 끈이 생기지 않은 비율
   - 다리 없는 문서  : 다리 엔티티와 하나도 이어지지 않은 문서의 비율 (그래프에서 고립)
+  - 문서당 엔티티   : 문서 하나에서 추출된 서로 다른 엔티티 수의 평균 (끈 유무와 무관, 2026-11-02 추가)
+  - 문서당 끈       : 문서 하나가 엔티티와 이어진 끈 수의 평균 (2026-11-02 추가)
 
 wiki_ko 는 논문 결과와 같은 wiki_ko_v2 색인("번호:본문" 유지, 2026-10-15 재실행)을 읽는다.
 인접 문단 간선(문서–문서)은 엔티티를 거치지 않으므로 이 지표에 들어가지 않는다.
@@ -53,11 +55,14 @@ def main():
             isolated = sum(1 for pid, es in p2e.items() if not (set(es) & bridge))
             print(f"{ds:10s} {mode:5s} 고유 {len(uniq):7,d}  다리 {len(bridge):6,d}  "
                   f"허브끈 {hub_edges / edges:.1%}  끈없는언급 {orphan / mentions:.1%}  "
-                  f"다리없는문서 {isolated / len(p2e):.1%}")
+                  f"다리없는문서 {isolated / len(p2e):.1%}  문서당 엔티티 {mentions / len(p2e):.2f}  "
+                  f"문서당 끈 {edges / len(p2e):.2f}")
             rows.append({"dataset": ds, "extract": mode, "documents": len(p2e), "unique_entities": len(uniq),
                          "bridge_entities": len(bridge), "hub_edge_ratio": round(hub_edges / edges, 4),
                          "unlinked_mention_ratio": round(orphan / mentions, 4),
-                         "isolated_doc_ratio": round(isolated / len(p2e), 4)})
+                         "isolated_doc_ratio": round(isolated / len(p2e), 4),
+                         "entities_per_doc": round(mentions / len(p2e), 2),
+                         "linked_entities_per_doc": round(edges / len(p2e), 2)})
     out = ROOT / "results" / "track_02" / "graph_connectivity.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "w", encoding="utf-8", newline="") as f:

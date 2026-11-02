@@ -9,6 +9,9 @@ admin full·hard 질의의 연결어(bridge)는 comp와 같은 규칙(extract_co
   - HippoRAG2(31B): cache/track_02/hipporag2_admin_full/openie/{idx}.json 의
     named_entities + 트리플 주어·목적어. 정확 일치와 부분 포함 두 기준을 함께 본다.
 
+판정은 문항 ID로 모은다. admin full에는 질의 문장이 같은 문항 쌍(anc_191·anc_343, 연결어가 다름)이 있어
+질의 문장을 열쇠로 쓰면 한쪽 판정이 덮어써진다(2026-11-02 수정). hard 문항은 자기 파일의 연결어·정답 문서로 판정한다.
+
 실행: python scripts/bridge_strata.py
 """
 import json
@@ -45,20 +48,20 @@ def load_preds(prefix, ds):
     out = {}
     for r in p:
         r5 = set(map(str, r["supporting"])) <= set(map(str, r["retrieved"][:5]))
-        out[r["id"]] = {"r5": r5, "acc": bool(r["gpt4o"]), "q": r["question"]}
+        out[r["id"]] = {"r5": r5, "acc": bool(r["gpt4o"])}
     return out
 
 
 def bridge_flags():
-    qs = json.load(open(DATA / "questions_anchored.json", encoding="utf-8"))
-    by_q = {q["question"]: q for q in qs}
+    qs = (json.load(open(DATA / "questions_anchored.json", encoding="utf-8"))
+          + json.load(open(DATA / "questions_admin_hard.json", encoding="utf-8")))
     passages = load_dataset("admin_full")[0]
     idx = {str(p["id"]): i for i, p in enumerate(passages)}
     flags = {}
     for name, (_, cache) in SYSTEMS.items():
         if cache:
             p2e = {k: set(v) for k, v in json.load(open(CACHE / cache / "ner.json"))["p2e"].items()}
-            flags[name] = {q["question"]: all(q["bridge"] in p2e.get(str(p), ()) for p in q["supporting_facts"])
+            flags[name] = {q["id"]: all(q["bridge"] in p2e.get(str(p), ()) for p in q["supporting_facts"])
                            for q in qs}
         else:
             def ents(pid):
@@ -69,11 +72,11 @@ def bridge_flags():
                         s.update((t[0], t[2]))
                 return s
             E = {str(p): ents(p) for q in qs for p in q["supporting_facts"]}
-            flags[name] = {q["question"]: all(q["bridge"] in E[str(p)] for p in q["supporting_facts"]) for q in qs}
+            flags[name] = {q["id"]: all(q["bridge"] in E[str(p)] for p in q["supporting_facts"]) for q in qs}
             flags[name + "~부분포함"] = {
-                q["question"]: all(any(q["bridge"] in e for e in E[str(p)]) for p in q["supporting_facts"])
+                q["id"]: all(any(q["bridge"] in e for e in E[str(p)]) for p in q["supporting_facts"])
                 for q in qs}
-    return by_q, flags
+    return flags
 
 
 def mcnemar(a, b, ids, key):
@@ -87,7 +90,7 @@ def mcnemar(a, b, ids, key):
 
 
 def main():
-    _, flags = bridge_flags()
+    flags = bridge_flags()
     for ds in ("admin_full", "admin_hard"):
         preds = {k: load_preds(v[0], ds) for k, v in SYSTEMS.items()}
         ids = sorted(preds["comp"])
@@ -98,10 +101,10 @@ def main():
             for fk in keys:
                 fa, fb = flags[A], flags[fk]
                 strata = {
-                    "둘 다 보유": [i for i in ids if fa[a[i]["q"]] and fb[a[i]["q"]]],
-                    "A만 보유": [i for i in ids if fa[a[i]["q"]] and not fb[a[i]["q"]]],
-                    "B만 보유": [i for i in ids if not fa[a[i]["q"]] and fb[a[i]["q"]]],
-                    "둘 다 없음": [i for i in ids if not fa[a[i]["q"]] and not fb[a[i]["q"]]],
+                    "둘 다 보유": [i for i in ids if fa[i] and fb[i]],
+                    "A만 보유": [i for i in ids if fa[i] and not fb[i]],
+                    "B만 보유": [i for i in ids if not fa[i] and fb[i]],
+                    "둘 다 없음": [i for i in ids if not fa[i] and not fb[i]],
                 }
                 print(f"\n[{A} 대 {B}]  층 기준: {fk}")
                 for metric in ("r5", "acc"):

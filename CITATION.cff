@@ -9,7 +9,7 @@ repository-code: "https://github.com/LimDoHwan/nongraphrag-ko"
 license: Apache-2.0
 preferred-citation:
   type: thesis
-  title: "관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 성능으로 이어지는가 (A Cost-Effectiveness Analysis of Entity Extraction Methods for Korean in Relation-Free Graph RAG: Does Investment in LLM-Based Indexing Translate into Performance?)"
+  title: "관계 없는 그래프 RAG의 한국어 엔티티 추출 방식별 비용-효과 분석 — LLM 색인 투자는 어디에서 성능으로 이어지는가 (A Cost-Effectiveness Analysis of Entity Extraction Methods for Korean in Relation-Free Graph RAG: Where Does Investment in LLM-Based Indexing Translate into Performance?)"
   authors:
     - family-names: "임"
       given-names: "도환"
